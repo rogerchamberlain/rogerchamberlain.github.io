@@ -11,6 +11,6 @@ course: "CSE 132"
 semester: "Fall 2021"
 
 # baseurl: "/~SEAS-SVC-CSE132"
-baseurl: "/~roger/test/fall2021"
+# baseurl: "/~roger/test/fall2021"
 
 exclude: [p.sh, push.sh]
