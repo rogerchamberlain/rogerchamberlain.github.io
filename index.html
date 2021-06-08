@@ -1,15 +1,73 @@
 ---
-title: CSE 132 Test
-semester: Fall 2021
+layout: default
+author: Roger D. Chamberlain
 ---
-<!DOCTYPE html>
-<html>
-<head>
-  <title> {{page.title}} {{page.semester}} </title>
-</head>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>The title is supposed to be {{page.title}} {{page.semester}}</p>
-</body>
-</html>
+
+<H1> {{site.course}} - {{site.title}} - {{site.semester}}
+</H1>
+<img src="{{ "/images/line.gif" | relative_url }}">
+<p>
+<H2> Course Information </H2>
+<p>
+CSE 132 introduces students to fundamental concepts in the basic operation of computers, from microprocessors to servers, and explores the universal similarities between all modern computing problems: how do we represent data? How do we communicate with other computers? How do processors "think"?
+</p>
+<p>
+We study inputs, outputs, and sensing; information representation; basic computer architecture and machine language; time-critical computation; inter-machine communication; and protocol design.
+</p>
+<p>
+Students use both desktop systems and hand-held (Arduino-compatible) micro-controllers to design and implement solutions to problems. They also participate in active-learning sessions where they work with professors and their peers to solve problems collaboratively.
+</p>
+<p>Prerequisite: CSE 131 or equivalent.
+</p>
+
+
+<img src="{{ "/images/line.gif" | relative_url }}">
+<p>
+<H2> Administrative Logistics </H2>
+<p>
+The instructor for the course this semester is
+<a href="http://www.cse.wustl.edu/~roger/">Roger Chamberlain</a>.
+<a href="https://wustl.box.com/s/ikt2b1s6yekotolajm4o1pd1q06d0rab">Here</a> is a short video about me.
+</p>
+<p>
+Head TAs this semester are Nina Tekkey and Michael Filippini. TA hours are documented <a href="{{ "/ta-hours.html" | relative_url }}">here</a>.
+</p>
+<p>
+This is a lecture-less class, please do the prep work and attend studio to keep up.
+</p>
+<p>
+Lab locations are on the 2nd floor of Urbauer.  Come to the lab for which you are registered, but we may move you to a different section (at the same time) to better handle the load.
+</p>
+<p>
+We will primarily use Piazza for communication in the class. Please use Piazza over email for asking questions.  </p>
+<p>
+Here are some useful links:
+<ul>
+	<li> <a href="{{ "/policies.html" | relative_url }}">Course Policies</a>
+	<li> <a href="{{ "/style-guide.html" | relative_url }}">Style Guide</a>
+	<li> <a href="{{ "/files/cc_v0_06.pdf" | relative_url }}" target="_blank">Course Textbook</a>
+	<li> <a href="{{ "/tbd.html" | relative_url }}">Piazza</a>
+	<li> <a href="{{ "/tbd.html" | relative_url }}">Canvas</a>
+	<li> <a href="https://github.com">GitHub</a>
+	<li> Additional reference material is available <a href="{{ "/#reference" | relative_url }}">below</a>
+</ul>
+
+<img src="{{ "/images/line.gif" | relative_url }}">
+<p>
+<H2 id="calendar"> Calendar </H2>
+<p>
+{% include calendar.html %}
+
+<img src="{{ "/images/line.gif" | relative_url }}">
+<p>
+<H2 id="reference"> References </H2>
+<p>
+Here are links to explanatory guides on course material:
+<ul>
+	<li> <a href="{{ "/tbd.html" | relative_url }}">FSMs</a>
+</ul>
+Here are links to external reference materials:
+<ul>
+	<li> <a href="https://www.arduino.cc/reference/en/" target="_blank">Arduino API</a>
+</ul>
+
