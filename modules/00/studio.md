@@ -1,15 +1,14 @@
 ---
 layout: default
-title: Studio 0 Introduction to Arduino
+title: Studio 0 - Introduction to Arduino
 author: Ben Stolovitz
-week: 0
 ---
 
 # {{ page.title }}
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
-# Access your repository
+## Access your repository
 
 We will be using [git](https://git-scm.com/) to distribute the code you need for studios and assignments. You will also use git to turn in your work. Here\'s a great video that explains what git is and how it works:
 

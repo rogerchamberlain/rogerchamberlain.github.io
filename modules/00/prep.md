@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Module 0 Prep
-week: 0
 author: Doug Shook
 ---
 
@@ -52,8 +51,6 @@ Read Chapters 1 and 2 in the course
 # Introduction to Arduino Programs
 
 Watch the following videos for a quick introduction to Arduino programming - if these are confusing to you now, don\'t worry! You\'ll get more practice with this during the first week of class.
-
-![========]({{ "/images/line.gif" | relative_url }})
 
 |Video | Description |
 |:-----:|:----------:|

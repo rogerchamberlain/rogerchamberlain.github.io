@@ -12,7 +12,7 @@
 
 - title: Prep 1
   module: 1
-  url: /tbd.html
+  url: /modules/01/prep.html
   assigned: Aug 30
   due: Sep 01
 
@@ -24,13 +24,13 @@
 
 - title: Studio 1
   module: 1
-  url: /tbd.html
+  url: /modules/01/studio.html
   assigned: Sep 01
   due: Sep 01
 
 - title: Assignment 1
   module: 1
-  url: /tbd.html
+  url: /modules/01/assignment.html
   assigned: Sep 08
   due: Sep 15
 

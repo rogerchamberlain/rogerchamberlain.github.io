@@ -42,6 +42,7 @@ The **Head TAs** for this course are Emily Wilson and Talia Weiss.
 
 <sup>3</sup> On Feb 8 and Mar 8 office hours will end at 4pm. 
   
+<img src="{{ "/images/line.gif" | relative_url }}">
 
 ## Help During Lab Times 
 [//]: #  | Section        |   Rooms |
@@ -51,6 +52,6 @@ The **Head TAs** for this course are Emily Wilson and Talia Weiss.
 [//]: #  | C (2:30pm-4:00pm) | Urbauer 218, 216, 214<sup>1</sup>   |
 
 [//]: #  <sup>1</sup> 
-On Wednesdays Ubauer 214 will be used for help while 216 and 218 will be used for assignment demos.
+On Wednesdays Urbauer 214 will be used for help while 216 and 218 will be used for assignment demos.
 
 
