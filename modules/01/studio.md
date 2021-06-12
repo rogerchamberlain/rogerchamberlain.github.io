@@ -40,8 +40,6 @@ But before we can ever talk about I/O (input/output) and programs and compiling 
 
 To that end, we've prepared some pen-and-paper exercises to get you thinking about data like a computer does.
 
-If you are having trouble with the concepts behind any of these questions, try reading Chapter 8 in the [course textbook](http://www.cse.wustl.edu/~roger/cse132/cc_v0_06.pdf) or look through the [Guide to Information Representation](/~cse132/guides/intro-to-information.html).
-
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
