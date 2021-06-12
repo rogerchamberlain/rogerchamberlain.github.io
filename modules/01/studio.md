@@ -40,6 +40,73 @@ But before we can ever talk about I/O (input/output) and programs and compiling 
 
 To that end, we've prepared some pen-and-paper exercises to get you thinking about data like a computer does.
 
+#### Binary & Bases
+
+**Binary** is what every form of data on your computer eventually boils down to: some chain of `HIGH`s and `LOW`s, zeroes and ones. These questions will explore your understanding of binary as a base 2 number system.
+
+The subscript on a number indicates its current base. If no base is given, *assume* base 10.
+
+1. What is $ 1010_2 $ in base 10?
+2. What is $ 68_{10} $ in binary?
+3. What is $ 20_{10} $ in base 6?
+
+#### Hexadecimal
+
+**Hexadecimal** is base 16. It ends up being a very nice way of representing computer-related numbers because it jives with binary so well.
+
+1. What is $ 1010 0101_2 $ in hexadecimal?
+2. What is $ 0xF1 $ in binary?
+3. How many digits of binary correspond to a digit of hex?
+4. Hex uses the letters `A` through `F` to go up to base 16. What is the highest base we can represent if we use all the letters of the alphabet?
+
+
+[//]: *If possible, have a TA check your answers before moving on*
+
+
+![========]({{ "/images/line.gif" | relative_url }})
+
+## Bits of Arduino
+
+Both the Arduino IDE and your Eclipse Workspace should be set up before starting this section (see [Studio0](../../../weeks/0/studio/) for help). 
+
+### Setup 
+- Create the studio repository (link is at the top of the page)
+- Open `bits.ino`  (` bits / bits.ino`)
+- Connect your Ardunio to the PC
+	- Check your port 
+	
+### Bit Dissection 
+
+**Run** `bits.ino` in the Arduino IDE, opening up the Serial Monitor after it is done uploading.
+
+In the Serial Monitor you will see the number 100 written in `Decimal`, `Hexadecimal`, and `Binary`. You will also see what the number looks like after a `LEFT-SHIFT`, `RIGHT-SHIFT`, and `INVERSE`.
+
+- Look at the **Binary** Representation
+	- what does `LEFT-SHIFT` do?
+	- what does `RIGHT-SHIFT` do? 
+	- what does `INVERSE` do?
+
+- Change the Variable `a`
+
+```
+void setup() { 
+  unsigned a = 100;             //Change this number
+  unsigned b = shiftLeft(a);    //Leave these alone 
+  ...
+```
+
+
+- Try running the program with a few new values (be sure to Upload it after any changes)
+	- Try to find patterns and describe them. (Ex: If you know what happens to 5 due to all three operations, what happens to 10?)
+	- Try more values to validate your patterns
+- If you haven't already make `a` greater than `32768`
+	- Do any of your patterns break?
+	- What happened when you used `LEFT-SHIFT`?
+	
+[//]: *If possible discuss **OverFlow** with a TA -- 
+
+*What are the implications of overflowing in a program? 
+What are some ways to avoid **OverFlow**?*
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
