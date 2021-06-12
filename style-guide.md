@@ -3,6 +3,7 @@ layout: default
 title: Style Guide
 author: Ron Cytron, Josh Gelbard, and Ben Stolovitz
 ---
+{% include nav.html %}
 
 # Style Guide
 
@@ -193,3 +194,5 @@ The comment in the following example adds no information and should be omitted s
 -  **Be professional.** Use the same care in preparing your code as you would for any writing assignment. Avoid jokes in your code, slang terms, crude comments, etc.
 
 -  **Use common sense.** Remember that the CSE 132 style guide is only a guide. Your primary concern should be making sure that others can read and understand the text of your program. If you think an additional comment or particular organization will get your ideas across more effectively, do it. However, if you are considering deviating significantly from the guidelines or if you are in doubt about something, discuss it with us first.
+
+{% include footer.html %}
