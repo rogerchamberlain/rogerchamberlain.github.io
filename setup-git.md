@@ -35,23 +35,33 @@ Paste the link that you copied from GitHub into the box at the top. Fill in your
 ![Github login]({{ "/images/11.png" | relative_url }})
 
 Eventually you will see the following screen. If you are on your laptop, then you do not need to do anything on this screen. **If you are on a lab computer, make sure to choose a location that is on the H:\ drive.** You can do this by typing in a location, or by clicking the "Browse" button and selecting the H:\ drive.
-[//] <img src="17.png" ><br><br>
+
+![H: drive]({{ "/images/17.png" | relative_url }})
+
 Keep clicking next until you see the following screen. Make sure the box next to the CSE132 project is checked:<br><br>
-[//] <img src="12.png" ><br><br>
+
+![CSE132 project]({{ "/images/12.png" | relative_url }})
+
 Once you click "Finish", you should see the CSE132 project in your workspace. It should contain all of the materials for labs, studios, and extensions.<br><br>
 
 # Committing your work
 
 Committing your work is equivalent to turning something in. When you are ready to submit your work, right click the project and select Team-> Commit:<br><br>
-[//] <img src="13.png" ><br><br>
+
+![Team -> Commit]({{ "/images/13.png" | relative_url }})
+
 Type in a descriptive commit message then push the "Commit and Push" button at the bottom. Make sure to push! If you only commit (without the push) we will not be able to grade your work.<br><br>
-[//] <img src="14.png" ><br><br>
+
+![Commit and Push]({{ "/images/14.png" | relative_url }})
+
 You may commit/push as many times as you want. You should commit often! Think of it as saving your work.<br><br>
 
 # Updating your repository
 
-From time to time we will add files to your repository (such as grades). To do this, you need to update your repository. This can be accomplished by right clicking the CSE132 project and selecting "Pull":<br><br>
-[//] <img src="16.png" ><br><br>
+From time to time we might add files to your repository (such as grades). To do this, you need to update your repository. This can be accomplished by right clicking the CSE132 project and selecting "Pull":<br><br>
+
+![Pull]({{ "/images/16.png" | relative_url }})
+
 This will get any changes that have been made to your repository. It is a good habit to run a synchronize before you make any changes to your repository, especially if you are working with a partner.
 
 {% include footer.html %}
