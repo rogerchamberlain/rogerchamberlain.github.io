@@ -114,7 +114,7 @@ What are some ways to avoid **OverFlow**?*
 
 ## FSMs
 
-[**Here**]({{ /intro-to-FSMs.html" | relative_url }}) is a great introduction to FSMs. They are also described in Chapter 7 of the [text]({{ "/files/cc_v0_06.pdf#page=59" | relative_url }}) (read Section 7.1).
+[**Here**]({{ "/intro-to-FSMs.html" | relative_url }}) is a great introduction to FSMs. They are also described in Chapter 7 of the [text]({{ "/files/cc_v0_06.pdf#page=59" | relative_url }}) (read Section 7.1).
 
 For the final Part of the studio we have designed another program `FSM.ino`, a simplified binary counter, designed to introduce you to the concepts and syntax of FSMs that you will need for **Assignment 1**
 
