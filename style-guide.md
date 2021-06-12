@@ -1,8 +1,8 @@
----
+xxx---
 layout: default
 title: Style Guide
 author: Ron Cytron, Josh Gelbard, and Ben Stolovitz
----
+xxx---
 
 # Style Guide
 
