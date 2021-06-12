@@ -15,7 +15,7 @@ We will be using [git](https://git-scm.com/) to distribute the code you need for
 
 <iframe src="https://player.vimeo.com/video/41027679" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Before you can complete any of the assignments, you must set up your repository. You can find instructions on how to do this [here](../../../guides/setup-git.html).
+Before you can complete any of the assignments, you must set up your repository. You can find instructions on how to do this [here]({{ "/setup-git.html" | relative_url ).
 
 The link to access Studio 0 is [here]({{ "/tbd.html" | relative_url }}). Read the guide before clicking this link!
 

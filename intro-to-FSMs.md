@@ -147,4 +147,6 @@ You can also have multiple outputs for each state. Consider the long-studied and
 
 Notice that every state must have defined transitions for every input, in this case `nuke` and `wait`.
 
+FSMs are also described in Chapter 7 of the [text]({{ "/files/cc_v0_06.pdf#page=59" | relative_url }}) (read Section 7.1).
+
 {% include footer.html %}
