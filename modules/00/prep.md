@@ -3,6 +3,7 @@ layout: default
 title: Module 0 Prep
 author: Doug Shook
 ---
+{% include nav.html %}
 
 # {{ page.title }}
 
@@ -61,3 +62,4 @@ Watch the following videos for a quick introduction to Arduino programming - if 
 |[Java Timing](https://wustl.box.com/s/06du4se1o0syu2bu6opwc0upq7djhgm9) | Next we\'ll look at how to control timing in Java |
 |[Exceptions](https://wustl.box.com/s/gwdts37609gzxcngfdf24hgdvudnmu25) | Exceptions are a useful tool for managing errors that may occur in your code, such as errors that result from mistakes in our circuit timings. |
 
+{% include footer.html %}

@@ -3,6 +3,8 @@ layout: default
 title: Policies
 author: Ron Cytron and Josh Gelbard and Doug Shook and Bill Siever and Evan Simkowitz
 ---
+{% include nav.html %}
+
 # Course Policies
 
 ![========]({{ "/images/line.gif" | relative_url }})
@@ -144,3 +146,5 @@ Attendance at the Thursday lecture time is required during the two scheduled in-
 There is zero tolerance of Academic Dishonesty. We will be actively searching for academic dishonesty on all homework assignments, quizzes, and exams. If you are guilty of cheating on any assignment or exam, you will be referred to the School of Engineering Discipline Committee. In severe cases, this can lead to expulsion from the University, as well as possible deportation for international students. If you copy from anyone in the class both parties will be penalized, regardless of which direction the information flowed. This is your only warning.
 
 Please refer to the University Undergraduate Academic Integrity Policy, for more information. If you suspect that you may be entering an ambiguous situation, it is your responsibility to clarify it before the professor or TAs detect it. If in doubt, please ask.
+
+{% include footer.html %}

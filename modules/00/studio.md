@@ -3,6 +3,7 @@ layout: default
 title: Studio 0 - Introduction to Arduino
 author: Ben Stolovitz
 ---
+{% include nav.html %}
 
 # {{ page.title }}
 
@@ -252,3 +253,5 @@ This is a mental checklist for you to see what the Studio is designed to teach y
 - Reliability of Timing
 	- PC vs Arduino
 	- delay()
+
+{% include footer.html %}

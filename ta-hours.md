@@ -3,6 +3,8 @@ layout: default
 title: TA Hours
 author: Josh Gelbard and Evan Simkowitz
 ---
+{% include nav.html %}
+
 # TA Hours - Not Yet Current!
 
 <img src="{{ "/images/line.gif" | relative_url }}">
@@ -54,4 +56,4 @@ The **Head TAs** for this course are Emily Wilson and Talia Weiss.
 [//]: #  <sup>1</sup> 
 On Wednesdays Urbauer 214 will be used for help while 216 and 218 will be used for assignment demos.
 
-
+{% include footer.html %}

@@ -3,6 +3,7 @@ layout: default
 title: Module 1 Prep
 author: Doug Shook
 ---
+{% include nav.html %}
 
 # {{ page.title }}
 
@@ -49,3 +50,5 @@ In order to better understand what our computers are doing, it is important that
 ## Guide to Finite State Machines
 
 [This guide]({{ "/tbd.html" | relative_url }}) on Finite State Machines is also quite useful.
+
+{% include footer.html %}
