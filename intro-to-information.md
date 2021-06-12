@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Introduction to Information Representation
-short: Information
 author: Ben Stolovitz
 ---
 {% include nav.html %}
+
+# {{ page.title }}
 
 Computers are very different from humans<sup>[citation needed]</sup>. We've learned from experience that getting them to solve problems for us requires an extreme amount of luck and translation, and popular culture likes to attribute that to computers "thinking differently" from us. While that's certainly true, a lot of problems come from how we *store* information differently.
 

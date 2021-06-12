@@ -74,7 +74,7 @@ Not all numbers are the same length.  Because of this it is useful to have sever
 
 By default, all of these values are `signed` and can store both positive and negative numbers. Their possible values  range from $-2^{n-1}$ and $2^{n-1} - 1$, where `n` is the number of bits in the data type. `unsigned` numbers range from $0$ to $2^{n}-1$. e.g. [`unsigned char`](https://www.arduino.cc/en/Reference/UnsignedChar), [`unsigned int`](https://www.arduino.cc/en/Reference/UnsignedInt) and [`unsigned long`](https://www.arduino.cc/en/Reference/UnsignedLong).
 
-[Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement) is used here to store `signed` numbers. If you still have confusions about `signed` and `unsigned` numbers, please read [Introduction to Information Representation]({{ "/tbd.html" | relative_url }}) guide for detailed explanations.
+[Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement) is used here to store `signed` numbers. If you still have confusions about `signed` and `unsigned` numbers, please read [Introduction to Information Representation]({{ "/intro-to-information.html" | relative_url }}) guide for detailed explanations.
 
 - [**Characters (`char`)**](https://www.arduino.cc/en/Reference/Char) : Smallest addressable unit that can contain integer data.  They are 1 byte (8 bits) in length.  Signed characters range between `-128` and `+127`.
 - [**Integers (`int`)**](https://www.arduino.cc/en/Reference/Int) : Standard unit to contain integer data.  In Arduino C, they contain 2 bytes---16 bits.  Signed integers range between `-32,768` and `32,767`.

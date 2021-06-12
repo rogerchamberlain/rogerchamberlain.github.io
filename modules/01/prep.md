@@ -49,6 +49,6 @@ In order to better understand what our computers are doing, it is important that
 
 ## Guide to Finite State Machines
 
-[This guide]({{ "/tbd.html" | relative_url }}) on Finite State Machines is also quite useful.
+[This guide]({{ "/intro-to-FSMs.html" | relative_url }}) on Finite State Machines is also quite useful.
 
 {% include footer.html %}

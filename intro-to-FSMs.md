@@ -5,6 +5,8 @@ author: Josh Gelbard and Ben Stolovitz
 ---
 {% include nav.html %}
 
+# {{ page.title }}
+
 In this guide, we introduce the **Finite State Machine**, one of the most powerful ideas in computing. However, in order to code it in a way that's not confusing, you'll need to know a few concepts first. Namely, `switch`es and `enum`s.
 
 ## Switches
