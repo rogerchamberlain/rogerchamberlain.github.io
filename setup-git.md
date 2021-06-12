@@ -17,16 +17,23 @@ One person in your team will need to create the team. Please use the last names 
 This will create a repository for you with the code that you need. The next thing you need to do is create a clone of your repository on your local machine. First, go to the GitHub page for your repository (your repository should contain CSE132, the name of your assignment, and the name of your team) and copy the link:
 
 ![Github page for repo]({{ "/images/19.png" | relative_url }})
-[//] <img src="19.png" ><br><br>
 
 Next, open Eclipse and go into your workspace:<br><br>
-[//] <img src="8.png" ><br><br>
+
+![Eclipse workspace]({{ "/images/8.png" | relative_url }})
+
 Go to File -> Import. Then select Git project from the list:<br><br>
-[//] <img src="9.png" ><br><br>
+
+![Git project]({{ "/images/9.png" | relative_url }})
+
 Next, select "Clone URI":<br><br>
-[//] <img src="10.png" ><br><br>
+
+![Clone URL]({{ "/images/10.png" | relative_url }})
+
 Paste the link that you copied from GitHub into the box at the top. Fill in your GitHub login (not your WUSTL key!) at the bottom:<br><br>
-[//] <img src="11.png" ><br><br>
+
+![Github login]({{ "/images/11.png" | relative_url }})
+
 Eventually you will see the following screen. If you are on your laptop, then you do not need to do anything on this screen. **If you are on a lab computer, make sure to choose a location that is on the H:\ drive.** You can do this by typing in a location, or by clicking the "Browse" button and selecting the H:\ drive.
 [//] <img src="17.png" ><br><br>
 Keep clicking next until you see the following screen. Make sure the box next to the CSE132 project is checked:<br><br>
