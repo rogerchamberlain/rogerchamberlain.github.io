@@ -35,7 +35,7 @@ In order to better understand what our computers are doing, it is important that
 
 ## Guide to Information Representation
 
-[This guide](https://classes.cec.wustl.edu/~SEAS-SVC-CSE132/guides/intro-to-information.html) on information representation covers some of the same material covered in the videos, but it goes more in depth on a few topics.
+[This guide]({{ "/intro-to-information.html" | relative_url }}) on information representation covers some of the same material covered in the videos, but it goes more in depth on a few topics.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
