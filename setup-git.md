@@ -11,12 +11,14 @@ The first thing you will need to do is set up a <a href="http://www.github.com">
 
 For each assignment we will provide a GitHub link that contains the starter code. When you click on the link it should take you to a Team Registration Page, like the one seen here:
 
-![team registration page]({{ "/files/18.png" | relative_url }}
+![team registration page]({{ "/files/18.png" | relative_url }})
 
 One person in your team will need to create the team. Please use the last names of everyone in your team as the team name. Once the team has been created, the other members of the team should be able to see it and click the "Join" button to join the team.<br><br>
 This will create a repository for you with the code that you need. The next thing you need to do is create a clone of your repository on your local machine. First, go to the GitHub page for your repository (your repository should contain CSE132, the name of your assignment, and the name of your team) and copy the link:
 
+![Github page for repo]({{ "/files/19.png" | relative_url }})
 [//] <img src="19.png" ><br><br>
+
 Next, open Eclipse and go into your workspace:<br><br>
 [//] <img src="8.png" ><br><br>
 Go to File -> Import. Then select Git project from the list:<br><br>
