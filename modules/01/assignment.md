@@ -11,8 +11,6 @@ author: Sean Schaffer, Claire Heuckeroth, Ben Stolovitz and Shuya Ma
 
 ## Access your repository
 
-Really?
-
 Click [here]({{ "/tbd.html" | relative_url }}) to access the Canvas page with the repository for this assignment.
 
 ![========]({{ "/images/line.gif" | relative_url }})
