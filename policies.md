@@ -1,8 +1,8 @@
----
+xxx---
 layout: default
 title: Policies
 author: Ron Cytron and Josh Gelbard and Doug Shook and Bill Siever and Evan Simkowitz
----
+xxx---
 # Course Policies
 
 ![========]({{ "/images/line.gif" | relative_url }})
