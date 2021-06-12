@@ -3,7 +3,9 @@ layout: default
 title: Setting Up Git
 author: Doug Shook
 ---
-{% {{ page.title }}
+{% include nav.html %}
+
+{{ page.title }}
 
 The first thing you will need to do is set up a <a href="http://www.github.com">GitHub</a> account. Go to GitHub and register for an account. Please use your @wustl.edu email address when registering.
 
@@ -12,32 +14,35 @@ For each assignment we will provide a GitHub link that contains the starter code
 ![team registration page]({{ "/files/18.png" | relative_url }}
 
 One person in your team will need to create the team. Please use the last names of everyone in your team as the team name. Once the team has been created, the other members of the team should be able to see it and click the "Join" button to join the team.<br><br>
-This will create a repository for you with the code that you need. The next thing you need to do is create a clone of your repository on your local machine. First, go to the GitHub page for your repository (your repository should contain CSE132, the name of your assignment, and the name of your team) and copy the link:<br><br>
-<img src="19.png" ><br><br>
+This will create a repository for you with the code that you need. The next thing you need to do is create a clone of your repository on your local machine. First, go to the GitHub page for your repository (your repository should contain CSE132, the name of your assignment, and the name of your team) and copy the link:
+
+[//] <img src="19.png" ><br><br>
 Next, open Eclipse and go into your workspace:<br><br>
-<img src="8.png" ><br><br>
+[//] <img src="8.png" ><br><br>
 Go to File -> Import. Then select Git project from the list:<br><br>
-<img src="9.png" ><br><br>
+[//] <img src="9.png" ><br><br>
 Next, select "Clone URI":<br><br>
-<img src="10.png" ><br><br>
+[//] <img src="10.png" ><br><br>
 Paste the link that you copied from GitHub into the box at the top. Fill in your GitHub login (not your WUSTL key!) at the bottom:<br><br>
-<img src="11.png" ><br><br>
+[//] <img src="11.png" ><br><br>
 Eventually you will see the following screen. If you are on your laptop, then you do not need to do anything on this screen. **If you are on a lab computer, make sure to choose a location that is on the H:\ drive.** You can do this by typing in a location, or by clicking the "Browse" button and selecting the H:\ drive.
-<img src="17.png" ><br><br>
+[//] <img src="17.png" ><br><br>
 Keep clicking next until you see the following screen. Make sure the box next to the CSE132 project is checked:<br><br>
-<img src="12.png" ><br><br>
+[//] <img src="12.png" ><br><br>
 Once you click "Finish", you should see the CSE132 project in your workspace. It should contain all of the materials for labs, studios, and extensions.<br><br>
 
 # Committing your work
 
 Committing your work is equivalent to turning something in. When you are ready to submit your work, right click the project and select Team-> Commit:<br><br>
-<img src="13.png" ><br><br>
+[//] <img src="13.png" ><br><br>
 Type in a descriptive commit message then push the "Commit and Push" button at the bottom. Make sure to push! If you only commit (without the push) we will not be able to grade your work.<br><br>
-<img src="14.png" ><br><br>
+[//] <img src="14.png" ><br><br>
 You may commit/push as many times as you want. You should commit often! Think of it as saving your work.<br><br>
 
 # Updating your repository
 
 From time to time we will add files to your repository (such as grades). To do this, you need to update your repository. This can be accomplished by right clicking the CSE132 project and selecting "Pull":<br><br>
-<img src="16.png" ><br><br>
+[//] <img src="16.png" ><br><br>
 This will get any changes that have been made to your repository. It is a good habit to run a synchronize before you make any changes to your repository, especially if you are working with a partner.
+
+{% include footer.html %}
