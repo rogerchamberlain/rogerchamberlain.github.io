@@ -9,4 +9,4 @@ author: Anonymous
 
 This page has not yet been setup.
 
-{% include fotter.html %}
+{% include footer.html %}
