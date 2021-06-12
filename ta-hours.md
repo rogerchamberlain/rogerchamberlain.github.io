@@ -1,8 +1,8 @@
----
+xxx---
 layout: default
 title: TA Hours
 author: Josh Gelbard and Evan Simkowitz
----
+xxx---
 # TA Hours - Not Yet Current!
 
 <img src="{{ "/images/line.gif" | relative_url }}">
