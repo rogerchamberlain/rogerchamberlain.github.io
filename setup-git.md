@@ -13,24 +13,24 @@ For each assignment we will provide a GitHub link that contains the starter code
 
 ![team registration page]({{ "/images/18.png" | relative_url }})
 
-One person in your team will need to create the team. Please use the last names of everyone in your team as the team name. Once the team has been created, the other members of the team should be able to see it and click the "Join" button to join the team.<br><br>
+One person in your team will need to create the team. Please use the last names of everyone in your team as the team name. Once the team has been created, the other members of the team should be able to see it and click the "Join" button to join the team.
 This will create a repository for you with the code that you need. The next thing you need to do is create a clone of your repository on your local machine. First, go to the GitHub page for your repository (your repository should contain CSE132, the name of your assignment, and the name of your team) and copy the link:
 
 ![Github page for repo]({{ "/images/19.png" | relative_url }})
 
-Next, open Eclipse and go into your workspace:<br><br>
+Next, open Eclipse and go into your workspace:
 
 ![Eclipse workspace]({{ "/images/8.png" | relative_url }})
 
-Go to File -> Import. Then select Git project from the list:<br><br>
+Go to File -> Import. Then select Git project from the list:
 
 ![Git project]({{ "/images/9.png" | relative_url }})
 
-Next, select "Clone URI":<br><br>
+Next, select "Clone URI":
 
 ![Clone URL]({{ "/images/10.png" | relative_url }})
 
-Paste the link that you copied from GitHub into the box at the top. Fill in your GitHub login (not your WUSTL key!) at the bottom:<br><br>
+Paste the link that you copied from GitHub into the box at the top. Fill in your GitHub login (not your WUSTL key!) at the bottom:
 
 ![Github login]({{ "/images/11.png" | relative_url }})
 
@@ -38,27 +38,27 @@ Eventually you will see the following screen. If you are on your laptop, then yo
 
 ![H: drive]({{ "/images/17.png" | relative_url }})
 
-Keep clicking next until you see the following screen. Make sure the box next to the CSE132 project is checked:<br><br>
+Keep clicking next until you see the following screen. Make sure the box next to the CSE132 project is checked:
 
 ![CSE132 project]({{ "/images/12.png" | relative_url }})
 
-Once you click "Finish", you should see the CSE132 project in your workspace. It should contain all of the materials for labs, studios, and extensions.<br><br>
+Once you click "Finish", you should see the CSE132 project in your workspace. It should contain all of the materials for labs, studios, and extensions.
 
 # Committing your work
 
-Committing your work is equivalent to turning something in. When you are ready to submit your work, right click the project and select Team-> Commit:<br><br>
+Committing your work is equivalent to turning something in. When you are ready to submit your work, right click the project and select Team-> Commit:
 
 ![Team -> Commit]({{ "/images/13.png" | relative_url }})
 
-Type in a descriptive commit message then push the "Commit and Push" button at the bottom. Make sure to push! If you only commit (without the push) we will not be able to grade your work.<br><br>
+Type in a descriptive commit message then push the "Commit and Push" button at the bottom. Make sure to push! If you only commit (without the push) we will not be able to grade your work.
 
 ![Commit and Push]({{ "/images/14.png" | relative_url }})
 
-You may commit/push as many times as you want. You should commit often! Think of it as saving your work.<br><br>
+You may commit/push as many times as you want. You should commit often! Think of it as saving your work.
 
 # Updating your repository
 
-From time to time we might add files to your repository (such as grades). To do this, you need to update your repository. This can be accomplished by right clicking the CSE132 project and selecting "Pull":<br><br>
+From time to time we might add files to your repository (such as grades). To do this, you need to update your repository. This can be accomplished by right clicking the CSE132 project and selecting "Pull":
 
 ![Pull]({{ "/images/16.png" | relative_url }})
 
