@@ -24,17 +24,15 @@
 
 - title: Studio 1
   module: 1
-  url: /tbd.html
+  url: /modules/01/studio.html
   assigned: Sep 01
   due: Sep 01
-  #  url: /modules/01/studio.html
 
 - title: Assignment 1
   module: 1
-  url: /tbd.html
+  url: /modules/01/assignment.html
   assigned: Sep 08
   due: Sep 15
-  # url: /modules/01/assignment.html
 
 - title: Quiz 1B
   module: 1
