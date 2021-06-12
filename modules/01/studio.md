@@ -40,6 +40,8 @@ But before we can ever talk about I/O (input/output) and programs and compiling 
 
 To that end, we've prepared some pen-and-paper exercises to get you thinking about data like a computer does.
 
+If you are having trouble with the concepts behind any of these questions, try reading Chapter 8 in the [course textbook]({{ "/files/cc_v0_06.pdf" | relative_url }}) or look through the [Guide to Information Representation]({{ "/tbd.html" | relative_url }}).
+
 #### Binary & Bases
 
 **Binary** is what every form of data on your computer eventually boils down to: some chain of `HIGH`s and `LOW`s, zeroes and ones. These questions will explore your understanding of binary as a base 2 number system.
