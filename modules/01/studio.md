@@ -62,7 +62,7 @@ The subscript on a number indicates its current base. If no base is given, *assu
 4. Hex uses the letters `A` through `F` to go up to base 16. What is the highest base we can represent if we use all the letters of the alphabet?
 
 
-[//]: *If possible, have a TA check your answers before moving on*
+*If possible, have a TA check your answers before moving on*
 
 
 ![========]({{ "/images/line.gif" | relative_url }})
