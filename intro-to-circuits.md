@@ -1,4 +1,5 @@
 ---
+layout: default
 title: An Introduction to Circuits
 short: Circuits
 ---
@@ -248,3 +249,5 @@ Looking at the bottom of a breadboard can make these connections clear.
 ## Conclusion
 
 Anyway, that's it. That's your 4,000 word primer to E&M for CSE132. You should know everything you need to build circuits in this class. Good luck!
+
+{% include footer.html %}

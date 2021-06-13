@@ -1,4 +1,5 @@
 ---
+layout: default
 title: A Brief Introduction to Object-Oriented Programming
 author: Rishil Mehta
 ---

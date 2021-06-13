@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Using SerialComm to Communicate between Java and Arduino
 ---
 {% include nav.html %}
