@@ -75,7 +75,7 @@ This difference should not change your mental model too much. Any charged object
 
 But even after all this work, we know from classical physics that any potential energy, even compensated for charge, is a strictly *relative* measure. A potential energy must be relative to some reference point since it literally measures the energy that would *potentially* be released as an object moves from it's current location to that reference point.
 
-![No reference point means it's impossible to measure potential.]({{ "/images/hills-and-potentials.png | relative_url }})
+![No reference point means it's impossible to measure potential.]({{ "/images/hills-and-potentials.png" | relative_url }})
 
 The useful measurement for any potiential energy, then, is a measurement *between two points.* In the case of electrical potential, we call that a **voltage**, or $ΔV$---"delta v" ("$Δ$" means "change" in most fields of mathematics, so "change in volts"). Usually we describe it as "voltage *across* something"‚ like across a wire, a circuit, or a lightbulb.
 
