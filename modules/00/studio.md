@@ -111,7 +111,7 @@ First, you need to check out your repository so that you can commit the changes 
 	
 		
 In CSE132 this semester, we will be using Git as our version control system.
-We have made a [git Tutorial](../../../guides/setup-git.html) to get your workspace set up and running.
+We have made a [git Tutorial]({{ "/setup-git.html" | relative_url }}) to get your workspace set up and running.
 
 Make a note of the `Local Destination` directory, as it will be needed later.
 
@@ -122,7 +122,7 @@ In Eclipse nagivate to the studios.studio0 helloworld.ino file. If the icon show
 
 The `helloworld.ino` file is a complete Arduino program. Compiling and uploading it should help you learn the Arduino interface.
 
-<aside class="sidenote">
+<!-- <aside class="sidenote"> -->
 #### Problems uploading?
 
 Considering that you are compiling a program from C, using an old USB driver designed by one company to communicate with a board designed by another company running code designed by a third, it\'s surprising that Arduino upload works as often as it does.
@@ -132,7 +132,7 @@ But stuff goes wrong. A lot. Here\'s how to troubleshoot your upload.
 - **Is your code free of syntax errors?** Make sure that your code is correct (**Verify** it and make sure the status is `Done compiling.`)
 - **Are you writing to the correct port?** Look under `Tools>Port>` and select a different one. On Windows it will be something like `COM3`. On Mac, it will be something like `/dev/cu.usbmodem1492`. There\'s no good way to find the correct one aside from guess-and-check.
 - **Restart the Arduino IDE and plug everything in again**. It works a lot of the time.
-</aside>
+<!-- </aside> -->
 
 ![An annotated screenshot of the Arduino IDE](arduino.png)
 
