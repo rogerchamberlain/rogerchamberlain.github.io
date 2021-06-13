@@ -68,17 +68,17 @@ The bad news: unlike "normal" potential energy, the amount of electric potential
 
 This difference should not change your mental model too much. Any charged object in an electric field will move to an area of low electric potential, it will just happen faster for higher-charged objects. So aside from that caveat, it makes sense to conceive of this pseudo-potential energy as a normal potential energy.
 
-![Balls rolling on a hill demonstrate potential energy as it relates to gravity](circuits/hills.png)
+![Balls rolling on a hill demonstrate potential energy as it relates to gravity]({{ "/images/hills.png" | relative_url }})
 
 ### Voltage, schmoltage
 
 But even after all this work, we know from classical physics that any potential energy, even compensated for charge, is a strictly *relative* measure. A potential energy must be relative to some reference point since it literally measures the energy that would *potentially* be released as an object moves from it's current location to that reference point.
 
-![No reference point means it's impossible to measure potential.](circuits/hills-and-potentials.png)
+![No reference point means it's impossible to measure potential.]({{ "/images/hills-and-potentials.png | relative_url }})
 
 The useful measurement for any potiential energy, then, is a measurement *between two points.* In the case of electrical potential, we call that a **voltage**, or $ΔV$---"delta v" ("$Δ$" means "change" in most fields of mathematics, so "change in volts"). Usually we describe it as "voltage *across* something"‚ like across a wire, a circuit, or a lightbulb.
 
-![By choosing a reference point, we can measure potential from that reference.](circuits/hills-and-voltages.png)
+![By choosing a reference point, we can measure potential from that reference.]({{ "/images/hills-and-voltages.png" | relative_url }})
 
 Measuring voltage requires measuring the difference between two points, and obviously voltage will vary based on where you measure it.
 
@@ -164,7 +164,7 @@ Circuit diagrams use straight lines for wires. Because wiring can get pretty int
 
 The paperclip-battery circuit looks something like this:
 
-![A diagram of the simplest possible circuit, just a simple battery and wire.](circuits/simplestcircuit.png)
+![A diagram of the simplest possible circuit, just a simple battery and wire.]({{ "/images/simplestcircuit.png" | relative_url }})
 
 The main symbol in this circuit is the battery, attached to the thin wire. Actually, it's two symbols: one symbol for a positive terminal and one for the negative terminal. Sometimes they're grouped together to denote a power cell, or doubled to mean a battery (a **battery** is defined as a stack of **power cells**). In computer circuit diagrams, we generally keep high and low separate, even if they connect to the same battery or Arduino. It keeps the drawing simpler.
 
@@ -195,7 +195,7 @@ In general, if you want to hook something up to a circuit, there's a symbol for 
 
 Thus, if we plop a resistor on our simplest circuit, we get the simplest sensible circuit:
 
-![The simplest sensible circuit includes a resistor so that it does not overheat.](circuits/simplestsensiblecircuit.png)
+![The simplest sensible circuit includes a resistor so that it does not overheat.]({{ "/images/simplestsensiblecircuit.png" | relative_url }})
 
 ## How to put things on your circuits
 
@@ -211,7 +211,7 @@ Looking up how to work with new components (like potentiometers, switches, capac
 
 These traits are shared among all **diodes**---LED stands for "Light Emitting Diode." Diodes prevent current flowing in one direction and let it through unimpeeded in the other. Take care not to explode your LEDs: place resistors on their circuits (different colors have different optimum resistances; read their spec sheets).
 
-![An LED circuit includes a resistor as well. The LED symbol has arrows around it indicating that it emits light.](circuits/ledcircuit.png)
+![An LED circuit includes a resistor as well. The LED symbol has arrows around it indicating that it emits light.]({{ "/images/ledcircuit.png" | relative_url }})
 
 You want to attach the long end (the **anode**) closer to the positive side of your battery and the short end (the **cathode**)
 
@@ -225,11 +225,11 @@ In this class, we tend to draw them as triangles: if a pin *reads* from the circ
 
 When you begin building circuits to send input to the Arduino, you'll start seeing a pattern in a lot of your circuits. You'll see a $5V$ source, a resistor, and a grounded drain in your circuits. For example, a button might be wired as follows:
 
-![A button reading into an Arduino](circuits/buttoncircuit.png)
+![A button reading into an Arduino]({{ "/images/buttoncircuit.png" | relative_url }})
 
 This soon gets annoying to build, so most modern microprocessors, including the Arduino, have built-in circuitry that does this for you. Setting a pin to be an **input pull-up** pin hooks it up to an *internal* 5V source and resistor, so all you need to do is connect your circuitry to ground to get a working circuit. Arduino pins *by default* are set to pull-up inputs.
 
-![A button reading into an Arduino, but being pulled up by the Arduino's internal resistor.](circuits/pullupcircuit.png)
+![A button reading into an Arduino, but being pulled up by the Arduino's internal resistor.]({{ "/images/pullupcircuit.png" | relative_url }})
 
 ### The breadboard
 
