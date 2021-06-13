@@ -52,4 +52,4 @@ If Java can't find the right port, **double check the port name** of your Arduin
 
 When running Java alongside your Arduino program, also **check that the previous run of the Java program has been terminated**. Arduinos work really well for projects that require continual input checking, but Java will terminate unless a loop is used to keep it running, meaning you may have to manually stop the Java application each time you run it.
 
-{% include footer.html }}
+{% include footer.html %}
