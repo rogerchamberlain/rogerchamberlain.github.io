@@ -7,6 +7,8 @@ author: Ben Stolovitz
 
 # {{ page.title }}
 
+![========](images/line.gif)
+
 <aside class="sidenote">
 ## Philosophical rambling, or, why learn circuits?
 
@@ -44,6 +46,8 @@ So, what is a circuit? A **circuit** is a continuous flow of electric charge[^ch
 	In both cases, the speed of the wave moved considerably faster than the individual molecules. This is the same in circuits, where electric charge moves considerably faster than the electrons within. Even though the force moves charged particles, like electrons, we don't worry about them because they're too slow.
 	
 	[This guide](http://amasci.com/amateur/elecdir.html) (via [StackExchange](http://electronics.stackexchange.com/a/13753)) provides a deeper look at what we consider to be "charge," if you're interested. 
+
+![========](images/line.gif)
 	
 ## What is electric charge?
 
@@ -54,6 +58,8 @@ An object's **electric charge** is a measurement of *how affected* it is when pl
 We describe circuits as "flows of electric charge," but in reality that is a simplification. In most cases, it is a real particle *with electric charge* that flows. However, many different particles carry electric charge, and in very different ways, so thinking about the charge itself flowing rather than mediator particles flowing is very helpful.
 
 We measure charge in "Coulombs."
+
+![========](images/line.gif)
 
 ## What is a flow of charge?
 
@@ -83,6 +89,8 @@ The useful measurement for any potiential energy, then, is a measurement *betwee
 
 Measuring voltage requires measuring the difference between two points, and obviously voltage will vary based on where you measure it.
 
+![========](images/line.gif)
+
 ## Current, Resistance, and You
 
 It's not quite descriptive enough to visualize circuits as balls on a hillside. There are two aspects of a circuit, **current** and **resistance**, that this metaphor does not represent. 
@@ -95,9 +103,8 @@ You measure current in amperes, or "amps" for short. The unit symbol is an "$A$"
 
 ### Ohm's law
 
-<aside class="sidenote">
+<!-- <aside class="sidenote"> -->
 #### Implications of Ohm's law
-{:.no_toc}
 
 It's almost impossible to complete grade school in the United States without hearing about **parallel** and **series** circuits and finding them confusing. It's a shame because they are fairly easy to understand intuitively.
 
@@ -114,7 +121,7 @@ Why does this happen? Voltage is a potential difference. Both paths of a split s
 You can only deal with this problem by saying that any path between the same two points must have the same potential drop---in electricity, voltage is independent of path. **Voltage is identical for parallel elements**.
 
 Thus, from an understanding of Ohm's law comes an understanding of the different types of circuits. The equations for determining voltage in series or current in parallel simply come from combining this intuition with Ohm's law in various forms. They are fairly simple to derive.
-</aside>
+<!-- </aside> -->
 
 Both current and resistance relate to voltage via **Ohm's Law**:
 
@@ -137,6 +144,8 @@ Imagine two elevators lifting people a very long distance (high resistance). One
 Ignoring other energy expenditures and assuming they are otherwise identical, both would take the same energy to lift up 500 people. However, in a given instant, the smaller elevator requires less energy because it is only lifting one person at a time. Likewise, two rivers of different strengths might both be able to push a giant block of lead downstream, but the weaker one might take considerably longer to do so. The weaker stream has less energy at any instant.
 
 It makes sense, then, that potential energy is depenent on current *and* resistance.
+
+![========](images/line.gif)
 
 ## How to make a circuit
 
@@ -198,6 +207,8 @@ Thus, if we plop a resistor on our simplest circuit, we get the simplest sensibl
 
 ![The simplest sensible circuit includes a resistor so that it does not overheat.]({{ "/images/simplestsensiblecircuit.png" | relative_url }})
 
+![========](images/line.gif)
+
 ## How to put things on your circuits
 
 Once you understand the basics of circuit diagramming---and really, once you understand the conventions all you need to look up are the symbols---you're set to build your own.
@@ -245,6 +256,8 @@ Some breadboards have **bus strips** on the side, long columns with one slot per
 Most people building circuits with the Arduino will attach their `5V` or `GND` connections to these strips and connect to that whenever they need to draw power to one of their main rows.
 
 Looking at the bottom of a breadboard can make these connections clear.
+
+![========](images/line.gif)
 
 ## Conclusion
 
