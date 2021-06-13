@@ -1,11 +1,11 @@
 ---
 layout: default
 title: An Introduction to Circuits
-short: Circuits
+author: Ben Stolovitz
 ---
 {% include nav.html %}
 
-{{ page.title }}
+# {{ page.title }}
 
 <aside class="sidenote">
 ## Philosophical rambling, or, why learn circuits?
