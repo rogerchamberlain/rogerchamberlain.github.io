@@ -7,6 +7,8 @@ author: Rishil Mehta
 
 # {{ page.title }}
 
+![========](images/line.gif)
+
 In CSE 131, you spent a lot of your time digging into code that was almost completely prepared for you. This meant that you didn't have to worry about the big-picture stuff---you could focus on figuring out the details of the methods you were supposed to be working on.
 
 Unfortunately, the real programming world isn't always like that. Starting with CSE 132, you will be asked to do a lot more overhead work (sometimes you'll even be building entire, working projects from the ground up). To be able to do this, you need to have some familiarity with **object-oriented programming**, which is the way Java and C++ (and most programming languages) work. Thankfully, a lot of people have made online tutorials that will help you learn the basics. The goal of this document is to point you to these sources of information and help you wrap your head around the concept of object-oriented programming.
@@ -19,6 +21,8 @@ By the end of this document you should:
 - know where to look if you ever get confused or forget how the syntax works in Java.
 
 Let's get started!
+
+![========](images/line.gif)
 
 ## What is object-oriented programming?
 
@@ -34,7 +38,9 @@ Then watch the first 3 minutes or so of this [Khan academy video](http://study.c
 
 Most of the remaining articles are from the official Java documentation.
 
-# What are objects?
+![========](images/line.gif)
+
+## What are objects?
 
 If you are wondering:
 
@@ -52,6 +58,8 @@ You might want to read [What Is an Object?](https://docs.oracle.com/javase/tutor
 5. What are some behaviors you have that can change the state of other objects? (hint: for me, some examples would be `turnOffComputer` or `wakeUpRoommate`)
 
 **States** and **behaviors** are loosely associated with instance/field variables and methods in Java, as we'll see in a little bit.
+
+![========](images/line.gif)
 	
 ## What are Classes?
 
@@ -161,6 +169,8 @@ The `Mammal` class could itself be a subclass of class `Animal`, which could its
 If we kept going up the chain like this, is there a class that has no superclass—a class which all other classes inherit from? In real life, this is a question for your religious leader. But, in Java, the answer is yes, and it is the `Object` class. The `Object` class is like a platypus— it doesn’t really do much[^what]. If you ever declare a class without using the `extends` keyword, Java will just automatically assume that you are extending `Object`. 
 
 [^what]: Editors note: I have no clue what Rishil meant by this simile.
+
+![========](images/line.gif)
 
 ## Summary
 Congratulations, the conceptual section of the tutorial is over! Now that you’ve learned how to create classes, the next step is learning how to initialize and use objects in your functions. Java’s tutorials speak for themselves, so I will let them do the work. 

@@ -7,6 +7,8 @@ author: Doug Shook
 
 # {{ page.title }}
 
+![========](images/line.gif)
+
 The first thing you will need to do is set up a <a href="http://www.github.com">GitHub</a> account. Go to GitHub and register for an account. Please use your @wustl.edu email address when registering.
 
 For each assignment we will provide a GitHub link that contains the starter code. When you click on the link it should take you to a Team Registration Page, like the one seen here:
@@ -44,7 +46,9 @@ Keep clicking next until you see the following screen. Make sure the box next to
 
 Once you click "Finish", you should see the CSE132 project in your workspace. It should contain all of the materials for labs, studios, and extensions.
 
-# Committing your work
+![========](images/line.gif)
+
+## Committing your work
 
 Committing your work is equivalent to turning something in. When you are ready to submit your work, right click the project and select Team-> Commit:
 
@@ -56,7 +60,9 @@ Type in a descriptive commit message then push the "Commit and Push" button at t
 
 You may commit/push as many times as you want. You should commit often! Think of it as saving your work.
 
-# Updating your repository
+![========](images/line.gif)
+
+## Updating your repository
 
 From time to time we might add files to your repository (such as grades). To do this, you need to update your repository. This can be accomplished by right clicking the CSE132 project and selecting "Pull":
 

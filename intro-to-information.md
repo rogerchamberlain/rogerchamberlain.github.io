@@ -7,9 +7,13 @@ author: Ben Stolovitz
 
 # {{ page.title }}
 
+![========](images/line.gif)
+
 Computers are very different from humans<sup>[citation needed]</sup>. We've learned from experience that getting them to solve problems for us requires an extreme amount of luck and translation, and popular culture likes to attribute that to computers "thinking differently" from us. While that's certainly true, a lot of problems come from how we *store* information differently.
 
 This guide explains how machines represent things, from the ground up, which is something we can't quite explain for human information. First, we talk about the electrical signals we use for binary.
+
+![========](images/line.gif)
 
 ## Binary
 
@@ -53,6 +57,8 @@ This should lead you to a couple interesting conclusions:
 
 If any of these observations do not make sense, I suggest spending more time thinking about different bases and how counting works.
 
+![========](images/line.gif)
+
 ## Hexadecimal
 
 Computer scientists have long known the tediousness of base 2. Simple numbers become very long: it takes 10 places to represent all the numbers less than $1000_{10}$! So most of the time when dealing with computer-numbers we write in **hexadecimal**---hex. 
@@ -63,6 +69,8 @@ We typically prefix hex numbers with `0x` to identify them, like `0x4a41`. You c
 
 $$1 1010 1110 1001 1001 = 0x1AE99$$
 
+![========](images/line.gif)
+
 ## Ints and the things you're used to
 
 Now that we've dispensed with the more abstract mathematics, reality comes into play. Consider why we use *binary* in computing: we only have two possible signals, `HIGH` and `LOW`. It is not physically possible to use any higher base.
@@ -70,6 +78,8 @@ Now that we've dispensed with the more abstract mathematics, reality comes into 
 We also run into another problem. How can we indicate when a number *ends*? In the human world, this is not a problem: we simply stop writing, make a new line, and write another number. However, this secretly introduces another symbol---some way of demarcating the end of a number. We do not have this extra symbol, therefore, we assign limits to the size of our numbers.
 
 This is the reason we have `int`s. `int`s store whole numbers in base 2 but have a maximum size. Java is more exacting: `int`s are 4 bytes (a **byte** is a 8 **bits**, digits of binary: $4 \times 8 = 32$ bits), whereas C `int`s are *at least* 2 bytes ($2 \times 8 = 16$ bits). If you want 4 bytes in C, you use a `long`.
+
+![========](images/line.gif)
 
 ## Signed, unsigned, and fixed point
 
@@ -85,6 +95,7 @@ This will not do, because sometimes we need to work with negative numbers. Sever
 
 
 #### Sign-magnitude 
+
 **Sign-magnitude** uses the highest bit as a negative "flag"— `HIGH` (or `1`) and the number is negative, `LOW` (or `0`) and the number is positive.
 
 <br>However, neither  biased representation nor sign-magnitude is used in most circumstances.
@@ -98,6 +109,8 @@ $$ 110_2 = 1 \times 2^{2} + 1 \times 2^{1} + 0 \times 2^0 = 6 $$
 In *two's complement*:
 
 $$ 110_2 = 1 \times -2^{2} + 1 \times 2^{1} + 0 \times 2^0 = -2 $$
+
+![========](images/line.gif)
 
 ## Text & ASCII
 

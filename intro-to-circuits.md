@@ -23,6 +23,8 @@ That may be hard if you don't know how to *wire* your own circuits, so we wrote 
 
 This guide is a quick introduction to the mechanics of electricity and simple circuitry. We'll start by explaining the circuit itself in concrete terms, including Ohm's Law, and then dive into circuit diagrams. This guide should help you analyze circuits intuitively and understand new components fairly quickly.
 
+![========](images/line.gif)
+
 ## What is a circuit?
 
 You might have a basic intuition about circuits. They have batteries, wires, and maybe some little incandescent bulbs and switches. You might have heard people talking about "charge flowing" or "voltage drops", but what does that mean?

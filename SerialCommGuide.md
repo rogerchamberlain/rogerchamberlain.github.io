@@ -6,7 +6,11 @@ title: Using SerialComm to Communicate between Java and Arduino
 
 # {{ page.title }}
 
+![========](images/line.gif)
+
 **If you’re confused about the purpose of the SerialComm object you’ll be using for the next few assignments, look through this guide to get a TA’s explanation on the class. If you still have questions, reach out to a TA or instructor during office hours or through Piazza!**
+
+![========](images/line.gif)
 
 ## An Overview on Arduino Communication
 
@@ -22,6 +26,8 @@ The Arduino Uno comes with **one built-in serial port** that relies on digital p
 Sending and receiving data on the Java end will be similar to the reading and writing functions you have already implemented in Arduino for previous assignments, but a little prep is necessary before you can begin transmitting data back and forth.
 
 In the upcoming studio, we provide you with an incomplete Serial Communication class (SerialComm) and the JSSC (Java Simple Serial Connector) library that contains the basic functions you’ll need to communicate with your Arduino. We highly recommend browsing through the methods for the SerialPort class in the [JSSC javadocs](https://classes.cec.wustl.edu/~SEAS-SVC-CSE132/jssc/javadoc/) if you haven't already.
+
+![========](images/line.gif)
 
 ## Breaking down the SerialComm class
 
@@ -41,6 +47,8 @@ A complete SerialComm class should have the following methods:
 | public byte readByte() | reads and returns a <b>single</b> byte; <i>if</i> debug was previously set to true, prints a debugging message with the received byte value | INCOMPLETE |
 
 Once you have finished these functions, you will be able to send and receive input from a Java application just like you would from the Arduino IDE’s serial monitor. The addition of the debug variable is meant to help troubleshoot any errors that might occur when sending bytes back and forth. We recommend using it to determine if incorrect or missing values are due to serial communication issues or local code errors. Feel free to add extra messages if it helps you.
+
+![========](images/line.gif)
 
 ## Using the SerialComm object
 

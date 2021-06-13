@@ -7,7 +7,11 @@ author: Josh Gelbard and Ben Stolovitz
 
 # {{ page.title }}
 
+![========](images/line.gif)
+
 In this guide, we introduce the **Finite State Machine**, one of the most powerful ideas in computing. However, in order to code it in a way that's not confusing, you'll need to know a few concepts first. Namely, `switch`es and `enum`s.
+
+![========](images/line.gif)
 
 ## Switches
 
@@ -92,6 +96,8 @@ You should see the value of a switch statement in a larger example:
 	// In this case, August would be printed
 	System.out.println(monthString);
 
+![========](images/line.gif)
+
 ## Enums
 
 An `enum` is a built-in data type, just like an `int`, `float`, or `String`. It lets you assign variables to be one of a series of constants you create. For example, the cardinal directions:
@@ -124,6 +130,8 @@ You can now use the `Direction` type like any other variable -- maybe in a switc
 	}
 
 There are a couple gotchas to both `enum`s and `switch` statements, but this is enough to learn about Finite State Machines.
+
+![========](images/line.gif)
 
 ## Finite State Machines
 
