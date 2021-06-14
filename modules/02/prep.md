@@ -9,10 +9,6 @@ author: Doug Shook
 
 This module serves as an introduction to the Arduino and basic circuitry. We learn about basic circuitry, Arduino C, and how the Arduino itself communicates with the outside world.
 
-## Building Circuits
-
-The Arduino is capable of a lot of things, but it can't do everything. To fill in the gaps we will build some circuits and connect them to the Arduino. We can then use the Arduino to control these circuits. The following videos cover what you will need to know to start building your own circuits.
-
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## Text
@@ -22,9 +18,9 @@ Read Chapters 3, 4, and 5 in the course
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
-## Guide to Circuits
+## Building Circuits
 
-[This guide]({{ "/intro-to-circuits.html" | relative_url }}) on building circuits will go over the basics of what you need to know, including Ohm's Law, various circuit components, and the different types of pins on your Arduino.
+The Arduino is capable of a lot of things, but it can't do everything. To fill in the gaps we will build some circuits and connect them to the Arduino. We can then use the Arduino to control these circuits. The following videos cover what you will need to know to start building your own circuits.
 
 | Video | Description |
 |:-----:|:-----------:|
@@ -33,5 +29,11 @@ Read Chapters 3, 4, and 5 in the course
 |[LEDs](https://learn.sparkfun.com/tutorials/light-emitting-diodes-leds) | In this tutorial from SparkFun, you'll learn about LEDs. |
 |[How to: Wire an LED](https://wustl.box.com/s/9b9s7a2veefp0o26m2h7csj7vdwjes11) | In this video, Professor Siever shows you how to wire up and control an LED using the Arduino. |
 |[Exceptions](https://wustl.box.com/s/gwdts37609gzxcngfdf24hgdvudnmu25) (Review) | Exceptions are a useful tool for managing errors that may occur in your code, such as errors that result from mistakes in our circuit timings. |
+
+![========]({{ "/images/line.gif" | relative_url }})
+
+## Guide to Circuits
+
+[This guide]({{ "/intro-to-circuits.html" | relative_url }}) on building circuits will go over the basics of what you need to know, including Ohm's Law, various circuit components, and the different types of pins on your Arduino.
 
 {% include footer.html %}
