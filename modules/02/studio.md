@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Circuits
+title: Studio 2 - Circuits
 author: Ben Stolovitz and Sean Schaffer 
 ---
 {% include nav.html %}
 
 # {{ page.title }}
 
-Click [here](https://wustl.instructure.com/courses/58988/pages/studio-2) to access the Canvas page with the repository for this studio.
+Click [here]({{ "/tbd.html" | relative_url }}) to access the Canvas page with the repository for this studio.
 
 
 ![========]({{ "/images/line.gif" | relative_url }})
