@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Assignment 2 Wacky Washer
-author: Bill Siever & Doug Shook
+title: Assignment 2 - Wacky Washer
+author: Bill Siever and Doug Shook
 ---
 {% include nav.html %}
 
