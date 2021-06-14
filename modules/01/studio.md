@@ -3,6 +3,7 @@ layout: default
 title: Studio 1 - Programming and Bit Manipulation
 author: Claire Heuckeroth, Ben Stolovitz, and Sean Schaffer
 ---
+
 {% include nav.html %}
 
 # {{ page.title }}
@@ -262,4 +263,4 @@ This is a checklist for you to see what the Studio is designed to teach you.
 		- `Team > commit` 
 
 
-(% include footer.html %}
+{% include footer.html %}
