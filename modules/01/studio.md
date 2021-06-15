@@ -57,8 +57,8 @@ The subscript on a number indicates its current base. If no base is given, *assu
 
 **Hexadecimal** is base 16. It ends up being a very nice way of representing computer-related numbers because it jives with binary so well.
 
-1. What is $ 1010 0101_2 $ in hexadecimal?
-2. What is $ 0xF1 $ in binary?
+1. What is 1010 0101<sub>2</sub> in hexadecimal?
+2. What is 0xF1 in binary?
 3. How many digits of binary correspond to a digit of hex?
 4. Hex uses the letters `A` through `F` to go up to base 16. What is the highest base we can represent if we use all the letters of the alphabet?
 
