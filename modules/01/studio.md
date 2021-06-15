@@ -49,9 +49,9 @@ If you are having trouble with the concepts behind any of these questions, try r
 
 The subscript on a number indicates its current base. If no base is given, *assume* base 10.
 
-1. What is $ 1010_2 $ in base 10?
-2. What is $ 68_{10} $ in binary?
-3. What is $ 20_{10} $ in base 6?
+1. What is 1010<sub>2</sub> in base 10?
+2. What is 68<sub>10</sub> in binary?
+3. What is 20<sub>10</sub> in base 6?
 
 #### Hexadecimal
 
