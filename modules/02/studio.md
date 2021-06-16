@@ -116,10 +116,10 @@ Here is what your LEDs should do:
 
 Repository structure for this lab:
 
-<section class="tree">
+<!-- <section class="tree"> -->
 - `circuits/`
   - `circuits.ino`
-</section>
+<!-- </section> -->
 
 ## Key Concepts
 <aside class="sidenote">
