@@ -162,10 +162,10 @@ The sketch already contains a `Washer` package with a partial, but incomplete `W
 	<iframe src="https://app.box.com/embed/preview/6n0if5m1ht5lsbyf7xaggofqa7kwdheh?theme=dark" width="640" height="720" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe><br />
 
 4. Check out with a TA.  You will need to show them a clearly drawn FSM diagram.  Things that should be present in your repo structure:
-<section class="tree">
+<!-- <section class="tree"> -->
 - `Washer/`
   - `Washer.ino`			
-</section>
+<!-- </section> -->
 
 ![========]({{ "/images/line.gif" | relative_url }})
 

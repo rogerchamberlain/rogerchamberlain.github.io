@@ -190,10 +190,11 @@ Note that:
 
 Changes to repo structure:
 
-<section class="tree">
-- `CSE132-studio3/`
-   - `stoplight/stoplight.ino`
-   - `LEDtest/LEDtest.ino`
-</section>
+<!-- <section class="tree"> -->
+- `stoplight/`
+   - `stoplight.ino`
+- `LEDtest/`
+   - `LEDtest.ino`
+<!-- </section> -->
 
 {% include footer.html %}

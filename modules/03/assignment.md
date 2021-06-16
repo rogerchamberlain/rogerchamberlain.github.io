@@ -229,13 +229,13 @@ Now you can use the filtered temperature to make a blinking cricket.
 
 New files:
 
-<section class="tree">
+<!-- <section class="tree"> -->
 
-- `cricket'
-	- 'cricket.ino`
+- `cricket/`
+	- `cricket.ino`
 - A screen capture of the graph of your temperature data from the `Serial Plotter`.
 
-</section>
+<!-- </section> -->
 
 ### The rubric
 
