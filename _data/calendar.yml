@@ -72,7 +72,7 @@
 
 - title: Prep 3
   module: 3
-  url: /tbd.html
+  url: /modules/03/prep.html
   assigned: Sep 15
   due: Sep 20
 
@@ -84,13 +84,13 @@
 
 - title: Studio 3
   module: 3
-  url: /tbd.html
+  url: /modules/03/studio.html
   assigned: Sep 20
   due: Sep 20
 
 - title: Assignment 3
   module: 3
-  url: /tbd.html
+  url: /modules/03/assignment.html
   assigned: Sep 22
   due: Sep 29
 
