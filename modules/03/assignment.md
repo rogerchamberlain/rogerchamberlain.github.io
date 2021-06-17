@@ -43,7 +43,7 @@ The output voltage is independent of the supply voltage: it is a linear function
 For example, the table also provides data for another sensor, the *TMP35*.  For the *TMP35*, the temperature in Celsius is:
 
 <a name="equation">
-<img src="https://latex.codecogs.com/gif.latex?T_C&space;=&space;25^{\circ}&space;C&space;&plus;&space;(V_{measured}&space;-&space;.25V)&space;\cdot&space;100&space;\frac{^{\circ}&space;C}{V}" title="T_C = 25^{\circ} C + (V_{measured} - .25V) \cdot 100 \frac{^{\circ} C}{V}" /></a>
+<img src="https://latex.codecogs.com/svg.latex?T_C&space;=&space;25^{\circ}&space;C&space;&plus;&space;(V_{measured}&space;-&space;.25V)&space;\cdot&space;100&space;\frac{^{\circ}&space;C}{V}" title="T_C = 25^{\circ} C + (V_{measured} - .25V) \cdot 100 \frac{^{\circ} C}{V}" /></a>
 
 where $$ T_C $$ is temperature in $$ ^{\circ}C $$ and $$ V_{measured} $$ is the sensor voltage in volts (remember, `1 V = 1000 mV`). Of course, the above could be simplified to just:
 
