@@ -48,7 +48,7 @@ For example, the table also provides data for another sensor, the *TMP35*.  For 
 where $$ T_C $$ is temperature in $$ ^{\circ}C $$ and $$ V_{measured} $$ is the sensor voltage in volts (remember, `1 V = 1000 mV`). Of course, the above could be simplified to just:
 
 <a name="equation">
-$$ T_C = (V_{measured}) \cdot 100 \frac{^{\circ} C}{V} $$
+<img src="https://latex.codecogs.com/svg.latex?\(T_C&space;=&space;(V_{measured})&space;\cdot&space;100&space;\frac{^{\circ}&space;C}{V}\)" title="\(T_C = (V_{measured}) \cdot 100 \frac{^{\circ} C}{V}\)" />
 </a>
 
 <b>*Using the data from table derive the equation for the TMP36.*</b>
