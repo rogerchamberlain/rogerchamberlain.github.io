@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Module 5 - Digital Inputs and More Practice with Delta Timing
-author: Ben Stolovitz and Shuya Ma; Revision by Bill Siever, Roger Chamberlain, James Orr
+author: Ben Stolovitz and Shuya Ma; Revisions by Bill Siever, Roger Chamberlain, James Orr
 ---
 {% include nav.html %}
 
@@ -86,7 +86,7 @@ Things that should be present in your repo structure:
 - `mirror/`
   - `mirror.ino`
 - `stoplight/`
-        - `stoplight.ino`
+  - `stoplight.ino`
 
 <!-- </section> -->
 
