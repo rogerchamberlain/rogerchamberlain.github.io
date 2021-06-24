@@ -165,6 +165,7 @@ Verify that you have completed the following files:
 		- `MorseCodes.h`
 	- `communication/`
 		- `SerialComm.java`
+
 <!-- </section> -->
 
 1. Commit all your code. **Do not ask to be checked out by a TA until
