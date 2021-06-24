@@ -204,3 +204,4 @@ Note: the formal rubric is on Canvas, this is just the highlights.
     - The `SerialComm` class has an appropriate `writeByte()` method
     - The `SerialComm` class has an appropriate `available()` method
 
+{% include footer.html %}

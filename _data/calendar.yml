@@ -132,7 +132,7 @@
 
 - title: Prep 5
   module: 5
-  url: /tbd.html
+  url: /modules/05/prep.html
   assigned: Sep 29
   due: Oct 04
 
@@ -144,13 +144,13 @@
 
 - title: Studio 5
   module: 5
-  url: /tbd.html
+  url: /modules/05/studio.html
   assigned: Oct 04
   due: Oct 04
 
 - title: Assignment 5
   module: 5
-  url: /tbd.html
+  url: /modules/05/assignment.html
   assigned: Oct 06
   due: Oct 20
 
