@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Assignment 5 - More Morse Mayhem:  -&thinsp;- -&thinsp;-&thinsp;- .-. ... . "
+title: "Assignment 5 - More Morse Mayhem:  -&hairsp;- -&hairsp;-&hairsp;- .-. ... . "
 author: Julia Vogl, Bill Siever, Jeremy Goldstein, Evan Simkowitz, and James Orr
 ---
 {% include nav.html %}
