@@ -102,7 +102,7 @@
 
 - title: Prep 4
   module: 4
-  url: /tbd.html
+  url: /modules/04/prep.html
   assigned: Sep 22
   due: Sep 27
 
@@ -114,13 +114,13 @@
 
 - title: Studio 4
   module: 4
-  url: /tbd.html
+  url: /modules/04/studio.html
   assigned: Sep 27
   due: Sep 27
 
 - title: Assignment 4
   module: 4
-  url: /tbd.html
+  url: /modules/04/assignment.html
   assigned: Sep 29
   due: Oct 06
 
