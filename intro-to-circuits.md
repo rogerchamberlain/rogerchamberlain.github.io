@@ -9,17 +9,17 @@ author: Ben Stolovitz
 
 ![========](images/line.gif)
 
-<aside class="sidenote">
+<!-- <aside class="sidenote"> -->
 ## Philosophical rambling, or, why learn circuits?
 
-Before we dive into the ins and outs of electricity, it's worth tying everything back to this class and Arduino. It's pretty obvious, from the need to charge them, that computers are electrical circuits. The Arduino is one such circuit, although it is smaller and uglier than your laptop.
+>Before we dive into the ins and outs of electricity, it's worth tying everything back to this class and Arduino. It's pretty obvious, from the need to charge them, that computers are electrical circuits. The Arduino is one such circuit, although it is smaller and uglier than your laptop.
 
-The Arduino cannot produce output in the same way your laptop can because it does not have a built-in screen, speakers, or Wi-Fi chip. Instead, it has **pins**. It's output is entirely electrical: pins are the ends of wires that the Arduino can talk to. In fact, the only thing your Arduino can do is manipulate pins. Your programs can choose to "read" the state of electric circuits (like whether they're off or on) attached to your pins as input, or to "write" to a circuit  (using the pin as a programmable switch) as output. Serial communication and programming happens through a very complex, and automatic, usage of the first two pins.
+>The Arduino cannot produce output in the same way your laptop can because it does not have a built-in screen, speakers, or Wi-Fi chip. Instead, it has **pins**. It's output is entirely electrical: pins are the ends of wires that the Arduino can talk to. In fact, the only thing your Arduino can do is manipulate pins. Your programs can choose to "read" the state of electric circuits (like whether they're off or on) attached to your pins as input, or to "write" to a circuit  (using the pin as a programmable switch) as output. Serial communication and programming happens through a very complex, and automatic, usage of the first two pins.
 
-This is a barebones version of what your normal computer does: your laptop reads USB ports and writes audio signals to your speakers, and both USB ports and speakers are just more complicated versions of simple circuits. We want you to prove this inherent "simplicity" for yourself by letting you build your own circuits---circuits that power screens and keyboards and many other fun & exciting things.
+>This is a barebones version of what your normal computer does: your laptop reads USB ports and writes audio signals to your speakers, and both USB ports and speakers are just more complicated versions of simple circuits. We want you to prove this inherent "simplicity" for yourself by letting you build your own circuits---circuits that power screens and keyboards and many other fun & exciting things.
 
-That may be hard if you don't know how to *wire* your own circuits, so we wrote this crash course.
-</aside>
+>That may be hard if you don't know how to *wire* your own circuits, so we wrote this crash course.
+<!-- </aside> -->
 
 This guide is a quick introduction to the mechanics of electricity and simple circuitry. We'll start by explaining the circuit itself in concrete terms, including Ohm's Law, and then dive into circuit diagrams. This guide should help you analyze circuits intuitively and understand new components fairly quickly.
 
