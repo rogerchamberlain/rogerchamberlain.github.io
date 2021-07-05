@@ -219,7 +219,7 @@ Looking up how to work with new components (like potentiometers, switches, capac
 
 ### LEDs & diodes
 
-**LEDs** are fickle creatures. Unlike traditional lightbulbs, LEDs cannot be placed onto a circuit heedlessly. First, LEDs have **very little resistance** (or very little). A circuit with just an LED is similar to the paperclip-battery circuit. It must be resisted separately, with an additional resistor. Second, LEDs only allow current in **one direction**. If placed backward, they will not light up.
+**LEDs** are fickle creatures. Unlike traditional lightbulbs, LEDs cannot be placed onto a circuit heedlessly. First, LEDs have **little resistance** (or very little). A circuit with just an LED is similar to the paperclip-battery circuit. It must be resisted separately, with an additional resistor. Second, LEDs only allow current in **one direction**. If placed backward, they will not light up.
 
 These traits are shared among all **diodes**---LED stands for "Light Emitting Diode." Diodes prevent current flowing in one direction and let it through unimpeeded in the other. Take care not to explode your LEDs: place resistors on their circuits (different colors have different optimum resistances; read their spec sheets).
 
