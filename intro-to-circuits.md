@@ -7,10 +7,12 @@ author: Ben Stolovitz
 
 # {{ page.title }}
 
+This guide is a quick introduction to the mechanics of electricity and simple circuitry. We'll start by explaining the circuit itself in concrete terms, including Ohm's Law, and then dive into circuit diagrams. This guide should help you analyze circuits intuitively and understand new components fairly quickly.
+
 ![========](images/line.gif)
 
 <!-- <aside class="sidenote"> -->
-## Philosophical rambling, or, why learn circuits?
+>## Philosophical rambling, or, why learn circuits?
 
 >Before we dive into the ins and outs of electricity, it's worth tying everything back to this class and Arduino. It's pretty obvious, from the need to charge them, that computers are electrical circuits. The Arduino is one such circuit, although it is smaller and uglier than your laptop.
 
@@ -20,8 +22,6 @@ author: Ben Stolovitz
 
 >That may be hard if you don't know how to *wire* your own circuits, so we wrote this crash course.
 <!-- </aside> -->
-
-This guide is a quick introduction to the mechanics of electricity and simple circuitry. We'll start by explaining the circuit itself in concrete terms, including Ohm's Law, and then dive into circuit diagrams. This guide should help you analyze circuits intuitively and understand new components fairly quickly.
 
 ![========](images/line.gif)
 
@@ -105,26 +105,6 @@ You measure current in amperes, or "amps" for short. The unit symbol is an "$A$"
 
 ### Ohm's law
 
-<!-- <aside class="sidenote"> -->
-#### Implications of Ohm's law
-
-It's almost impossible to complete grade school in the United States without hearing about **parallel** and **series** circuits and finding them confusing. It's a shame because they are fairly easy to understand intuitively.
-
-There are only two possible ways of hooking up a flow of water (or electricity) across two segments of pipe that resist its flow: either you hook up the resisting things **consecutively** to the flow, one after another, or you can **split** the flow up into two paths, one for each element. How does the water behave each time?
-
-For the **consecutive** case, with both elements on the same path, the flow rate must be the same at each element. If this were not the case, and water flowed at different speeds through each, there would be gaps and spurts in the water. 
-
-For example, if the first element has a lower flow rate than the second, the second element would run out of water before the first can provide it. If the first were *faster*, there would be an ever-growing water buildup between the two elements. You can extend this reasoning to any number of consecutive elements. Therefore it makes sense to say that **current is identical for elements in a series**.
-
-If the flow *splits*, though, current in each flow does not need to be identical. Two streams that diverge can have very different flow rates and merge together with no problem. No, *current* is not identical between split streams. Lucky for us, *voltage* is.
-
-Why does this happen? Voltage is a potential difference. Both paths of a split stream start at the same potential. If, once they meet up, they have decreased in potential by different amounts (ie they have different voltages), then they disagree as to what potential energy the meeting point has.
-
-You can only deal with this problem by saying that any path between the same two points must have the same potential drop---in electricity, voltage is independent of path. **Voltage is identical for parallel elements**.
-
-Thus, from an understanding of Ohm's law comes an understanding of the different types of circuits. The equations for determining voltage in series or current in parallel simply come from combining this intuition with Ohm's law in various forms. They are fairly simple to derive.
-<!-- </aside> -->
-
 Both current and resistance relate to voltage via **Ohm's Law**:
 
 $$ V = IR $$
@@ -147,6 +127,26 @@ Ignoring other energy expenditures and assuming they are otherwise identical, bo
 
 It makes sense, then, that potential energy is depenent on current *and* resistance.
 
+<!-- <aside class="sidenote"> -->
+#### Implications of Ohm's law
+
+>It's almost impossible to complete grade school in the United States without hearing about **parallel** and **series** circuits and finding them confusing. It's a shame because they are fairly easy to understand intuitively.
+
+>There are only two possible ways of hooking up a flow of water (or electricity) across two segments of pipe that resist its flow: either you hook up the resisting things **consecutively** to the flow, one after another, or you can **split** the flow up into two paths, one for each element. How does the water behave each time?
+
+>For the **consecutive** case, with both elements on the same path, the flow rate must be the same at each element. If this were not the case, and water flowed at different speeds through each, there would be gaps and spurts in the water. 
+
+>For example, if the first element has a lower flow rate than the second, the second element would run out of water before the first can provide it. If the first were *faster*, there would be an ever-growing water buildup between the two elements. You can extend this reasoning to any number of consecutive elements. Therefore it makes sense to say that **current is identical for elements in a series**.
+
+>If the flow *splits*, though, current in each flow does not need to be identical. Two streams that diverge can have very different flow rates and merge together with no problem. No, *current* is not identical between split streams. Lucky for us, *voltage* is.
+
+>Why does this happen? Voltage is a potential difference. Both paths of a split stream start at the same potential. If, once they meet up, they have decreased in potential by different amounts (ie they have different voltages), then they disagree as to what potential energy the meeting point has.
+
+>You can only deal with this problem by saying that any path between the same two points must have the same potential drop---in electricity, voltage is independent of path. **Voltage is identical for parallel elements**.
+
+>Thus, from an understanding of Ohm's law comes an understanding of the different types of circuits. The equations for determining voltage in series or current in parallel simply come from combining this intuition with Ohm's law in various forms. They are fairly simple to derive.
+<!-- </aside> -->
+
 ![========](images/line.gif)
 
 ## How to make a circuit
@@ -167,12 +167,11 @@ Since we think of the negative terminal as the end of this charge flow, we measu
 
 Because engineers don't like drawing realistically, we have the **circuit diagram** to depict circuits.
 
-<aside class="sidenote">
+<!-- <aside class="sidenote"> -->
 #### Odds & ends
-{:.no_toc}
 
-Circuit diagrams use straight lines for wires. Because wiring can get pretty intense, overlapping wires *don't* connect unless there's a dot drawn over them or it's T-intersection.
-</aside>
+>Circuit diagrams use straight lines for wires. Because wiring can get pretty intense, overlapping wires *don't* connect unless there's a dot drawn over them or it's T-intersection.
+<!-- </aside> -->
 
 The paperclip-battery circuit looks something like this:
 
