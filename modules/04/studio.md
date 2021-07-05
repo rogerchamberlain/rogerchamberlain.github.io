@@ -265,7 +265,7 @@ library, particularly the `SerialPort` class methods.
 After you've tried that, change the startup order.  What happens when?  Why?
 
 <!-- <aside class="sidenote"> -->
-#### Startup debugging
+>#### Startup debugging
 
 >You can only have one open connection to your Arduino at any given time, be it uploading new code, Serial Monitor, or a custom Java app.  It's important to:
 

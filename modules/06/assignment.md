@@ -80,7 +80,7 @@ In this way, it is reasonably assured to be aligned with
 the beginning of a message.
 
 <!-- <aside class="sidenote"> -->
-##### Magic numbers
+>##### Magic numbers
 
 >Magic numbers can be found not only in **communication protocols**, but in places all over computer science. One such place is in files that are expected to be of a particular type.
 
@@ -138,18 +138,18 @@ In Java, make sure you have finished Studio 8.
 Locate and open the `MsgReceiver.java` file in your repository. This is where most of your work will go on the Java side. Import your SerialComm.java into the same directory and copy out its `public static void main(String[] args)` method, as that is now in `MsgReceiver.java`.
 
 <!-- <aside class="sidenote"> -->
-### Sidebar for all you hackers
+>### Sidebar for all you hackers
 
 >We want to provide two ways of completing this assignment: the guided way in the main writeup, and a more "free-form" way. In this sidebar we just detail what we expect the protocol to do and what your programs should output, but in the main writeup we guide you through the process in more detail. Choose whatever you like.
 
 >1. Wire up your potentiometer and temperature sensor to two analog ports on your Arduino. The wiring is identical to before.
 >2. In a 1 Hz delta-time loop (in `sender.ino`), send---using our protocol:
 
->	- the timestamp of the loop (do not call `millis()` a second time, store the first call as an `unsigned long` and use that),
->	- the potentiometer reading,
->	- the unfiltered, raw, A/D counts value for the temperature sensor
+>- the timestamp of the loop (do not call `millis()` a second time, store the first call as an `unsigned long` and use that),
+>- the potentiometer reading,
+>- the unfiltered, raw, A/D counts value for the temperature sensor
 
->	Finally, if the potentiometer reading is over a certain value of your choice, send an error string (key: `0x31`) `High alarm` at the very end of the delta-time loop.
+>Finally, if the potentiometer reading is over a certain value of your choice, send an error string (key: `0x31`) `High alarm` at the very end of the delta-time loop.
 >3. Edit the `run()` method of `MsgReceiver` in Java to read these messages and print them out as it receives them. Make sure to output both the type of message (e.g., info string, error string, potentiometer value, raw temperature) and the value (the string value or integer value). 
 
 >4. On the Java side, convert the temperature readings to an actual temperature (in Celcius, just like you did on assignment 3), filter the values with a rolling average filter (again, like you did for assignment 3), then print out the filtered and unfiltered temperature values.
