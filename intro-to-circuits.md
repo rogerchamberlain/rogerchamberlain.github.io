@@ -77,7 +77,7 @@ The bad news: unlike "normal" potential energy, the amount of electric potential
 
 This difference should not change your mental model too much. Any charged object in an electric field will move to an area of low electric potential, it will just happen faster for higher-charged objects. So aside from that caveat, it makes sense to conceive of this pseudo-potential energy as a normal potential energy.
 
-![Balls rolling on a hill demonstrate potential energy as it relates to gravity]({{ "/images/hills.png" | relative_url }}){:height="36px" width="36px"}
+![Balls rolling on a hill demonstrate potential energy as it relates to gravity]({{ "/images/hills.png" | relative_url }}){:width="120px"}
 
 ### Voltage, schmoltage
 
