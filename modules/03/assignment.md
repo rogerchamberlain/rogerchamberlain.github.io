@@ -38,14 +38,14 @@ When you insert the TMP36 in the breadboard the pins will be *facing down*.  If 
 **NOTE**: The temperature sensor *will burn you* if you wire it incorrectly. *Double check your connections before powering the Arduino.*
 <!-- </aside> -->
 
-The output voltage is independent of the supply voltage: it is a linear function of ambient temperature. At 25&deg;C $$ 25^{\circ} C $$ the TMP36 outputs a specific voltage (written in Table 1 on page 3 of the spec sheet) and as the temperature changes  the output voltage changes based on a **scale factor** ( $$ \frac{mV}{ ^{\circ} C} $$, also in Table 1 of the spec sheet). You can use a linear equation to find out the temperature in Celsius using the measured voltage and these two values from the table.
+The output voltage is independent of the supply voltage: it is a linear function of ambient temperature. At 25&deg;C the TMP36 outputs a specific voltage (written in Table 1 on page 3 of the spec sheet) and as the temperature changes  the output voltage changes based on a **scale factor** (mv/&deg;C), $$ \frac{mV}{ ^{\circ} C} $$, also in Table 1 of the spec sheet). You can use a linear equation to find out the temperature in Celsius using the measured voltage and these two values from the table.
 
 For example, the table also provides data for another sensor, the *TMP35*.  For the *TMP35*, the temperature in Celsius is:
 
 <a name="equation">
 <img src="https://latex.codecogs.com/svg.latex?T_C&space;=&space;25^{\circ}&space;C&space;&plus;&space;(V_{measured}&space;-&space;.25V)&space;\cdot&space;100&space;\frac{^{\circ}&space;C}{V}" title="T_C = 25^{\circ} C + (V_{measured} - .25V) \cdot 100 \frac{^{\circ} C}{V}" /></a>
 
-where $$ T_C $$ is temperature in $$ ^{\circ}C $$ and $$ V_{measured} $$ is the sensor voltage in volts (remember, `1 V = 1000 mV`). Of course, the above could be simplified to just:
+where *T<sub>C</sub>* is temperature in &deg;C and *V<sub>measured</sub>* is the sensor voltage in volts (remember, `1 V = 1000 mV`). Of course, the above could be simplified to just:
 
 <a name="equation">
 <img src="https://latex.codecogs.com/svg.latex?T_C&space;=&space;(V_{measured})&space;\cdot&space;100&space;\frac{^{\circ}&space;C}{V}" title="T_C = (V_{measured}) \cdot 100 \frac{^{\circ} C}{V}" />
