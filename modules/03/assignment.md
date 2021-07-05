@@ -165,7 +165,7 @@ Now you can use the filtered temperature to make a blinking cricket.
 
 	$$ T_C = 10 + \left(\frac{N_{60} - 40}{7}\right)$$
 	
-	where *T<sub>C</sub>* is the temperature in Celsius and *N<sub>60</sub>* is the number of chirps in a minute.
+	where *T<sub>C</sub>* is the temperature in Celsius and *N*<sub>60</sub> is the number of chirps in a minute.
 	
 	You can solve this in terms of chirps *per second*. By inverting it (1 / chirps per second) you get a period, *seconds per chirp*. If you convert this number into milliseconds per chirp, you can use this as the duration of a delta time iteration to flash your LED.
 	
