@@ -147,11 +147,11 @@ Where each circle is a state -- green, yellow, or red -- and the arrows indicate
 
 FSMs can also take multiple inputs. You could represent a search for the letters "dog" in a string with a FSM like this, where you output some `success` variable when you're in the green state:
 
-![A FSM that takes a string and returns true if the sequence "DOG" is present in it.](http://i.imgur.com/M90rfHi.jpg)
+![A FSM that takes a string and returns true if the sequence "DOG" is present in it.](http://i.imgur.com/M90rfHim.jpg)
 
 You can also have multiple outputs for each state. Consider the long-studied and intractible problem of getting a hot pocket fully cooked:
 
-![The quintessential problem illustrated.](http://i.imgur.com/VN8cJZ0.jpg)
+![The quintessential problem illustrated.](http://i.imgur.com/VN8cJZ0m.jpg)
 
 Notice that every state must have defined transitions for every input, in this case `nuke` and `wait`.
 
