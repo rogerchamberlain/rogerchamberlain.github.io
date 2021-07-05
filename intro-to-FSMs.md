@@ -141,17 +141,17 @@ We introduce the **Moore machine**, one type of FSM (you learn about other types
 
 For example, imagine a computer for a traffic light. You might have three different states: red, yellow, or green. You could also have an "advance" input that progresses the traffic light. We can represent this stateful system in a FSM, and it turns out most of the time the standard is to just draw it:
 
-![A very simple traffic light FSM, with three states G, Y, and R.](http://i.imgur.com/UC113L8m.jpg)
+![A very simple traffic light FSM, with three states G, Y, and R.](http://i.imgur.com/UC113L8.jpg){:width="50%"}
 
 Where each circle is a state -- green, yellow, or red -- and the arrows indicate how the one input changes the systems state. The disconnected arrow indicates the initial state.
 
 FSMs can also take multiple inputs. You could represent a search for the letters "dog" in a string with a FSM like this, where you output some `success` variable when you're in the green state:
 
-![A FSM that takes a string and returns true if the sequence "DOG" is present in it.](http://i.imgur.com/M90rfHim.jpg)
+![A FSM that takes a string and returns true if the sequence "DOG" is present in it.](http://i.imgur.com/M90rfHi.jpg){:width="50%"}
 
 You can also have multiple outputs for each state. Consider the long-studied and intractible problem of getting a hot pocket fully cooked:
 
-![The quintessential problem illustrated.](http://i.imgur.com/VN8cJZ0m.jpg)
+![The quintessential problem illustrated.](http://i.imgur.com/VN8cJZ0.jpg){:width="50%"}
 
 Notice that every state must have defined transitions for every input, in this case `nuke` and `wait`.
 

@@ -191,7 +191,7 @@ Now you can use the filtered temperature to make a blinking cricket.
 
 	The final circuit schematic should look like this:
 
-	![The final circuit](finalcircuit.png)
+	![The final circuit](finalcircuit.png){:width="50%"}
 
 	Note that this picture has the LED connected to the Arduino pin and the resistor connected to ground.  Either order is fine, Arduino pin then LED then resistor then ground, or Arduino pin then resistor then LED then ground.
 
