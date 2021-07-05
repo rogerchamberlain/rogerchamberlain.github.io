@@ -45,8 +45,8 @@ would print each letter in a string one-at-a-time:
 
 ~~~ java
 String words = "Hello World!";
-    for(int i=0;i<words.length();i++) {
-Serial.print(words[i]);
+for(int i=0;i<words.length();i++) {
+    Serial.print(words[i]);
 }
 ~~~
 
