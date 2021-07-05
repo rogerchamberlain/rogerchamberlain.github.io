@@ -86,7 +86,13 @@ Onward!
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
->## Setting up Arduino
+## Setting up Arduino
+
+To use your own laptop for development, you\'ll find the Arduino IDE [on the official site](https://www.arduino.cc/en/Main/Software), for Windows, Linux, and Mac.  Don\'t use the web editor, install the latest IDE (currently 1.8.10) on your machine.
+
+>If you have *any* trouble with the installation process, finish the studio exercises using one of your group\'s computers, and *then* ask for help with the installation.
+
+>Do the studio today. Install the software later.
 
 ### Getting ready
 
@@ -102,18 +108,10 @@ First, you need to check out your repository so that you can commit the changes 
 4.	Check out your repository.
 	
 		
-In CSE132 this semester, we will be using Git as our version control system.
+In CSE 132 this semester, we will be using Git as our version control system.
 We have made a [git Tutorial]({{ "/setup-git.html" | relative_url }}) to get your workspace set up and running.
 
 Make a note of the `Local Destination` directory, as it will be needed later.
-
-<!-- <aside class="warning"> -->
->To use your own laptop for development, you\'ll find the Arduino IDE [on the official site](https://www.arduino.cc/en/Main/Software), for Windows, Linux, and Mac.  Don\'t use the web editor, install the latest IDE (currently 1.8.10) on your machine.
-
->If you have *any* trouble with the installation process, finish the studio exercises using one of your group\'s computers, and *then* ask for help with the installation.
-
->Do the studio today. Install the software later.
-<!-- </aside> -->
 
 ### Running a program
 
@@ -121,18 +119,6 @@ In Eclipse nagivate to the studios.studio0 helloworld.ino file. If the icon show
 
 
 The `helloworld.ino` file is a complete Arduino program. Compiling and uploading it should help you learn the Arduino interface.
-
-<!-- <aside class="sidenote"> -->
->#### Problems uploading?
-
->Considering that you are compiling a program from C, using an old USB driver designed by one company to communicate with a board designed by another company running code designed by a third, it\'s surprising that Arduino upload works as often as it does.
-
->But stuff goes wrong. A lot. Here\'s how to troubleshoot your upload.
-
->- **Is your code free of syntax errors?** Make sure that your code is correct (**Verify** it and make sure the status is `Done compiling.`)
->- **Are you writing to the correct port?** Look under `Tools>Port>` and select a different one. On Windows it will be something like `COM3`. On Mac, it will be something like `/dev/cu.usbmodem1492`. There\'s no good way to find the correct one aside from guess-and-check.
->- **Restart the Arduino IDE and plug everything in again**. It works a lot of the time.
-<!-- </aside> -->
 
 ![An annotated screenshot of the Arduino IDE](arduino.png)
 
@@ -145,6 +131,18 @@ The `helloworld.ino` file is a complete Arduino program. Compiling and uploading
 	Opening serial monitor or pushing the reset button on the Arduino both reset the Arduino.
 	
 	Note that opening the serial monitor will sometimes print garbage data as the signals between the Arduino and computer sync up.
+
+<!-- <aside class="sidenote"> -->
+>#### Problems uploading?
+
+>Considering that you are compiling a program from C, using an old USB driver designed by one company to communicate with a board designed by another company running code designed by a third, it\'s surprising that Arduino upload works as often as it does.
+
+>But stuff goes wrong. A lot. Here\'s how to troubleshoot your upload.
+
+>- **Is your code free of syntax errors?** Make sure that your code is correct (**Verify** it and make sure the status is `Done compiling.`)
+>- **Are you writing to the correct port?** Look under `Tools>Port>` and select a different one. On Windows it will be something like `COM3`. On Mac, it will be something like `/dev/cu.usbmodem1492`. There\'s no good way to find the correct one aside from guess-and-check.
+>- **Restart the Arduino IDE and plug everything in again**. It works a lot of the time.
+<!-- </aside> -->
 
 
 ![========]({{ "/images/line.gif" | relative_url }})
@@ -220,16 +218,14 @@ Check out and get out.
 2. Show your two timing programs and your repository to a TA.
 3. Tell your TA how long it took for your Arduino and computer to get out of sync.
 
-Repository structure for this lab:
+Repository structure for this studio:
 
-<section class="tree">
 - `studio0/`
 	- `helloworld/`
 		- `helloworld.ino`
 	- `heartbeat/`
   	  - `heartbeat.ino`
 	- `Heartbeat.java`
-</section>
 
 ![========]({{ "/images/line.gif" | relative_url }})
 

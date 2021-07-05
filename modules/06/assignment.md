@@ -48,21 +48,6 @@ a potentiometer reading, a timestamp, an error message, etc.
 
 #### Header
 
-<aside class="sidenote">
-##### Magic numbers
-{:.no_toc}
-
-Magic numbers can be found not only in **communication protocols**,
-but in places all over computer science. One such place
-is in files that are expected to be of a particular type.
-
-You can understand the arbitrary nature of file extensions by renaming a `.jpeg` file `.txt`---it will be garbage, but your computer doesn't have any "checker" when using files. What could happen if you accidentally ran a `.txt` file or a JPEG as a compiled program? What if some of the bytes in the file translated to machine instructions to destroy a file?
-
-To prevent that, ELF files (compiled Linux programs) and their Windows equivalents, `.exe`s, both have magic numbers at the beginning. ELF files begin with 4 bytes of magic numbers: `0x7f 0x45 0x4c 0x46` (or `DEL E L F` in ASCII---`DEL` is a special character). Windows executables: `0x4d 0x5a` (`M Z`, the initials of the designer).
-
-If you consider the similarity between **file formats** and protocols, it's not surprising that [many, many recognizable filetypes](https://en.wikipedia.org/wiki/Magic_number_(programming)) have magic numbers, too.
-</aside>
-
 
 As stated above, the message header helps the
 communication protocol do some book-keeping. In our case, the header is
@@ -93,6 +78,18 @@ that byte (and all subsequent bytes that are not the magic
 number) until it reads a byte that *is* the magic number.
 In this way, it is reasonably assured to be aligned with
 the beginning of a message.
+
+<!-- <aside class="sidenote"> -->
+##### Magic numbers
+
+>Magic numbers can be found not only in **communication protocols**, but in places all over computer science. One such place is in files that are expected to be of a particular type.
+
+>You can understand the arbitrary nature of file extensions by renaming a `.jpeg` file `.txt`---it will be garbage, but your computer doesn't have any "checker" when using files. What could happen if you accidentally ran a `.txt` file or a JPEG as a compiled program? What if some of the bytes in the file translated to machine instructions to destroy a file?
+
+>To prevent that, ELF files (compiled Linux programs) and their Windows equivalents, `.exe`s, both have magic numbers at the beginning. ELF files begin with 4 bytes of magic numbers: `0x7f 0x45 0x4c 0x46` (or `DEL E L F` in ASCII---`DEL` is a special character). Windows executables: `0x4d 0x5a` (`M Z`, the initials of the designer).
+
+>If you consider the similarity between **file formats** and protocols, it's not surprising that [many, many recognizable filetypes](https://en.wikipedia.org/wiki/Magic_number_(programming)) have magic numbers, too.
+<!-- </aside> -->
 
 #### Payload
 
@@ -140,29 +137,29 @@ In Java, make sure you have finished Studio 8.
 
 Locate and open the `MsgReceiver.java` file in your repository. This is where most of your work will go on the Java side. Import your SerialComm.java into the same directory and copy out its `public static void main(String[] args)` method, as that is now in `MsgReceiver.java`.
 
-<aside class="sidenote">
-### For all you hackers
-{:.no_toc}
+<!-- <aside class="sidenote"> -->
+### Sidebar for all you hackers
 
-We want to provide two ways of completing this assignment: the guided way in the main writeup, and a more "free-form" way. In this sidebar we just detail what we expect the protocol to do and what your programs should output, but in the main writeup we guide you through the process in more detail. Choose whatever you like.
+>We want to provide two ways of completing this assignment: the guided way in the main writeup, and a more "free-form" way. In this sidebar we just detail what we expect the protocol to do and what your programs should output, but in the main writeup we guide you through the process in more detail. Choose whatever you like.
 
-1. Wire up your potentiometer and temperature sensor to two analog ports on your Arduino. The wiring is identical to before.
-2. In a 1 Hz delta-time loop (in `sender.ino`), send---using our protocol:
+>1. Wire up your potentiometer and temperature sensor to two analog ports on your Arduino. The wiring is identical to before.
+>2. In a 1 Hz delta-time loop (in `sender.ino`), send---using our protocol:
 
-	- the timestamp of the loop (do not call `millis()` a second time, store the first call as an `unsigned long` and use that),
-	- the potentiometer reading,
-	- the unfiltered, raw, A/D counts value for the temperature sensor
+>	- the timestamp of the loop (do not call `millis()` a second time, store the first call as an `unsigned long` and use that),
+>	- the potentiometer reading,
+>	- the unfiltered, raw, A/D counts value for the temperature sensor
 
-	Finally, if the potentiometer reading is over a certain value of your choice, send an error string (key: `0x31`) `High alarm` at the very end of the delta-time loop.
-3. Edit the `run()` method of `MsgReceiver` in Java to read these messages and print them out as it receives them. Make sure to output both the type of message (e.g., info string, error string, potentiometer value, raw temperature) and the value
-(the string value or integer value). 
+>	Finally, if the potentiometer reading is over a certain value of your choice, send an error string (key: `0x31`) `High alarm` at the very end of the delta-time loop.
+>3. Edit the `run()` method of `MsgReceiver` in Java to read these messages and print them out as it receives them. Make sure to output both the type of message (e.g., info string, error string, potentiometer value, raw temperature) and the value (the string value or integer value). 
 
-4. On the Java side, convert the temperature readings to an actual temperature (in Celcius, just like you did on assignment 3), filter the values with a rolling average filter (again, like you did for assignment 3), then print out the filtered and unfiltered temperature values.
+>4. On the Java side, convert the temperature readings to an actual temperature (in Celcius, just like you did on assignment 3), filter the values with a rolling average filter (again, like you did for assignment 3), then print out the filtered and unfiltered temperature values.
 
-	Have it print a visually distinct error message if an unknown key is used.
+>	Have it print a visually distinct error message if an unknown key is used.
 
-That's the entire lab. If it seems simple, make sure to use a finite state machine on the Java side, as we will probably be extending this later in the semester.
-</aside>
+>That's the entire lab. If it seems simple, make sure to use a finite state machine on the Java side, as we will probably be extending this later in the semester.
+<!-- </aside> -->
+
+### And now we return to the main writeup
 
 1. Author enough of an Arduino sketch `sender.ino` to send info messages (i.e., send the magic number `!`, the key `0x30`, and then a hard-coded UTF-8 encoded string, prefixed with its length). String s need to be hardcode for a couple of reasons. First, strings cannot be dynamically sent via the Serial Monitor from the Arduino IDE while the Java side. Second, the messages will correspond with specific actions (e.g., indicating which button has been pressed), so there will be a finite amount.
 

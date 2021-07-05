@@ -127,22 +127,6 @@ Complete code that will convert the ASCII value into an appropriate decimal valu
 
 ## Writing to the Serial Port
 
-<aside class="sidenote">
-#### Startup debugging
-{:.no_toc}
-
-You can only have one open connection to your Arduino at any given time, be it
-uploading new code, Serial Monitor, or a custom Java app.
-
-So make sure to close all your Java programs after running them.
-
-1. Click the red square on the side of the Java `Console` to stop the program.
-2. Click the `x` next to it to clear that program's output and show any other running programs (if there are)
-3. Repeat for all open programs.
-
-Also close Serial Monitor when you are not using it.
-</aside>
-
 1.  `CSE132-studio4 > communication` contains a partially complete Java class named `SerialComm`.  It has some `TODO` items that need to be completed.  If you're confused about the purpose of this class, we have written a [SerialComm]({{ "/SerialCommGuide.html" | relative_url }}) guide to better explain it.
 
 2. This program will send data via the serial port (to your Arduino). In order to do that, you will need to use the `SerialPort` class---that is available as a library, the JavaDoc is available [here](https://classes.cec.wustl.edu/~SEAS-SVC-CSE132/jssc/javadoc/)---and connect to the correct port.
@@ -173,6 +157,21 @@ Make sure you've closed all your Java programs with the Terminate button in the 
 **`PortNotFoundException`**
 
 See what `SerialPort` is connecting to— it should match the port name in the Arduino IDE (`/dev/cu.usbmodem0000` or something similar on Macs, COM1, COM2, or something similar on PCs).
+
+<!-- <aside class="sidenote"> -->
+>#### Startup debugging
+
+>You can only have one open connection to your Arduino at any given time, be it
+>uploading new code, Serial Monitor, or a custom Java app.
+
+>So make sure to close all your Java programs after running them.
+
+>1. Click the red square on the side of the Java `Console` to stop the program.
+>2. Click the `x` next to it to clear that program's output and show any other running programs (if there are)
+>3. Repeat for all open programs.
+
+>Also close Serial Monitor when you are not using it.
+<!-- </aside> -->
 	
 
 ### Get User Input
@@ -235,21 +234,6 @@ Now that you've successfully sent data from Java to you Arduino, it's time to se
 
 ### Simple printing
 
-<aside class="sidenote">
-#### Startup debugging
-{:.no_toc}
-
-You can only have one open connection to your Arduino at any given time, be it
-uploading new code, Serial Monitor, or a custom Java app.  It's important
-to:
-
-1. Make sure to close all your Java programs after running them.
-   1. Click the red square on the side of the Java `Console` to stop the program.
-   2. Click the `x` next to it to clear that program's output and show any other running programs (if there are)
-   3. Repeat for all open programs.
-2. Close Serial Monitor when you are not using it.
-</aside>
-
 The first task for Arduino to Java communication is to have a Java program receive data sent by the Arduino.
 We will start simple.
 
@@ -279,6 +263,18 @@ library, particularly the `SerialPort` class methods.
 4. Experiment by starting the Java program first, then the Arduino. You can do this by downloading the Arduino program, running it and testing via the Serial Monitor, closing the Serial Monitor, and pulling the plug on the USB cable to the Arduino.  Start up the Java program, then plug in the Arduino, which will cause it to start again (the sketch is retained in memory that is not lost when the power is removed).
 
 After you've tried that, change the startup order.  What happens when?  Why?
+
+<!-- <aside class="sidenote"> -->
+#### Startup debugging
+
+>You can only have one open connection to your Arduino at any given time, be it uploading new code, Serial Monitor, or a custom Java app.  It's important to:
+
+>1. Make sure to close all your Java programs after running them.
+>   1. Click the red square on the side of the Java `Console` to stop the program.
+>   2. Click the `x` next to it to clear that program's output and show any other running programs (if there are)
+>   3. Repeat for all open programs.
+>2. Close Serial Monitor when you are not using it.
+<!-- </aside> -->
 
 
 ### A debugging version
@@ -321,10 +317,8 @@ Repository structure for this lab:
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## Key Concepts
-<aside class="sidenote">
-This is a mental checklist for you to see what the Studio is designed to teach you.
-</aside>
 
+This is a mental checklist for you to see what the Studio is designed to teach you.
 
 - Java program 
 	- Acceptable User Input

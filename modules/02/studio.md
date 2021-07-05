@@ -114,7 +114,7 @@ Here is what your LEDs should do:
 
 2. Get checked out by a TA.
 
-Repository structure for this lab:
+Repository structure for this studio:
 
 - `circuits/`
   - `circuits.ino`
