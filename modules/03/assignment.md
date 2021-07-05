@@ -38,7 +38,7 @@ When you insert the TMP36 in the breadboard the pins will be *facing down*.  If 
 **NOTE**: The temperature sensor *will burn you* if you wire it incorrectly. *Double check your connections before powering the Arduino.*
 <!-- </aside> -->
 
-The output voltage is independent of the supply voltage: it is a linear function of ambient temperature. At 25&deg;C the TMP36 outputs a specific voltage (written in Table 1 on page 3 of the spec sheet) and as the temperature changes  the output voltage changes based on a **scale factor** (mv/&deg;C), $$ \frac{mV}{ ^{\circ} C} $$, also in Table 1 of the spec sheet). You can use a linear equation to find out the temperature in Celsius using the measured voltage and these two values from the table.
+The output voltage is independent of the supply voltage: it is a linear function of ambient temperature. At 25&deg;C the TMP36 outputs a specific voltage (written in Table 1 on page 3 of the spec sheet) and as the temperature changes  the output voltage changes based on a **scale factor** (mv/&deg;C), also in Table 1 of the spec sheet). You can use a linear equation to find out the temperature in Celsius using the measured voltage and these two values from the table.
 
 For example, the table also provides data for another sensor, the *TMP35*.  For the *TMP35*, the temperature in Celsius is:
 
@@ -57,9 +57,9 @@ where *T<sub>C</sub>* is temperature in &deg;C and *V<sub>measured</sub>* is the
 
 In order to read the temperature output by our sensor, you need to read the voltage into your Arduino.  You have experience with `analogRead()` from an earlier assignment. Now you will use `analogRead()` to read a voltage from the temperature sensor.
 
-An `analogRead()` returns a number between `0` and `1023` that corresponds to a voltage. Usually, the `1023` corresponded to $$ 5V $$. It turns out that this "upper limit voltage" can be changed. This **reference voltage**, on our Arduinos at least, can be one of two values: $$ 5V $$ or $$ 1.1V $$.
+An `analogRead()` returns a number between `0` and `1023` that corresponds to a voltage. Usually, the `1023` corresponded to 5V. It turns out that this "upper limit voltage" can be changed. This **reference voltage**, on our Arduinos at least, can be one of two values: 5V or 1.1V.
 
-It's more appropriate to use $$ 1.1V $$ for the TMP36. Using the equation for the TMP36, $$ 1.1V $$ corresponds to $$ 60 ^{\circ} C $$ (use this to verify your derivation of the equation from above).   $$ 60 ^{\circ} C $$  is well above the temperature of Wash U's classrooms. More importantly, using the lower reference voltage gives us more resolution, which means it will give us a more accurate temperature, so it makes sense to use a lower reference voltage.  That is, when we use the $$ 5V $$ reference: $$ \frac{5V}{1023counts} \approx .005 \frac{V}{count} $$ whereas with the $$ 1.1V $$ reference: $$ \frac{1.1V}{1023counts} \approx .001 \frac{V}{count} $$. So the $$ 1.1V $$ reference allows us to measure changes of about $$ .001V $$.  The one downside of the higher resolution is the inability to measure values greater than $$ 1.1V $$, but we don't expect our sensor to measure temperatures that hot for this application (i.e., hotter than $$ 60 ^{\circ}C $$, which is $$140 ^{\circ}F $$; the crickets probably aren't accurate at those temperatures either).
+It's more appropriate to use 1.1V for the TMP36. Using the equation for the TMP36, 1.1V corresponds to 60&deg;C (use this to verify your derivation of the equation from above).   60&deg;C is well above the temperature of Wash U's classrooms. More importantly, using the lower reference voltage gives us more resolution, which means it will give us a more accurate temperature, so it makes sense to use a lower reference voltage.  That is, when we use the 5V reference: $$ \frac{5V}{1023counts} \approx .005 \frac{V}{count} $$ whereas with the 1.1V reference: $$ \frac{1.1V}{1023counts} \approx .001 \frac{V}{count} $$. So the 1.1V reference allows us to measure changes of about 0.001V.  The one downside of the higher resolution is the inability to measure values greater than 1.1V, but we don't expect our sensor to measure temperatures that hot for this application (i.e., hotter than 60&deg;C, which is 140&deg;F; the crickets probably aren't accurate at those temperatures either).
 
 Generally this reference should be configured in the `setup()`.  You can use `analogReference()` to [change the reference voltage to `INTERNAL`](https://www.arduino.cc/en/Reference/AnalogReference).
 
@@ -71,12 +71,12 @@ The output from your temperature sensor fluctuates due to a variety of factors (
 
 One option is to build physical hardware to filter: the [RC filter](http://www.electronics-tutorials.ws/filter/filter_2.html) is one such filter, and would do fairly nicely if this were an electrical engineering class. But we want to handle this in software, so we will use a very simple, [OK](http://www.analog.com/media/en/technical-documentation/dsp-book/dsp_book_Ch15.pdf) filter: a **rolling average**.
 
-A rolling average filter determines the filtered value from the arithmetic mean of the $$ N $$ most recent measured values. In mathematical speak:
+A rolling average filter determines the filtered value from the arithmetic mean of the *N* most recent measured values. In mathematical speak:
 
 $$ y_t = \frac{1}{N} \sum\limits_{j=0}^{N-1} x_{t-j} $$
 
-Where $$ y_t $$ is the filtered value at time $$ t $$ and $$ x_t $$ is the measured value at time $$ t $$.  
-It's only possible to compute the rolling average if you store the $$ N $$ most recent data points, and the easiest way to do this is with an **array**.
+Where *y<sub>t</sub>* is the filtered value at time *t* and *x<sub>t</sub>* is the measured value at time *t*.  
+It's only possible to compute the rolling average if you store the *N* most recent data points, and the easiest way to do this is with an **array**.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
@@ -94,7 +94,7 @@ Use the existing `cricket/cricket.ino` sketch for your work.
 
 3. Write delta time code to read the temperature at 4 Hz (do a `analogRead()` 4 times a second). Test your work so far by using `Serial.print()` to display the value from `analogRead()`.
 
-4. Set `analogReference()` to `INTERNAL`. This will change what each value of `analogRead()` corresponds to (`1023` will now correspond to $$ 1.1V $$, not $$ 5V $$), which will be important when you convert the data.
+4. Set `analogReference()` to `INTERNAL`. This will change what each value of `analogRead()` corresponds to (`1023` will now correspond to 1.1V, not 5V), which will be important when you convert the data.
 
 5. Convert the raw `analogRead()` value into a temperature. Mathematically this is a two step procedure, first converting the raw value into a voltage (i.e., understanding what voltage the temperature probe is generating given the A/D counts returned from `analogRead()`), then into a temperature based on the equation you derived earlier using the [spec sheet for the TMP36](http://www.analog.com/media/en/technical-documentation/data-sheets/TMP35_36_37.pdf). 
 
@@ -165,7 +165,7 @@ Now you can use the filtered temperature to make a blinking cricket.
 
 	$$ T_C = 10 + \left(\frac{N_{60} - 40}{7}\right)$$
 	
-	where $$ T_C $$ is the temperature in Celsius and $$ N_{60} $$ is the number of chirps in a minute.
+	where *T<sub>C</sub>* is the temperature in Celsius and *N<sub>60</sub>* is the number of chirps in a minute.
 	
 	You can solve this in terms of chirps *per second*. By inverting it (1 / chirps per second) you get a period, *seconds per chirp*. If you convert this number into milliseconds per chirp, you can use this as the duration of a delta time iteration to flash your LED.
 	
