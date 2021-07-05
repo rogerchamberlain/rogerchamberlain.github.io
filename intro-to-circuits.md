@@ -77,17 +77,17 @@ The bad news: unlike "normal" potential energy, the amount of electric potential
 
 This difference should not change your mental model too much. Any charged object in an electric field will move to an area of low electric potential, it will just happen faster for higher-charged objects. So aside from that caveat, it makes sense to conceive of this pseudo-potential energy as a normal potential energy.
 
-![Balls rolling on a hill demonstrate potential energy as it relates to gravity]({{ "/images/hills.png" | relative_url }}){:width="50%"}
+![Balls rolling on a hill demonstrate potential energy as it relates to gravity]({{ "/images/hills.png" | relative_url }}){:width="75%"}
 
 ### Voltage, schmoltage
 
 But even after all this work, we know from classical physics that any potential energy, even compensated for charge, is a strictly *relative* measure. A potential energy must be relative to some reference point since it literally measures the energy that would *potentially* be released as an object moves from it's current location to that reference point.
 
-![No reference point means it's impossible to measure potential.]({{ "/images/hills-and-potentials.png" | relative_url }}){:width="50%"}
+![No reference point means it's impossible to measure potential.]({{ "/images/hills-and-potentials.png" | relative_url }}){:width="75%"}
 
 The useful measurement for any potiential energy, then, is a measurement *between two points.* In the case of electrical potential, we call that a **voltage**, or $ΔV$---"delta v" ("$Δ$" means "change" in most fields of mathematics, so "change in volts"). Usually we describe it as "voltage *across* something"‚ like across a wire, a circuit, or a lightbulb.
 
-![By choosing a reference point, we can measure potential from that reference.]({{ "/images/hills-and-voltages.png" | relative_url }}){:width="50%"}
+![By choosing a reference point, we can measure potential from that reference.]({{ "/images/hills-and-voltages.png" | relative_url }}){:width="75%"}
 
 Measuring voltage requires measuring the difference between two points, and obviously voltage will vary based on where you measure it.
 
@@ -169,7 +169,7 @@ Because engineers don't like drawing realistically, we have the **circuit diagra
 
 The paperclip-battery circuit looks something like this:
 
-![A diagram of the simplest possible circuit, just a simple battery and wire.]({{ "/images/simplestcircuit.png" | relative_url }})
+![A diagram of the simplest possible circuit, just a simple battery and wire.]({{ "/images/simplestcircuit.png" | relative_url }}){:width="75%"}
 
 The main symbol in this circuit is the battery, attached to the thin wire. Actually, it's two symbols: one symbol for a positive terminal and one for the negative terminal. Sometimes they're grouped together to denote a power cell, or doubled to mean a battery (a **battery** is defined as a stack of **power cells**). In computer circuit diagrams, we generally keep high and low separate, even if they connect to the same battery or Arduino. It keeps the drawing simpler.
 
@@ -187,7 +187,7 @@ In general, if you want to hook something up to a circuit, there's a symbol for 
 
 Thus, if we plop a resistor on our simplest circuit, we get the simplest sensible circuit:
 
-![The simplest sensible circuit includes a resistor so that it does not overheat.]({{ "/images/simplestsensiblecircuit.png" | relative_url }})
+![The simplest sensible circuit includes a resistor so that it does not overheat.]({{ "/images/simplestsensiblecircuit.png" | relative_url }}){:width="75%"}
 
 <!-- <aside class="sidenote"> -->
 >#### Reading a resistor
@@ -223,7 +223,7 @@ Looking up how to work with new components (like potentiometers, switches, capac
 
 These traits are shared among all **diodes**---LED stands for "Light Emitting Diode." Diodes prevent current flowing in one direction and let it through unimpeeded in the other. Take care not to explode your LEDs: place resistors on their circuits (different colors have different optimum resistances; read their spec sheets).
 
-![An LED circuit includes a resistor as well. The LED symbol has arrows around it indicating that it emits light.]({{ "/images/ledcircuit.png" | relative_url }})
+![An LED circuit includes a resistor as well. The LED symbol has arrows around it indicating that it emits light.]({{ "/images/ledcircuit.png" | relative_url }}){:width="75%"}
 
 You want to attach the long end (the **anode**) closer to the positive side of your battery and the short end (the **cathode**)
 
