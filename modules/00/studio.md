@@ -86,15 +86,15 @@ Onward!
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
-## Setting up Arduino
+>## Setting up Arduino
 
-<aside class="warning">
-To use your own laptop for development, you\'ll find the Arduino IDE [on the official site](https://www.arduino.cc/en/Main/Software), for Windows, Linux, and Mac.  Don\'t use the web editor, install the latest IDE (currently 1.8.10) on your machine.
+<!-- <aside class="warning"> -->
+>To use your own laptop for development, you\'ll find the Arduino IDE [on the official site](https://www.arduino.cc/en/Main/Software), for Windows, Linux, and Mac.  Don\'t use the web editor, install the latest IDE (currently 1.8.10) on your machine.
 
-[//]: If you have *any* trouble with the installation process, finish the studio exercises using one of your group\'s computers, and *then* ask for help with the installation.
+>If you have *any* trouble with the installation process, finish the studio exercises using one of your group\'s computers, and *then* ask for help with the installation.
 
-[//]: Do the studio today. Install the software later.
-</aside>
+>Do the studio today. Install the software later.
+<!-- </aside> -->
 
 ### Getting ready
 
@@ -123,15 +123,15 @@ In Eclipse nagivate to the studios.studio0 helloworld.ino file. If the icon show
 The `helloworld.ino` file is a complete Arduino program. Compiling and uploading it should help you learn the Arduino interface.
 
 <!-- <aside class="sidenote"> -->
-#### Problems uploading?
+>#### Problems uploading?
 
-Considering that you are compiling a program from C, using an old USB driver designed by one company to communicate with a board designed by another company running code designed by a third, it\'s surprising that Arduino upload works as often as it does.
+>Considering that you are compiling a program from C, using an old USB driver designed by one company to communicate with a board designed by another company running code designed by a third, it\'s surprising that Arduino upload works as often as it does.
 
-But stuff goes wrong. A lot. Here\'s how to troubleshoot your upload.
+>But stuff goes wrong. A lot. Here\'s how to troubleshoot your upload.
 
-- **Is your code free of syntax errors?** Make sure that your code is correct (**Verify** it and make sure the status is `Done compiling.`)
-- **Are you writing to the correct port?** Look under `Tools>Port>` and select a different one. On Windows it will be something like `COM3`. On Mac, it will be something like `/dev/cu.usbmodem1492`. There\'s no good way to find the correct one aside from guess-and-check.
-- **Restart the Arduino IDE and plug everything in again**. It works a lot of the time.
+>- **Is your code free of syntax errors?** Make sure that your code is correct (**Verify** it and make sure the status is `Done compiling.`)
+>- **Are you writing to the correct port?** Look under `Tools>Port>` and select a different one. On Windows it will be something like `COM3`. On Mac, it will be something like `/dev/cu.usbmodem1492`. There\'s no good way to find the correct one aside from guess-and-check.
+>- **Restart the Arduino IDE and plug everything in again**. It works a lot of the time.
 <!-- </aside> -->
 
 ![An annotated screenshot of the Arduino IDE](arduino.png)
@@ -234,9 +234,9 @@ Repository structure for this lab:
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## Key Concepts
-<aside class="sidenote">
+<!-- <aside class="sidenote"> -->
 This is a mental checklist for you to see what the Studio is designed to teach you.
-</aside>
+<!-- </aside> -->
 
 
 - Arduino 

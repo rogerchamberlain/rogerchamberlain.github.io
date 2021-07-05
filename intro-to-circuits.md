@@ -128,7 +128,7 @@ Ignoring other energy expenditures and assuming they are otherwise identical, bo
 It makes sense, then, that potential energy is depenent on current *and* resistance.
 
 <!-- <aside class="sidenote"> -->
-#### Implications of Ohm's law
+>#### Implications of Ohm's law
 
 >It's almost impossible to complete grade school in the United States without hearing about **parallel** and **series** circuits and finding them confusing. It's a shame because they are fairly easy to understand intuitively.
 
@@ -168,7 +168,7 @@ Since we think of the negative terminal as the end of this charge flow, we measu
 Because engineers don't like drawing realistically, we have the **circuit diagram** to depict circuits.
 
 <!-- <aside class="sidenote"> -->
-#### Odds & ends
+>#### Odds & ends
 
 >Circuit diagrams use straight lines for wires. Because wiring can get pretty intense, overlapping wires *don't* connect unless there's a dot drawn over them or it's T-intersection.
 <!-- </aside> -->
@@ -181,24 +181,23 @@ The main symbol in this circuit is the battery, attached to the thin wire. Actua
 
 ### Adding resistors
 
-<aside class="sidenote">
-#### Reading a resistor
-{:.no_toc}
+<!-- <aside class="sidenote"> -->
+>#### Reading a resistor
 
-Resistors have fixed resistances that you can determine by reading the colored bands printed on them. These are codes that label the resistance.
+>Resistors have fixed resistances that you can determine by reading the colored bands printed on them. These are codes that label the resistance.
 
-The bands follow a specific order:
+>The bands follow a specific order:
 
-- Between 2 and 3 **digit** bands
-- A **multiplier** band
-- A **tolerance** band
+>- Between 2 and 3 **digit** bands
+>- A **multiplier** band
+>- A **tolerance** band
 
-To get the resistance, concatenate the **digits** (`2` and `3` would give `23`) and multiply by the **multiplier** (perhaps `1K`). The resistor resists within a **tolerance** of that number.
+>To get the resistance, concatenate the **digits** (`2` and `3` would give `23`) and multiply by the **multiplier** (perhaps `1K`). The resistor resists within a **tolerance** of that number.
 
-There are two questions then: what numbers do the colors represent, and what direction do I read in? I'm not going to bore you with a list of colors and numbers when you can just google it, but I will say that orientation is generally easy: the **tolerance** and **multiplier** have two colors that the digits don't use (silver and gold). These are the most common tolerances. Also, the tolerance is usually physically separated from the other bands, placed at a different edge of the resistor.
+>There are two questions then: what numbers do the colors represent, and what direction do I read in? I'm not going to bore you with a list of colors and numbers when you can just google it, but I will say that orientation is generally easy: the **tolerance** and **multiplier** have two colors that the digits don't use (silver and gold). These are the most common tolerances. Also, the tolerance is usually physically separated from the other bands, placed at a different edge of the resistor.
 
-For a step-by-step visual presentation of reading resistor values, see wikiHow's [How to Identify Resistors](http://www.wikihow.com/Identify-Resistors).  Another visual depection of how to match color bands to numbers is available from either DigiKey's [Resistor Color Chart](http://www.digikey.com/-/media/Images/Marketing/Resources/Calculators/resistor-color-chart.jpg) or the chart printed on the pack of resistors that came in your Arduino kit.
-</aside>
+>For a step-by-step visual presentation of reading resistor values, see wikiHow's [How to Identify Resistors](http://www.wikihow.com/Identify-Resistors).  Another visual depection of how to match color bands to numbers is available from either DigiKey's [Resistor Color Chart](http://www.digikey.com/-/media/Images/Marketing/Resources/Calculators/resistor-color-chart.jpg) or the chart printed on the pack of resistors that came in your Arduino kit.
+<!-- </aside> -->
 
 This paperclip circuit is an example of poor decision making. The simplest *sensible* circuit, i.e. the simplest circuit I *recommend* building, includes another component: a **resistor**.
 
