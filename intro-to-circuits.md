@@ -85,7 +85,7 @@ But even after all this work, we know from classical physics that any potential 
 
 ![No reference point means it's impossible to measure potential.]({{ "/images/hills-and-potentials.png" | relative_url }}){:width="65%"}
 
-The useful measurement for any potiential energy, then, is a measurement *between two points.* In the case of electrical potential, we call that a **voltage**, or &Delta;v---"delta v" ("&Delta" means "change" in most fields of mathematics, so "change in volts"). Usually we describe it as "voltage *across* something"‚ like across a wire, a circuit, or a lightbulb.
+The useful measurement for any potiential energy, then, is a measurement *between two points.* In the case of electrical potential, we call that a **voltage**, or &Delta;v---"delta v" ("&Delta;" means "change" in most fields of mathematics, so "change in volts"). Usually we describe it as "voltage *across* something"‚ like across a component, a circuit, or a lightbulb.
 
 ![By choosing a reference point, we can measure potential from that reference.]({{ "/images/hills-and-voltages.png" | relative_url }}){:width="65%"}
 
