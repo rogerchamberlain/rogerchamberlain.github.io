@@ -167,19 +167,27 @@ Since we think of the negative terminal as the end of this charge flow, we measu
 
 Because engineers don't like drawing realistically, we have the **circuit diagram** to depict circuits.
 
-<!-- <aside class="sidenote"> -->
->#### Odds & ends
-
->Circuit diagrams use straight lines for wires. Because wiring can get pretty intense, overlapping wires *don't* connect unless there's a dot drawn over them or it's T-intersection.
-<!-- </aside> -->
-
 The paperclip-battery circuit looks something like this:
 
 ![A diagram of the simplest possible circuit, just a simple battery and wire.]({{ "/images/simplestcircuit.png" | relative_url }})
 
 The main symbol in this circuit is the battery, attached to the thin wire. Actually, it's two symbols: one symbol for a positive terminal and one for the negative terminal. Sometimes they're grouped together to denote a power cell, or doubled to mean a battery (a **battery** is defined as a stack of **power cells**). In computer circuit diagrams, we generally keep high and low separate, even if they connect to the same battery or Arduino. It keeps the drawing simpler.
 
+<!-- <aside class="sidenote"> -->
+>#### Odds & ends
+
+>Circuit diagrams use straight lines for wires. Because wiring can get pretty intense, overlapping wires *don't* connect unless there's a dot drawn over them or it's T-intersection.
+<!-- </aside> -->
+
 ### Adding resistors
+
+This paperclip circuit is an example of poor decision making. The simplest *sensible* circuit, i.e. the simplest circuit I *recommend* building, includes another component: a **resistor**.
+
+In general, if you want to hook something up to a circuit, there's a symbol for it. However, if you don't know the symbol, or if one doesn't exist, you can just draw a resistor. Try to label any resistors you diagram if they signify something other than a resistor. 
+
+Thus, if we plop a resistor on our simplest circuit, we get the simplest sensible circuit:
+
+![The simplest sensible circuit includes a resistor so that it does not overheat.]({{ "/images/simplestsensiblecircuit.png" | relative_url }})
 
 <!-- <aside class="sidenote"> -->
 >#### Reading a resistor
@@ -198,14 +206,6 @@ The main symbol in this circuit is the battery, attached to the thin wire. Actua
 
 >For a step-by-step visual presentation of reading resistor values, see wikiHow's [How to Identify Resistors](http://www.wikihow.com/Identify-Resistors).  Another visual depection of how to match color bands to numbers is available from either DigiKey's [Resistor Color Chart](http://www.digikey.com/-/media/Images/Marketing/Resources/Calculators/resistor-color-chart.jpg) or the chart printed on the pack of resistors that came in your Arduino kit.
 <!-- </aside> -->
-
-This paperclip circuit is an example of poor decision making. The simplest *sensible* circuit, i.e. the simplest circuit I *recommend* building, includes another component: a **resistor**.
-
-In general, if you want to hook something up to a circuit, there's a symbol for it. However, if you don't know the symbol, or if one doesn't exist, you can just draw a resistor. Try to label any resistors you diagram if they signify something other than a resistor. 
-
-Thus, if we plop a resistor on our simplest circuit, we get the simplest sensible circuit:
-
-![The simplest sensible circuit includes a resistor so that it does not overheat.]({{ "/images/simplestsensiblecircuit.png" | relative_url }})
 
 ![========](images/line.gif)
 

@@ -242,9 +242,7 @@ Go through **Key Concepts** in your head to make sure you have all that you need
 
 ## Key Concepts
 
-<aside class="sidenote">
 This is a checklist for you to see what the Studio is designed to teach you.
-</aside>
 
 - Binary, Hexadecimal, and other Bases 
 - Bitwise Operations

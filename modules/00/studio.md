@@ -88,14 +88,6 @@ Onward!
 
 >## Setting up Arduino
 
-<!-- <aside class="warning"> -->
->To use your own laptop for development, you\'ll find the Arduino IDE [on the official site](https://www.arduino.cc/en/Main/Software), for Windows, Linux, and Mac.  Don\'t use the web editor, install the latest IDE (currently 1.8.10) on your machine.
-
->If you have *any* trouble with the installation process, finish the studio exercises using one of your group\'s computers, and *then* ask for help with the installation.
-
->Do the studio today. Install the software later.
-<!-- </aside> -->
-
 ### Getting ready
 
 First, you need to check out your repository so that you can commit the changes you make today. You may also need to tweak Arduino\'s preferences to make it easier to use.
@@ -114,6 +106,14 @@ In CSE132 this semester, we will be using Git as our version control system.
 We have made a [git Tutorial]({{ "/setup-git.html" | relative_url }}) to get your workspace set up and running.
 
 Make a note of the `Local Destination` directory, as it will be needed later.
+
+<!-- <aside class="warning"> -->
+>To use your own laptop for development, you\'ll find the Arduino IDE [on the official site](https://www.arduino.cc/en/Main/Software), for Windows, Linux, and Mac.  Don\'t use the web editor, install the latest IDE (currently 1.8.10) on your machine.
+
+>If you have *any* trouble with the installation process, finish the studio exercises using one of your group\'s computers, and *then* ask for help with the installation.
+
+>Do the studio today. Install the software later.
+<!-- </aside> -->
 
 ### Running a program
 
@@ -234,9 +234,8 @@ Repository structure for this lab:
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## Key Concepts
-<!-- <aside class="sidenote"> -->
+
 This is a mental checklist for you to see what the Studio is designed to teach you.
-<!-- </aside> -->
 
 
 - Arduino 

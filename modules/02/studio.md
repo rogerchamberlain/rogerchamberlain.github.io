@@ -116,15 +116,12 @@ Here is what your LEDs should do:
 
 Repository structure for this lab:
 
-<!-- <section class="tree"> -->
 - `circuits/`
   - `circuits.ino`
-<!-- </section> -->
 
 ## Key Concepts
-<aside class="sidenote">
+
 This is a mental checklist for you to see what the Studio is designed to teach you.
-</aside>
 
 - **Circuits**
 	- Currents

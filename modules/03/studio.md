@@ -45,12 +45,12 @@ A traditional three color (Red, Yellow, Green) traffic light will control traffi
  
 Wire up the intersection by hooking up 5 LEDs to your Arduino: one traffic lights (red, yellow, and green LEDs), and one pedestrian "WALK" indicator ("WALK" and "DONT WALK" LEDs, any color). If you wish, it is fine to use your RGB LED as the "WALK"/"DONT WALK" indicator, but it should use two different colors. 
 
-<aside class="warning">	
-NOTE:
-Your first inclination might be to start at pin 0, then work up from there as you add pins. This will not work.
-Pins 0 and 1 are `RX` and `TX` pins: they are connected to the same parts of your Arduino that handle receiving and transmitting data from the computer. The upshot of this? If you attach a circuit to these pins, uploading probably won't work.
-As a result, the convention in Arduino is to wire starting at pin 13 and work down.
-</aside>
+<!-- <aside class="warning">	 -->
+>**NOTE:**
+>Your first inclination might be to start at pin 0, then work up from there as you add pins. This will not work.
+>Pins 0 and 1 are `RX` and `TX` pins: they are connected to the same parts of your Arduino that handle receiving and transmitting data from the computer. The upshot of this? If you attach a circuit to these pins, uploading probably won't work.
+>As a result, the convention in Arduino is to wire starting at pin 13 and work down.
+<!-- </aside> -->
 
 Attach each discrete LED to a digital pin, making sure that each's path to ground has a series resistor as indicated in the diagram below:
 
@@ -190,11 +190,9 @@ Note that:
 
 Changes to repo structure:
 
-<!-- <section class="tree"> -->
 - `stoplight/`
    - `stoplight.ino`
 - `LEDtest/`
    - `LEDtest.ino`
-<!-- </section> -->
 
 {% include footer.html %}
