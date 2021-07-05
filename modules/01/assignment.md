@@ -11,7 +11,7 @@ author: Sean Schaffer, Claire Heuckeroth, Ben Stolovitz and Shuya Ma
 
 ## Access your repository
 
-Click [here]({{ "/tbd.html" | relative_url }}) to access the Canvas page with the repository for this assignment.
+Click [here](https://wustl.instructure.com/courses/68860/assignments/289416) to access the Canvas page with the repository for this assignment.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 

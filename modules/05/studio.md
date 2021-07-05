@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Module 5 - Digital Inputs and More Practice with Delta Timing
+title: Studio 5 - Digital Inputs and More Practice with Delta Timing
 author: Ben Stolovitz and Shuya Ma; Revisions by Bill Siever, Roger Chamberlain, James Orr
 ---
 {% include nav.html %}
@@ -76,11 +76,10 @@ The full, two-way stop light with a crossing should work something like this (Ag
 ## Finish up
 
 1. Commit your code and verify in your web browser that it is all there.
-2. Get checked out. You don't need a TA for this, instead each member of the group should separately take the [quiz](https://wustl.instructure.com/courses/66699/quizzes/59570) (also available through Canvas).
+2. Get checked out by a TA.
 
 Things that should be present in your repo structure:
 
-<!-- <section class="tree"> -->
 - `debounce/`
   - `debounce.ino`
 - `mirror/`
@@ -88,8 +87,7 @@ Things that should be present in your repo structure:
 - `stoplight/`
   - `stoplight.ino`
 
-<!-- </section> -->
-
+![========]({{ "/images/line.gif" | relative_url }})
 
 ## Key Concepts
 - Delta timing

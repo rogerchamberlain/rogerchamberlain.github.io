@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Module 6 - Streaming Data from Arduino to Java
+title: Studio 6 - Streaming Data from Arduino to Java
 author: Roger Chamberlain
 ---
 {% include nav.html %}
@@ -60,17 +60,14 @@ How well does that work?
 ## Finish up
 
 1. Commit your code and verify in your web browser that it is all there.
-2. Get checked out. You don't need a TA for this, instead each member of the group should separately take the participation [quiz](https://wustl.instructure.com/courses/66699/quizzes/59597) (also available through Canvas).
+2. Get checked out by a TA.
 
 Changes to repo structure:
 
-<!-- <section class="tree"> -->
 - `communication/`
 	- `SerialComm.java`
 - `datatypetest/`
 	- `datatypetest.ino`
-
-<!-- </section> -->
 
 
 ![========]({{ "/images/line.gif" | relative_url }})
