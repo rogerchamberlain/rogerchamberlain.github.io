@@ -7,7 +7,7 @@ author: Roger Chamberlain, Ben Stolovitz, and Evan Simkowitz
 
 # {{ page.title }}
 
-Click [here]({{ "/tbd.html" | relative_url }}) to access the Canvas page with the repository for this assignment.
+Click [here](https://wustl.instructure.com/courses/68860/assignments/289462) to access the Canvas page with the repository for this assignment.
 You will also need to copy your completed `SerialComm.java` file from studio into the `communication` package in order to get this assignment to work.
 
 ![========]({{ "/images/line.gif" | relative_url }})
@@ -137,7 +137,6 @@ In Java, make sure you have finished Studio 8.
 
 Locate and open the `MsgReceiver.java` file in your repository. This is where most of your work will go on the Java side. Import your SerialComm.java into the same directory and copy out its `public static void main(String[] args)` method, as that is now in `MsgReceiver.java`.
 
-<!-- <aside class="sidenote"> -->
 >### Sidebar for all you hackers
 
 >We want to provide two ways of completing this assignment: the guided way in the main writeup, and a more "free-form" way. In this sidebar we just detail what we expect the protocol to do and what your programs should output, but in the main writeup we guide you through the process in more detail. Choose whatever you like.
@@ -157,7 +156,6 @@ Locate and open the `MsgReceiver.java` file in your repository. This is where mo
 >	Have it print a visually distinct error message if an unknown key is used.
 
 >That's the entire lab. If it seems simple, make sure to use a finite state machine on the Java side, as we will probably be extending this later in the semester.
-<!-- </aside> -->
 
 ### And now we return to the main writeup
 

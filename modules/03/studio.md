@@ -11,7 +11,7 @@ author: Ben Stolovitz and Shuya Ma; Revision by Bill Siever
 
 ## Introduction
 
-Click [here]({{ "/tbd.html" | relative_url }}) to access the Canvas page with the repository for this studio.
+Click [here](https://wustl.instructure.com/courses/68860/assignments/289454) to access the Canvas page with the repository for this studio.
 
 In previous studios and assignments you have already explored the `delay()` function. Many applications rely on precise control of timing and strictly relying on `delay()` suffers from a few problems:
 

@@ -7,7 +7,7 @@ author: Ben Stolovitz and Shuya Ma; Updated by Bill Siever and Evan Simkowitz
 
 # {{ page.title }}
 
-Click [here]({{ "/tbd.html" | relative_url }}) to access the Canvas page with the repository for this assignment.
+Click [here](https://wustl.instructure.com/courses/68860/assignments/289459) to access the Canvas page with the repository for this assignment.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
@@ -34,9 +34,7 @@ The TMP36 is fairly simple. When a voltage is provided across the two outer pins
 You must wire the temperature sensor in the correct way or it will get hot. 
 When you insert the TMP36 in the breadboard the pins will be *facing down*.  If *you* are directly facing the *flat side*, the pin on the far left is power, and the pin on the far right is ground. Attach the power pin to +5V and the ground pin to ground.
 
-<!-- <aside class="warning"> -->
 **NOTE**: The temperature sensor *will burn you* if you wire it incorrectly. *Double check your connections before powering the Arduino.*
-<!-- </aside> -->
 
 The output voltage is independent of the supply voltage: it is a linear function of ambient temperature. At 25&deg;C the TMP36 outputs a specific voltage (written in Table 1 on page 3 of the spec sheet) and as the temperature changes  the output voltage changes based on a **scale factor** (mv/&deg;C), also in Table 1 of the spec sheet). You can use a linear equation to find out the temperature in Celsius using the measured voltage and these two values from the table.
 

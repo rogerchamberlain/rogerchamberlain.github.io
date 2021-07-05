@@ -11,7 +11,7 @@ author: Sean Schaffer; Revised by Bill Siever and Doug Shook
 
 ## Introduction
 
-Click [here]({{ "/tbd.html" | relative_url }}) to access the Canvas page with the repository for this studio.
+Click [here](https://wustl.instructure.com/courses/68860/assignments/289455) to access the Canvas page with the repository for this studio.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
@@ -264,7 +264,6 @@ library, particularly the `SerialPort` class methods.
 
 After you've tried that, change the startup order.  What happens when?  Why?
 
-<!-- <aside class="sidenote"> -->
 >#### Startup debugging
 
 >You can only have one open connection to your Arduino at any given time, be it uploading new code, Serial Monitor, or a custom Java app.  It's important to:
@@ -274,7 +273,6 @@ After you've tried that, change the startup order.  What happens when?  Why?
 >   2. Click the `x` next to it to clear that program's output and show any other running programs (if there are)
 >   3. Repeat for all open programs.
 >2. Close Serial Monitor when you are not using it.
-<!-- </aside> -->
 
 
 ### A debugging version

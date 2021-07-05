@@ -7,7 +7,7 @@ author: Ben Stolovitz and Sean Schaffer
 
 # {{ page.title }}
 
-Click [here]({{ "/tbd.html" | relative_url }}) to access the Canvas page with the repository for this studio.
+Click [here](https://wustl.instructure.com/courses/68860/assignments/289453) to access the Canvas page with the repository for this studio.
 
 
 ![========]({{ "/images/line.gif" | relative_url }})

@@ -11,7 +11,7 @@ author: Ben Stolovitz and Shuya Ma; Revisions by Bill Siever, Roger Chamberlain,
 
 ## Introduction
 
-Click [here]({{ "/tbd.html" | relative_url }}) to access the Canvas page with the repository for this studio.
+Click [here](https://wustl.instructure.com/courses/68860/assignments/289456) to access the Canvas page with the repository for this studio.
 
 ### Objectives
 
