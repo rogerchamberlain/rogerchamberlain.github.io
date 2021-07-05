@@ -77,17 +77,17 @@ The bad news: unlike "normal" potential energy, the amount of electric potential
 
 This difference should not change your mental model too much. Any charged object in an electric field will move to an area of low electric potential, it will just happen faster for higher-charged objects. So aside from that caveat, it makes sense to conceive of this pseudo-potential energy as a normal potential energy.
 
-![Balls rolling on a hill demonstrate potential energy as it relates to gravity]({{ "/images/hills.png" | relative_url }}){:width="75%"}
+![Balls rolling on a hill demonstrate potential energy as it relates to gravity]({{ "/images/hills.png" | relative_url }}){:width="65%"}
 
 ### Voltage, schmoltage
 
 But even after all this work, we know from classical physics that any potential energy, even compensated for charge, is a strictly *relative* measure. A potential energy must be relative to some reference point since it literally measures the energy that would *potentially* be released as an object moves from it's current location to that reference point.
 
-![No reference point means it's impossible to measure potential.]({{ "/images/hills-and-potentials.png" | relative_url }}){:width="75%"}
+![No reference point means it's impossible to measure potential.]({{ "/images/hills-and-potentials.png" | relative_url }}){:width="65%"}
 
-The useful measurement for any potiential energy, then, is a measurement *between two points.* In the case of electrical potential, we call that a **voltage**, or $ΔV$---"delta v" ("$Δ$" means "change" in most fields of mathematics, so "change in volts"). Usually we describe it as "voltage *across* something"‚ like across a wire, a circuit, or a lightbulb.
+The useful measurement for any potiential energy, then, is a measurement *between two points.* In the case of electrical potential, we call that a **voltage**, or &Delta;v---"delta v" ("&Delta" means "change" in most fields of mathematics, so "change in volts"). Usually we describe it as "voltage *across* something"‚ like across a wire, a circuit, or a lightbulb.
 
-![By choosing a reference point, we can measure potential from that reference.]({{ "/images/hills-and-voltages.png" | relative_url }}){:width="75%"}
+![By choosing a reference point, we can measure potential from that reference.]({{ "/images/hills-and-voltages.png" | relative_url }}){:width="65%"}
 
 Measuring voltage requires measuring the difference between two points, and obviously voltage will vary based on where you measure it.
 
@@ -101,15 +101,15 @@ Instead of thinking about circuits as basketballs rolling down the hillside, thi
 
 We can also put waterwheels in the pipe that push against the flow of water. These waterwheels and different diameters **resist** the **current** of the stream, fighting its flow of charge. Circuits are not physically flows of water, of course,  but most physical circuit components have some intrinsic resistance that *functions* like a pipe diameter or a hard-to-turn waterwheel. This should be intuitive: components *use* the power of the flow to do other work, like heat up, light a filament, or spin a motor. We call components designed specifically to resist the flow of current **resistors**.
 
-You measure current in amperes, or "amps" for short. The unit symbol is an "$A$"---$45A$ means 45 amps---and you call a given current an "amperage" (so a lightbulb might have an amperage of 12A). You measure resistance in ohms, using an $\Omega$ as the symbol. A motor might then have a resistance of $9 \Omega$.
+You measure current in amperes, or "amps" for short. The unit symbol is an "A"---45A means 45 amps---and you call a given current an "amperage" (so a lightbulb might have an amperage of 12A). You measure resistance in ohms, using an &Omega; as the symbol. A motor might then have a resistance of 9&Omega;.
 
 ### Ohm's law
 
 Both current and resistance relate to voltage via **Ohm's Law**:
 
-$$ V = IR $$
+*V = IR*
 
-where $V$ is voltage, $I$ is current, and $R$ is resistance.
+where *V* is voltage, *I* is current, and *R* is resistance.
 
 This equation should make intuitive sense: the *energy* that will be expended going between two points should depend on *how much* stuff can get through at any one instant and *how hard it is* for the stuff to get through.
 
@@ -155,7 +155,7 @@ It makes sense, then, that potential energy is depenent on current *and* resista
 
 [^nopenope]: Please, please don't do this. If I did this, *I* would die, and I'm writing a guide on how to make circuits. The first step in using plugs in your house for your own circuits is "don't." The second is "learn electricity from a guide who has a degree in it and doesn't teach on the internet."
 
-As soon as there is a connection between those two points, there exists a voltage across that wire. Power sources lift up charge from its low, exhausted state to its high, fresh state. A $5V$ battery gives a circuit 5 volts from its positive end to its negative end. If you take a paperclip and put one end on each tip of a AA battery, the end by the bump would be at high voltage and the end by the flat side would be at low voltage.
+As soon as there is a connection between those two points, there exists a voltage across that wire. Power sources lift up charge from its low, exhausted state to its high, fresh state. A 5V battery gives a circuit 5 volts from its positive end to its negative end. If you take a paperclip and put one end on each tip of a AA battery, the end by the bump would be at high voltage and the end by the flat side would be at low voltage.
 
 By convention, we assume charge flows from positive to negative, high to low---or "ground," as it's called. This happens to be the opposite of what actually happens for electron flows[^generally]---electrons actually flow from negative to positive---but Benjamin Franklin didn't know that when he decided the notation. Since not all current flow is electrons, we decided not to mess with his convention (see footnote).
 
@@ -235,7 +235,7 @@ In this class, we tend to draw them as triangles: if a pin *reads* from the circ
 
 #### Pull-ups
 
-When you begin building circuits to send input to the Arduino, you'll start seeing a pattern in a lot of your circuits. You'll see a $5V$ source, a resistor, and a grounded drain in your circuits. For example, a button might be wired as follows:
+When you begin building circuits to send input to the Arduino, you'll start seeing a pattern in a lot of your circuits. You'll see a 5V source, a resistor, and a grounded drain in your circuits. For example, a button might be wired as follows:
 
 ![A button reading into an Arduino]({{ "/images/buttoncircuit.png" | relative_url }})
 
