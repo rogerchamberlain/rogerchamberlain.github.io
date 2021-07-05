@@ -38,7 +38,7 @@ When you insert the TMP36 in the breadboard the pins will be *facing down*.  If 
 **NOTE**: The temperature sensor *will burn you* if you wire it incorrectly. *Double check your connections before powering the Arduino.*
 <!-- </aside> -->
 
-The output voltage is independent of the supply voltage: it is a linear function of ambient temperature. At $$ 25^{\circ} C $$ the TMP36 outputs a specific voltage (written in Table 1 on page 3 of the spec sheet) and as the temperature changes  the output voltage changes based on a **scale factor** ( $$ \frac{mV}{ ^{\circ} C} $$, also in Table 1 of the spec sheet). You can use a linear equation to find out the temperature in Celsius using the measured voltage and these two values from the table.
+The output voltage is independent of the supply voltage: it is a linear function of ambient temperature. At 25&deg;C $$ 25^{\circ} C $$ the TMP36 outputs a specific voltage (written in Table 1 on page 3 of the spec sheet) and as the temperature changes  the output voltage changes based on a **scale factor** ( $$ \frac{mV}{ ^{\circ} C} $$, also in Table 1 of the spec sheet). You can use a linear equation to find out the temperature in Celsius using the measured voltage and these two values from the table.
 
 For example, the table also provides data for another sensor, the *TMP35*.  For the *TMP35*, the temperature in Celsius is:
 
