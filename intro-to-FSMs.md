@@ -141,7 +141,7 @@ We introduce the **Moore machine**, one type of FSM (you learn about other types
 
 For example, imagine a computer for a traffic light. You might have three different states: red, yellow, or green. You could also have an "advance" input that progresses the traffic light. We can represent this stateful system in a FSM, and it turns out most of the time the standard is to just draw it:
 
-![A very simple traffic light FSM, with three states G, Y, and R.](http://i.imgur.com/UC113L8.jpg)
+![A very simple traffic light FSM, with three states G, Y, and R.](http://i.imgur.com/UC113L8.jpg){ width=50% }
 
 Where each circle is a state -- green, yellow, or red -- and the arrows indicate how the one input changes the systems state. The disconnected arrow indicates the initial state.
 
