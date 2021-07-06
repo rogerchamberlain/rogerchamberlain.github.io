@@ -282,7 +282,7 @@
 
 - title: Prep 10
   module: 10
-  url: /tbd.html
+  url: /modules/10/prep.html
   assigned: Nov 10
   due: Nov 15
 
@@ -294,13 +294,13 @@
 
 - title: Studio 10
   module: 10
-  url: /tbd.html
+  url: /modules/10/studio.html
   assigned: Nov 15
   due: Nov 15
 
 - title: Assignment 10
   module: 10
-  url: /tbd.html
+  url: /modules/10/assignment.html
   assigned: Nov 17
   due: Dec 01
 

@@ -48,7 +48,7 @@ The main concepts are:
 	There were just 5 steps, so 36/7 must be 5.
 	</pre>
 
-	(This, of course, isn't the approach used by "long division" that you learned in school.  Using the Big-O notation covered in CSE247, the approach shown here does *O*(*n*) steps.  Typically computers use a different approach that is quite like "long division" and only does *O*(log<sub>2</sub>*n*) steps, which is much faster.  Consequently we're referring to the approach here as "slow").
+	(This, of course, isn't the approach used by "long division" that you learned in school.  Using the Big-*O* notation covered in CSE 247, the approach shown here does *O*(*n*) steps.  Typically computers use a different approach that is quite like "long division" and only does *O*(log *n*) steps, which is much faster for large enough *n*.  Consequently we're referring to the approach here as "slow").
 
 - Modulus: Modulus is related to division however instead of the quotient, we are looking for the remainder. For this problem, we want you to use the division function you wrote (by calling it from your modulus function), taking the result and performing multiplication (using the `mul` [AVR Instruction](https://onlinedocs.microchip.com/pr/GUID-0B644D8F-67E7-49E6-82C9-1B2B9ABE6A0D-en-US-1/index.html?GUID-C301CF8C-34FD-43A4-BE0F-E705BB9FC85E), NOT the method you wrote in studio), then finally some subtraction to determine the remainder. Note again, that this is not the most efficient way of performing modulus, but it does give you good practice using various AVR instructions.
 
