@@ -40,9 +40,9 @@ The main concepts are:
 
 ## The Assignment
 
-In your repository you will find an `CSE132-assignment13/assignment13Demo` Arduino project. This project contains the prototypes for the functions we are asking you to write as well as code to test your work.
+In your repository you will find an `assignment10Demo` Arduino project. This project contains the prototypes for the functions we are asking you to write as well as code to test your work.
 
-The Assembly language functions may be easier to write if you have already tested the logic using C. There are three C-functions you'll need to complete in `assignment13Demo.ino`:
+The Assembly language functions may be easier to write if you have already tested the logic using C. There are three C-functions you'll need to complete in `assignment10Demo.ino`:
 
 - `uint8_t cStringLengthAlgorithm(const char aString[])`: This function will compute the length a C-style string by using a loop to search for the sentinel value. 
 - `void cSumArrays(uint8_t *a, uint8_t *b, uint8_t *c, byte length)`: This function will add arrays a and b together, placing the result in c.
@@ -62,13 +62,13 @@ There are five functions to complete entirely in assembly language:
 
 Assembly language can be challenging.  The provided files include several test cases to help you with your work.  Here's the approach we suggest:
 
-1. assignment13Demo.ino includes a lot of code to help you with testing.  The `setup()` includes calls to all test cases.
+1. assignment10Demo.ino includes a lot of code to help you with testing.  The `setup()` includes calls to all test cases.
 
-2. Complete the global functions first, and make sure they pass the tests.	You will need to create a global variable in `assignment13.S` before you can use it in your assembly functions.
+2. Complete the global functions first, and make sure they pass the tests.	You will need to create a global variable in `assignment10.S` before you can use it in your assembly functions.
 
 3. For the remaining functions, it is probably best to start with the C-code versions of the functions. This will give you an idea of how to manipulate the pointers accordingly when you go to write the assembly functions.
 
-4. Write and test the assembly language version of finding the length of a string: `cStringLength` in assignment13.S.
+4. Write and test the assembly language version of finding the length of a string: `cStringLength` in `assignment10.S`.
 
 5. Write and test the assembly language version of `sumArrays`. Note that you have three array pointers here: two arrays to be added and one array for the result. You need to be careful with how you manipulate these pointers - make sure you don't lose any of the pointers! Conveniently, there are also 3 addressing registers (X, Y, Z).
 

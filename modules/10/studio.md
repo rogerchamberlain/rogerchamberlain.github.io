@@ -31,7 +31,7 @@ By the end of this studio, you should:
 
 We'll start out by taking a look at how to use global variables.
 
-1. Set up your repository. We have written a bare bones project, `CSE132-studio13/memoryModel`. In it are assembly stubs for three functions. Let's start by looking at increment and decrement.
+1. Set up your repository. We have written a bare bones project, `memoryModel`. In it are assembly stubs for three functions. Let's start by looking at increment and decrement.
 
 2. The goal of increment and decrement is simple: we want to add one or subtract one from a global variable. First, define a global variable in your assembly code. We wish to use a single byte for our counter. This counter should have an initial value of 0.
 
