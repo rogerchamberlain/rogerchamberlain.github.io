@@ -7,14 +7,14 @@ author: Doug Shook
 
 # {{ page.title }}
 
-This week we explore the basics of AVR Assmebly language.
+This week we explore the basics of AVR Assembly language.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## Text
 
 Read Chapters 10 and 11 in the course
-[text]({{ "/files/cc_v0_06.pdf#page=111" | relative_url }}) and Section 1 of this module's [Studio]({{ "/modules/08/studio.html" | relative_url }})) (the actual Studio activities start in section 2).
+[text]({{ "/files/cc_v0_06.pdf#page=111" | relative_url }}) and Section 1 of this module's [Studio]({{ "/modules/08/studio.html" | relative_url }}) (the actual Studio activities start in section 2).
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
