@@ -58,7 +58,7 @@ To keep things as simple as possible all values are *unsigned*.  In C the 8-bit 
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
-## The assignment
+## The Assignment
 
 In your repository you will find an `cse132-assignment12/assignment12Demo` Arduino project. This project contains the prototypes for the functions we are asking you to write as well as code to test your work.
 

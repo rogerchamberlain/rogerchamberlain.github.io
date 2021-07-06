@@ -307,3 +307,5 @@ This is a mental checklist for you to see what the Studio is designed to teach y
 	- Loops
 	- Mimicking Control Structures from C (Ex: if-statements, if-else statements, loops, etc.)
 	
+
+{% include footer.html %}
