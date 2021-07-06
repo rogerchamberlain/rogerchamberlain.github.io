@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Module 7 Prep
+title: Module 6 Prep
 author: Doug Shook and Roger Chamberlain
 ---
 {% include nav.html %}
