@@ -57,7 +57,7 @@ In order to read the temperature output by our sensor, you need to read the volt
 
 An `analogRead()` returns a number between `0` and `1023` that corresponds to a voltage. Usually, the `1023` corresponded to 5V. It turns out that this "upper limit voltage" can be changed. This **reference voltage**, on our Arduinos at least, can be one of two values: 5V or 1.1V.
 
-It's more appropriate to use 1.1V for the TMP36. Using the equation for the TMP36, 1.1V corresponds to 60&deg;C (use this to verify your derivation of the equation from above).   60&deg;C is well above the temperature of Wash U's classrooms. More importantly, using the lower reference voltage gives us more resolution, which means it will give us a more accurate temperature, so it makes sense to use a lower reference voltage.  That is, when we use the 5V reference: $$ \frac{5V}{1023counts} \approx .005 \frac{V}{count} $$ whereas with the 1.1V reference: $$ \frac{1.1V}{1023counts} \approx .001 \frac{V}{count} $$. So the 1.1V reference allows us to measure changes of about 0.001V.  The one downside of the higher resolution is the inability to measure values greater than 1.1V, but we don't expect our sensor to measure temperatures that hot for this application (i.e., hotter than 60&deg;C, which is 140&deg;F; the crickets probably aren't accurate at those temperatures either).
+It's more appropriate to use 1.1V for the TMP36. Using the equation for the TMP36, 1.1V corresponds to 60&deg;C (use this to verify your derivation of the equation from above).   60&deg;C is well above the temperature of Wash U's classrooms. More importantly, using the lower reference voltage gives us more resolution, which means it will give us a more accurate temperature, so it makes sense to use a lower reference voltage.  That is, when we use the 5V reference: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\frac{5V}{1023counts}&space;\approx&space;.005&space;\frac{V}{count}" title="\frac{5V}{1023counts} \approx .005 \frac{V}{count}" /> whereas with the 1.1V reference: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\frac{1.1V}{1023counts}&space;\approx&space;.001&space;\frac{V}{count}" title="\frac{1.1V}{1023counts} \approx .001 \frac{V}{count}" />. So the 1.1V reference allows us to measure changes of about 0.001V.  The one downside of the higher resolution is the inability to measure values greater than 1.1V, but we don't expect our sensor to measure temperatures that hot for this application (i.e., hotter than 60&deg;C, which is 140&deg;F; the crickets probably aren't accurate at those temperatures either).
 
 Generally this reference should be configured in the `setup()`.  You can use `analogReference()` to [change the reference voltage to `INTERNAL`](https://www.arduino.cc/en/Reference/AnalogReference).
 
@@ -71,7 +71,7 @@ One option is to build physical hardware to filter: the [RC filter](http://www.e
 
 A rolling average filter determines the filtered value from the arithmetic mean of the *N* most recent measured values. In mathematical speak:
 
-$$ y_t = \frac{1}{N} \sum\limits_{j=0}^{N-1} x_{t-j} $$
+<img src="https://latex.codecogs.com/svg.latex?y_t&space;=&space;\frac{1}{N}&space;\sum\limits_{j=0}^{N-1}&space;x_{t-j}" title="y_t = \frac{1}{N} \sum\limits_{j=0}^{N-1} x_{t-j}" />
 
 Where *y<sub>t</sub>* is the filtered value at time *t* and *x<sub>t</sub>* is the measured value at time *t*.  
 It's only possible to compute the rolling average if you store the *N* most recent data points, and the easiest way to do this is with an **array**.
@@ -161,7 +161,7 @@ Now you can use the filtered temperature to make a blinking cricket.
 
 1. [Dolbear's Law](https://en.wikipedia.org/wiki/Dolbear%27s_law) is a formula to calculate the temperature from the amount of cricket chirps in 60 seconds:
 
-	$$ T_C = 10 + \left(\frac{N_{60} - 40}{7}\right)$$
+	<img src="https://latex.codecogs.com/svg.latex?T_C&space;=&space;10&space;&plus;&space;\left(\frac{N_{60}&space;-&space;40}{7}\right)" title="T_C = 10 + \left(\frac{N_{60} - 40}{7}\right)" />
 	
 	where *T<sub>C</sub>* is the temperature in Celsius and *N*<sub>60</sub> is the number of chirps in a minute.
 	
