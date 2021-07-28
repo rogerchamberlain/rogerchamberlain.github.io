@@ -124,6 +124,8 @@ Assembly language can be challenging.  The provided files include several test c
 
 2. If you call another function from within the function you are writing, keep in mind that the two functions may use the same registers. Be careful not to overwrite data you may need later. Convention is to save all *call-used* registers before calling another function. This can be done using the `push` and `pop` instructions.
 
+3. Pay attention to which test cases are failing. For example, does `sumOddsUInt8` only fail when the minimum value is even? Think about the actual binary of the bytes stored in each register; it can help guide you to a solution.
+
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## A Word on Multiplication
