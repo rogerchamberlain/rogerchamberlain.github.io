@@ -122,7 +122,7 @@ Assembly language can be challenging.  The provided files include several test c
 
 1. If you do not get the message `Done with tests!!!` at the end of your testing functions, you did not successfully finish all tests. You are probably caught in an infinite loop somewhere...
 
-2. If you call another function from within the function you are writing, keep in mind that the two functions may use the same registers. Be careful not to overwrite data you may need later. Convention is to save all *call-saved* registers before calling another function. This can be done using the `push` and `pop` instructions.
+2. If you call another function from within the function you are writing, keep in mind that the two functions may use the same registers. Be careful not to overwrite data you may need later. Convention is to save all *call-used* registers before calling another function. This can be done using the `push` and `pop` instructions.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
