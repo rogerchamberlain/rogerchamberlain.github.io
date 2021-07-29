@@ -19,7 +19,8 @@ This is a pretty complex question, and there are many other topics needed to giv
 Here are some resources:
 
 - Our [Introduction to Circuits]({{ "/intro-to-circuits.html" | relative_url }}) guide is packed with information. 
-- [SparkFun's](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) guide is also really good, and has some great pictures and gifs for the more visual learners.
+- SparkFun's [guide](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) is also really good, and has some great pictures and gifs for the more visual learners.
+- SparkFun also has a [tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard) on breadboards, if you are not already familiar with them.
 
 ### What you need to know for this class
 

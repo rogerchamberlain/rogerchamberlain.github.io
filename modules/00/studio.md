@@ -27,7 +27,7 @@ The Arduino is a (very) small computer that has dramatically fewer capabilities 
 
 ### Assembling the Arduino Board
 
-You will need to assemble your the main components of your Arduino kit. The tutorial from Sparkfun (the supplier of the hardware) is [here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/baseplate-assembly), or you can follow the description below. Either gets you to the same place.
+You will need to assemble your the main components of your Arduino kit. The tutorial from SparkFun (the supplier of the hardware) is [here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/baseplate-assembly), or you can follow the description below. Either gets you to the same place.
 
 The Arduino RedBoard:
 
