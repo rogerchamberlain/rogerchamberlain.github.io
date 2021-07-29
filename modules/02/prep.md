@@ -25,6 +25,7 @@ The Arduino is capable of a lot of things, but it can't do everything. To fill i
 | Video | Description |
 |:-----:|:-----------:|
 |[Voltage, Current, Resistance, and Ohm's Law](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) | Read through this tutorial from SparkFun to learn about essential concepts for understanding circuits. |
+|[Breadboards](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard) | This SparkFun tutorial describes how to use a breakboard. |
 |[Resistors](https://learn.sparkfun.com/tutorials/resistors) | This SparkFun tutorial covers a very important component: the resistor. |
 |[LEDs](https://learn.sparkfun.com/tutorials/light-emitting-diodes-leds) | In this tutorial from SparkFun, you'll learn about LEDs. |
 |[How to: Wire an LED](https://wustl.box.com/s/9b9s7a2veefp0o26m2h7csj7vdwjes11) | In this video, Professor Siever shows you how to wire up and control an LED using the Arduino. |

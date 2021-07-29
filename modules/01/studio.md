@@ -63,14 +63,14 @@ The subscript on a number indicates its current base. If no base is given, *assu
 4. Hex uses the letters `A` through `F` to go up to base 16. What is the highest base we can represent if we use all the letters of the alphabet?
 
 
-[//]: *If possible, have a TA check your answers before moving on*
+*If possible, have a TA check your answers before moving on*
 
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## Bits of Arduino
 
-Both the Arduino IDE and your Eclipse Workspace should be set up before starting this section (see [Studio0](../../../weeks/0/studio/) for help). 
+Both the Arduino IDE and your Eclipse Workspace should be set up before starting this section (see Studio 0 for help). 
 
 ### Setup 
 - Create the studio repository (link is at the top of the page)

@@ -33,9 +33,11 @@ Please know the basics of these subjects before moving on:
 - [Circuit Diagrams]({{ "/intro-to-circuits.html#how-to-make-a-circuit" | relative_url }})
 - [Breadboards]({{ "/intro-to-circuits.html#the-breadboard" | relative_url }})
 
+![========]({{ "/images/line.gif" | relative_url }})
+
 ## Today's studio
 
-Armed with your new circuit knowledge, you will be **modeling studio 1's Binary Counter with 3 LEDs**
+Armed with your new circuit knowledge, you will be **modeling studio 1's Binary Counter with 3 LEDs**.  We'll then follow that with the construction and exercising of the LCD display.
 
 ### Objectives
 
@@ -95,11 +97,23 @@ void setup() {
 
 - Which LEDs should be on (i.e., lit) when you are in state 5? State 3?
 
+![========]({{ "/images/line.gif" | relative_url }})
+
 ## The Final Product
 
 Here is what your LEDs should do:
 
 ![LED Counter](LED.gif)
+
+![========]({{ "/images/line.gif" | relative_url }})
+
+## LCD display
+
+In subsequent assignments, we will want to display text locally (rather than on the PC). Following the directions in SparkFun's [tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-4a-lcd-hello-world), construct the LCD display circuitry and make it operational.
+
+In Studio 1, the binary counter sent output to the Serial Monitor on the PC. Add `lcd.print()` statements to your Arduino sketch to display the current count on the LCD display.
+
+![========]({{ "/images/line.gif" | relative_url }})
 
 ## Finishing up
 
@@ -119,6 +133,8 @@ Repository structure for this studio:
 
 - `circuits/`
   - `circuits.ino`
+
+![========]({{ "/images/line.gif" | relative_url }})
 
 ## Key Concepts
 
