@@ -55,6 +55,21 @@ How well does that work?
 
 **Need to add this.**
 
+To measure distance, we will ...
+
+Here is an illustration of the sensor that identifies the pins:
+
+![distance sensor]({{ "15569-Ultrasonic_Distance_Sensor_-_HC-SR04-04_Pins.jpg" | relative_url }})
+
+The following table describes the function of each pin on the distance sensor:
+
+|Pin	|Description |
+|:--------|:--------------------------------|
+|VCC	|Power (5V) |
+|Trig	|Trigger Pulse Input: Sends bursts of ultrasound at 40 kHz. |
+|Echo	|Echo Pulse Output: Receives echo signal. Range is calculated by the proportion of trigger signal sent and echo signal received. |
+|GND	|Ground (0V) |
+
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## Finish up
