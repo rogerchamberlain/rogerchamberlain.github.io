@@ -59,7 +59,7 @@ To measure distance, we will ...
 
 Here is an illustration of the sensor that identifies the pins:
 
-![distance sensor]({{ "15569-Ultrasonic_Distance_Sensor_-_HC-SR04-04_Pins.jpg" | relative_url }})
+![distance sensor](15569-Ultrasonic_Distance_Sensor_-_HC-SR04-04_Pins.jpg)
 
 The following table describes the function of each pin on the distance sensor:
 
