@@ -37,7 +37,8 @@ Our next task is to use the motors (two of them) to drive the wheels of a car.  
 
 ![car](SIK_Updates-5B-Remote_Controlled_Robot.jpg)
 
-SparkFun's [Remote Controlled Robot tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-5b-remote-controlled-robotZZ) shows how to do the physical construction.
+SparkFun's [Remote Controlled Robot tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-5b-remote-controlled-robot) shows how to do the physical construction.
+The sketch is available in your repo for this studio under the name `RemoteControlRobot`.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
@@ -48,24 +49,17 @@ SparkFun's [Remote Controlled Robot tutorial](https://learn.sparkfun.com/tutoria
 
 Changes to repo structure:
 
-- `communication/`
-	- `SerialComm.java`
-- `datatypetest/`
-	- `datatypetest.ino`
+- `MotorBasics/`
+	- `MotorBasics.ino`
+- `RemoteControlRobot/`
+	- `RemoteControlRobot.ino`
 
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## Key Concepts
 
-- Serial communication
-	- Sending bytes from Arduino to Java (`Serial.write`)
-- Java Input
-	- Reading serial bytes
-- `Serial.print()` vs `Serial.write()`
-	- conversion and communication efficiency 
-- Multi-byte communication
-	- byte significance i.e. most significant byte
-	- sequencing 
+- Analog Output
+	- Pulse Width Modulation (PWM)
 
 {% include footer.html %}
