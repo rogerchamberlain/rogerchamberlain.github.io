@@ -32,8 +32,10 @@ but don't consider it complete by any means.
 |[Protocol Design](https://wustl.box.com/s/c2hqdkrm267r7m3n0eymcia0ngek3b2p) | You're now ready to think about designing and implementing protocols to ensure consistent communications from the arduino to Java. |
 |[Observability](https://wustl.box.com/s/098tf670ehwqglcgm96yviqgbey0hjsi) | How do we know that our protocol is working as intended? Let's watch it in action! |
 
+![========]({{ "/images/line.gif" | relative_url }})
+
 ## Sparkfun Tutorial on Ultrasonic Sensor
 
-This module also introduces an ultrasonic distance sensor. This [tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-3b-distance-sensor), from SparkFun, describes the setup of the sensor.  Don't worry about the actual experiment in the tutorial (although it might be fun to do!), it is the Hardware Hookup section that will be most beneficial.  Also, focus on the distance sensor, not the RGB LED.
+This module also introduces an ultrasonic distance sensor. [This tutorial](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-3b-distance-sensor), from SparkFun, describes the setup of the sensor.  Don't worry about the actual experiment in the tutorial (although it might be fun to do!), it is the Hardware Hookup section that will be most beneficial.  Also, focus on the distance sensor, not the RGB LED.
 
 {% include footer.html %}
