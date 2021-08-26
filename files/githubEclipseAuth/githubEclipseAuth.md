@@ -8,7 +8,7 @@ canvas:
             module_item[position]: 6
 ---
 
-# Objective
+# Acquiring and Using a GitHub Key
 
 GitHub requires using secure keys to work with tools like Eclipse.  You'll need to generate a key on your GitHub account and then configure Eclipse to use the key as your password the first time you import a repository.  You'll have Eclipse save the key, so you won't have to do this again.
   
