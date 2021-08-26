@@ -17,7 +17,7 @@ We will be using [git](https://git-scm.com/) to distribute the code you need for
 
 Before you can complete any of the assignments, you must set up your repository. You can find instructions on how to do this [here]({{ "/setup-git.html" | relative_url }}).
 
-The link to access Studio 0 is [here]({{ "/tbd.html" | relative_url }}). Read the guide before clicking this link!
+The link to access Studio 0 is [here](https://classroom.github.com/g/jJFJBnaD). Read the guide before clicking this link!
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
