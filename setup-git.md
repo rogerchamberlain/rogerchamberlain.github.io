@@ -33,7 +33,7 @@ Next, select "Clone URI":
 ![Clone URL]({{ "/images/10.png" | relative_url }})
 
 Paste the link that you copied from GitHub into the box at the top. Fill in your GitHub login (not your WUSTL key!) at the bottom.
-However, don't type in your GitHub password.  GitHub now requires a token instead of a password.  Follow the instructions [here]({{ "/files/githubEclipseAuth/githubEclipseAuth.html | relative_url }}) to setup your token.  Use your token for the password whenever accessing GitHub via Eclipse.
+However, don't type in your GitHub password.  GitHub now requires a token instead of a password.  Follow the instructions [here]({{ "/files/githubEclipseAuth/githubEclipseAuth.html" | relative_url }}) to setup your token.  Use your token for the password whenever accessing GitHub via Eclipse.
 
 ![Github login]({{ "/images/11.png" | relative_url }})
 
