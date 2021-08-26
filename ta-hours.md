@@ -20,7 +20,7 @@ The instructor for this course is [Roger Chamberlain](http://www.ccrc.wustl.edu/
 | Wednesday | 1-2:30pm | Urbauer 214 |  Roger (possibly TAs) | 
 | Friday<sup>1</sup>    | 1pm-2pm       | TBD  | Roger Chamberlain |
 
-<sup>1</sup> No office hours on Aug 27, watch this space for subsequent weeks.
+<sup>1</sup> No office hours on Sep 3, watch this space for subsequent weeks.
 
 <img src="{{ "/images/line.gif" | relative_url }}">
 
