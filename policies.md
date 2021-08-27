@@ -121,7 +121,7 @@ As stated in the attendance policy, studio sessions are required. You can miss o
 
 Attendance isn\'t normally taken, however credit for studios does require attendance. Attending Wednesday sessions is the primary way to demo assignments, however it is possible to demo an assignment during TA office hours Wednesday through Monday. 
 
-Attendance at the Thursday lecture time is required during the two scheduled in-semester exams.
+Attendance at the Monday lab time is required during the three scheduled in-semester exams.
 
 ![========](images/line.gif)
 
