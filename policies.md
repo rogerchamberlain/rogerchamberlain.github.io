@@ -32,7 +32,7 @@ There will be three exams (each worth 10%) to evaluate your understanding of con
 
 Quizzes will cover content from the videos and assignments.  There are two types of quizzes:
 
-- Pre-Studio Quizzes. These quizzes are short and are intended to ensure that you are prepared for the week\'s studio session. These will be due on Sunday at 11:59pm.  Three attempts are allowed.
+- Pre-Studio Quizzes. These quizzes are short and are intended to ensure that you are prepared for the week\'s studio session. These will be due *before* studio on studio days (typically Monday, but not always).  Three attempts are allowed.
 - Post-Assignment Quizzes. These quizzes are more complex and review the material. These will be due on Wednesdays at 11:59pm.  Three submissions are allowed.
 
 See [Late Policies and Missed Work](#late) too.
