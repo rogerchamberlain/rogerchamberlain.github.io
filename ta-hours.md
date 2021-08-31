@@ -18,9 +18,10 @@ The instructor for this course is [Roger Chamberlain](http://www.ccrc.wustl.edu/
 | Day       | Time          | Room                | Instructor        |
 |:-----------|:---------------|:---------------------|:-------------------|
 | Wednesday | 1-2:30pm | Urbauer 214 |  Roger (possibly TAs) | 
-| Friday<sup>1</sup>    | 1pm-2pm       | TBD  | Roger Chamberlain |
+| Friday<sup>1</sup>    | 1pm-2pm       | McKelvey 1030  | Roger Chamberlain |
 
-<sup>1</sup> No office hours on Sep 3 or Oct 8, watch this space for subsequent updates.
+<sup>1</sup> No office hours on Oct 8, watch this space for subsequent updates.
+I am only available until 1:45 on Sep 3.  
 
 <img src="{{ "/images/line.gif" | relative_url }}">
 
