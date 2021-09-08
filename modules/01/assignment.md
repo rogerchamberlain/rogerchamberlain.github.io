@@ -120,7 +120,7 @@ This part has two components: drawing a FSM, and modeling said FSM on your Ardui
 
 #### The Model 
 
-The [Studio](../studio) has useful information for this lab. If you were unable to finish the studio last class we recommend you look it over before starting on the assignment.
+The Studio has useful information for this lab. If you were unable to finish the studio last class we recommend you look it over before starting on the assignment.
 
 ##### Interpreting FSMs and FSAs
 
