@@ -32,13 +32,13 @@ The **Head TAs** for this course are Nina Tekkey and Michael Filippini.
 
 | Day                    | Time                 | Room          | 
 |:------------------------|:----------------------|:---------------|
-| Sunday |  TBD | TBD |
-| Monday | TBD | TBD |  
-| Tuesday  (no demos!) | TBD | TBD | 
-| Wednesday<sup>2</sup> | TBD | TBD | 
-| Thursday | TBD | TBD | 
-| Friday | TBD | TBD | 
-| Saturday | TBD | TBD | 
+| Sunday |  6pm - 8pm | TBD |
+| Monday | 6pm - 8pm | TBD |  
+| Tuesday  (no demos!) | 4pm - 10pm | TBD | 
+| Wednesday<sup>2</sup> | 4pm - 8pm | TBD | 
+| Thursday | 8pm - 10pm | TBD | 
+| Friday | 10am - 12pm | TBD | 
+| Saturday | 2pm - 4pm | TBD | 
 
 <sup>2</sup> Demos on Wednesdays after lab time do incur the use of a late ticket.
   
