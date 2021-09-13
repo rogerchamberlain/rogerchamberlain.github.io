@@ -32,13 +32,13 @@ The **Head TAs** for this course are Nina Tekkey and Michael Filippini.
 
 | Day                    | Time                 | Room          | 
 |:------------------------|:----------------------|:---------------|
-| Sunday |  6pm - 8pm | TBD |
-| Monday | 6pm - 8pm | TBD |  
-| Tuesday  (no demos!) | 4pm - 10pm | TBD | 
-| Wednesday<sup>2</sup> | 4pm - 8pm | TBD | 
-| Thursday | 8pm - 10pm | TBD | 
-| Friday | 10am - 12pm | TBD | 
-| Saturday | 2pm - 4pm | TBD | 
+| Sunday |  6pm - 8pm | Urbauer 218 |
+| Monday | 6pm - 8pm | Urbauer 218 |  
+| Tuesday  (no demos!) | 4pm - 10pm | Urbauer 218 | 
+| Wednesday<sup>2</sup> | 4pm - 8pm | Urbauer 222 | 
+| Thursday | 8pm - 10pm | Urbauer 218 | 
+| Friday | 10am - 12pm | Urbauer 218 | 
+| Saturday | 2pm - 4pm | Urbauer 218 | 
 
 <sup>2</sup> Demos on Wednesdays after lab time do incur the use of a late ticket.
   
