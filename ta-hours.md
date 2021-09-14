@@ -5,7 +5,7 @@ author: Josh Gelbard and Evan Simkowitz
 ---
 {% include nav.html %}
 
-# TA Hours - This will be updated once hours are set
+# TA Hours - This will be updated whenever any information changes
 
 <img src="{{ "/images/line.gif" | relative_url }}">
 
