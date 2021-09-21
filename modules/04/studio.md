@@ -300,7 +300,7 @@ Check out and get out.
 	
     You can verify that your changes went to the server by opening the repository URL in any web browser. 
 
-2. Get checked out. You don't need a TA for this, instead each member of the group should separately take the [quiz](https://wustl.instructure.com/courses/58988/quizzes/49429) (also available through Canvas).
+2. Get checked out by a TA.
 
 Repository structure for this lab:
 
