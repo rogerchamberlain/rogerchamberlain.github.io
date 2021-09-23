@@ -70,10 +70,12 @@ Super Deluxe
 : Washes dishes in hot water for 7 minutes, then in medium water (both hot and cold) for 7 minutes, then finally runs the dryer for 7 minutes.
 
 
-S&S would like to give users the flexibility to change the "next cycle" by adjusting the control knob in the middle of the current cycle. In particular they'd like:
+S&S would like to give users the flexibility to mix and match wash and dry cycles by adjusting the control knob in the middle of the current cycle. In particular they'd like:
 
-1. If the knob is changed to Economy during a hot or medium water cycle, it should proceed to the same dry process used in the Economy wash.
-2. If the knob is changed to either Deluxe or Super Deluxe during a cold wash cycle it should proceed to the same drying behavior as Deluxe or Super Deluxe.
+1. If the knob is changed to Economy during a Deluxe or Super Deluxe wash, it should proceed to the Economy drying process.
+2. If the knob is changed to either Deluxe or Super Deluxe during an Economy wash cycle it should proceed to the same drying behavior as Deluxe or Super Deluxe.
+
+**Reminder:** The Super Deluxe wash cycle should never be cut short. It should always wash with hot water for 7 minutes, then in medium water (both hot and cold) for 7 minutes (even if the knob is turned to Economy half way though).
 
 Also keep in mind that the door to the washer should be locked whenever it's running.
 
