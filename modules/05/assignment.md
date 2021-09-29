@@ -19,7 +19,7 @@ short (and slightly longer) amounts of time corresponding to dots and
 dashes in the Morse encoding of messages sent from Java.
 
 By the end of this assignment you should have a better understanding of how
-data streams work and how they can be used.  In addition, you will practice:
+delta timing works and how it can be used.  In addition, you will practice:
 iterating through arrays, working
 with ASCII characters, and considering the logic required to properly
 implement non-blocking (i.e., delta) timing.

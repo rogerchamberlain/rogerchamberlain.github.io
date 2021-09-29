@@ -36,4 +36,6 @@ Rather than using blocking delay timing techniques, in some situations, it is be
 |[Digital Inputs](https://wustl.box.com/s/35w87ffmt2o34fsug1zwfpy8569ezj4k) | This video gives a review of analog vs. digital signals and discusses digital inputs. |
 |[Delta Timing](https://wustl.box.com/s/q3bk6mh24wd72nd5p6j2gjjudx70ypdw) | In this video we review delta timing and show some examples. |
 
+Since this week's material is review, there is no Quiz 5A.
+
 {% include footer.html %}

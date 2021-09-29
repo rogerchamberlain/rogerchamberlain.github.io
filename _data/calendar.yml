@@ -136,12 +136,6 @@
   assigned: Sep 29
   due: Oct 04
 
-- title: Quiz 5A
-  module: 5
-  url: /tbd.html
-  assigned: Sep 29
-  due: Oct 04
-
 - title: Studio 5
   module: 5
   url: /modules/05/studio.html
@@ -156,7 +150,7 @@
 
 - title: Quiz 5B
   module: 5
-  url: /tbd.html
+  url: https://wustl.instructure.com/courses/68860/quizzes/65299
   assigned: Oct 06
   due: Oct 20
 
