@@ -28,8 +28,8 @@ implement non-blocking (i.e., delta) timing.
 
 ## The Arduino Assignment
 
-1. Begin by importing your SerialPort.java and MorseEncoder.ino from 
-Assignment 4 into their appropraite spots in Assignment 7. All 
+1. Begin by importing your Java code and MorseCoder.ino from 
+Assignment 4 into their appropriate spots in Assignment 5. All 
 functionality from Assignment 4 should still be in this assignment. 
 Java will still send a user-input message to Arduino to be encoded.
 The Arduino will then still encode the message and send it back to Java.
