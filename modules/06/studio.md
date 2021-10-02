@@ -56,9 +56,9 @@ How well does that work?
 
 To measure distance, we will take advantage of the fact that the velocity of sound is reasonably fixed (OK, it changes a bit with humidity and temperature, but we're going to ignore those effects) at 343 m/s. Therefore, if we send a chirp of sound from our sensor, wait for the chirp to reflect off some object in front of us, and measure the time until it returns, we can convert that time signal into a distance.  Note, this is a linear conversion operation that is quite similar, in principle, to what we've previously done with the temperature sensor. This implies that the expression for distance (as a function of time), can be expressed in the form
 
-*d = m t*
+*d = m &middot; t*
 
-where *d* is the distance (in cm), *t* is the time (in &mu;s), and *m* is the conversion factor (in units of cm/&mu;s). What is the value of *m* in this expression so that the units work?
+where *d* is the distance (in cm), *t* is the time (in &mu;s), and *m* is the conversion factor (in units of cm/&mu;s). What is the value of *m* in this expression so that the units work?  *Note, don't just copy the SparkFun tutorial's code, they are not using cm to measure distance!*
 
 Notice all we've done so far is measure the distance that the sound has travelled.  If we want to measure the distance from our sensor to the object that reflected the chirp, we have to account for the fact that the sound traveled both there and back.  The distance to the object is one-half the distance that the sound travelled.
 We can take care of this in one of two ways (which are equivalent): (1) change the value of *m* to one-half of what we decided above, this gives distance *d* to the reflecting object; or (2) after computing *d* as the distance that the sound has travelled, simply divide it by 2 to get the distance to the object.
