@@ -40,8 +40,8 @@ We detail this module's protocol below.
 
 We chose to design a protocol that centers around the sending of individual **messages**. Each message we send will have a 1 byte **header** and a variable length **payload**. The header is basically used for book-keeping and the payload is the actual information being sent.
 
-In our case, the payload will send a **key-value pair**: a **key** indicating the meaning of our value (is it a temperature or a string?, etc.) and a **value** for that key. A value might be a
-raw temperature reading, a filtered temperature reading,
+In our case, the payload will send a **key-value pair**: a **key** indicating the meaning of our value (is it a distance measure or a string?, etc.) and a **value** for that key. A value might be a
+raw reading (e.g., time for a distance measurement, a processed distance value,
 a potentiometer reading, a timestamp, an error message, etc.
 
 *Note*: In this assignment, we are using the terminology **key-value pair**; however, another nomenclature that is also very common is to call them **tag-value pair**.  Don't be surprized if you see these terms used for essentially the same purpose.
@@ -106,7 +106,7 @@ For this assignment, we define the following keys: **NOTE: need to add sonic sen
 - `0x31`	error string in UTF-8 format, maximum of 100 characters long
 - `0x32`	timestamp, 4-byte integer, milliseconds since reset
 - `0x33`	potentiometer reading, 2-byte integer A/D counts
-- `0x34`	raw (unconverted) temperature reading, 2-byte integer A/D counts
+- `0x34`	raw (unconverted) ultrasonic sensor reading (i.e., time), 4-byte unsigned integer &mu;s.
 
 As the semester progresses, we might add to the above list, but we
 won't change the meaning of these already-defined keys.
@@ -141,17 +141,17 @@ Locate and open the `MsgReceiver.java` file in your repository. This is where mo
 
 >We want to provide two ways of completing this assignment: the guided way in the main writeup, and a more "free-form" way. In this sidebar we just detail what we expect the protocol to do and what your programs should output, but in the main writeup we guide you through the process in more detail. Choose whatever you like.
 
->1. Wire up your potentiometer and temperature sensor to two analog ports on your Arduino. The wiring is identical to before.
+>1. Wire up your potentiometer and ultrasonic sensor to your Arduino. The wiring is identical to before.
 >2. In a 1 Hz delta-time loop (in `sender.ino`), send---using our protocol:
 
 >- the timestamp of the loop (do not call `millis()` a second time, store the first call as an `unsigned long` and use that),
 >- the potentiometer reading,
->- the unfiltered, raw, A/D counts value for the temperature sensor
+>- the raw time value from the ultrasonic sensor
 
 >Finally, if the potentiometer reading is over a certain value of your choice, send an error string (key: `0x31`) `High alarm` at the very end of the delta-time loop.
->3. Edit the `run()` method of `MsgReceiver` in Java to read these messages and print them out as it receives them. Make sure to output both the type of message (e.g., info string, error string, potentiometer value, raw temperature) and the value (the string value or integer value). 
+>3. Edit the `run()` method of `MsgReceiver` in Java to read these messages and print them out as it receives them. Make sure to output both the type of message (e.g., info string, error string, potentiometer value, raw ultrasonic sensor value) and the value (the string value or integer value). 
 
->4. On the Java side, convert the temperature readings to an actual temperature (in Celcius, just like you did on assignment 3), filter the values with a rolling average filter (again, like you did for assignment 3), then print out the filtered and unfiltered temperature values.
+>4. On the Java side, convert the ultrasonic readings to an actual distance (in cm, just like you did in studio, just in Java this time), then print out the computed distance.
 
 >	Have it print a visually distinct error message if an unknown key is used.
 
@@ -171,7 +171,7 @@ Locate and open the `MsgReceiver.java` file in your repository. This is where mo
 	Send a few more info messages.
 3. Set up a delta-time loop, running at about 1 Hz, that sends a message containing the `millis()` value used to control the loop (i.e., save the return value from `millis()` in a variable so that you can use it both for the `if` test
 in the delta-time code and send it to the PC. Make sure to use an `unsigned long`). This is the `0x32` message.
-4. Alter your Java code to parse the message and print it out nicely every time it's received. Include the type of message (e.g., info string, error string, potentiometer value, raw temperature value) as well as the value
+4. Alter your Java code to parse the message and print it out nicely every time it's received. Include the type of message (e.g., info string, error string, potentiometer value, raw ultrasonic value) as well as the value
 (the string value or integer value).
 
 	Structure your receiver program as a **finite state machine**. We recommend reading our
@@ -181,20 +181,16 @@ will make your program *significantly* easier to reason about.
 	Messages that do not conform to the protocol should generate an
 error printed to the console that is visually distinct from the
 protocol-supported error message. Indent it and use a different format. I like `!!!!! Error` but that may be a little dire for your tastes. &nbsp;  
-5. Attach the potentiometer and temperature sensors to two distinct
-analog input pins. The wiring is the same as the last two assignments.
+5. Attach the potentiometer and ultrasonic sensors to your Arduino.
+The wiring is the same as in the past.
 6. Update your delta time loop to also read the value of the potentiometer, sending it after the `millis()` message. This is the `0x33` message.
 7. Likewise update your Java code to read this number and print it out nicely.
-8. Continue doing this for the other keys: send and a receive a raw A/D counts reading from the temperature sensor. This is the `0x34` message.
-
-	This hardware setup is the same as for Assignment 3; however, you will need to use
-`analogReference(DEFAULT)` to maintain compatibility with the potentiometer.
-
-11. When the potentiometer reading is above a threshold
+8. Continue doing this for the other keys: send and a receive a raw time reading from the ultrasonic sensor. This is the `0x34` message.
+9. When the potentiometer reading is above a threshold
 value (feel free to use whatever value you chose in that assignment, or
 pick a new value) send a message with the error string "High alarm".
 This key = `0x31` message should come at the end of all output.
-12. On the Java side, when you receive a temperature value you should convert it to engineering units (degrees Celcius), filter it (using a rolling average filter like you used on assignment 3), then display the raw, converted, and filtered temperature values. **Note**, your conversion code is now in Java, not in C. Also, the math isn't the same either, because the analog reference voltage is now 5V instead of the previous 1.1V. Because the 5V reference isn't as precise, don't worry if your temperature values are a few degrees off.
+10. On the Java side, when you receive a distance value from the ultrasonic sensor you should convert it to the appropriate engineering units (&mu;s), then display the computed distance values. **Note**, your conversion code is now in Java, not in C. 
 
 ### Guidelines
 
