@@ -100,7 +100,7 @@ The key is a fixed-length field: one byte.
 The value is a variable-length field, the number of bytes depending
 upon a number of factors.
 
-For this assignment, we define the following keys: **NOTE: need to add sonic sensor**
+For this assignment, we define the following keys:
 
 - `0x30`	info string in UTF-8 format, maximum of 100 characters long
 - `0x31`	error string in UTF-8 format, maximum of 100 characters long
@@ -131,7 +131,7 @@ For more information about how string types are represented in Arduino C, take a
 For multi-byte values that represent a single number (e.g., 2-byte integers,
 4-byte integers), the order of the bytes is most significant
 byte first and least significant byte last.
-In Java, make sure you have finished Studio 8. 
+In Java, you should have done this in studio.
 
 ## The assignment
 
@@ -170,7 +170,7 @@ Locate and open the `MsgReceiver.java` file in your repository. This is where mo
 2. Author enough of the Java program (`MsgReceiver`'s `run()` method) that you can receive an info message and reliably observe the info string on the console window.
 	Send a few more info messages.
 3. Set up a delta-time loop, running at about 1 Hz, that sends a message containing the `millis()` value used to control the loop (i.e., save the return value from `millis()` in a variable so that you can use it both for the `if` test
-in the delta-time code and send it to the PC. Make sure to use an `unsigned long`). This is the `0x32` message.
+in the delta-time code and send it to the PC). Make sure to use an `unsigned long`. This is the `0x32` message.
 4. Alter your Java code to parse the message and print it out nicely every time it's received. Include the type of message (e.g., info string, error string, potentiometer value, raw ultrasonic value) as well as the value
 (the string value or integer value).
 
@@ -181,16 +181,22 @@ will make your program *significantly* easier to reason about.
 	Messages that do not conform to the protocol should generate an
 error printed to the console that is visually distinct from the
 protocol-supported error message. Indent it and use a different format. I like `!!!!! Error` but that may be a little dire for your tastes. &nbsp;  
+
 5. Attach the potentiometer and ultrasonic sensors to your Arduino.
 The wiring is the same as in the past.
+
 6. Update your delta time loop to also read the value of the potentiometer, sending it after the `millis()` message. This is the `0x33` message.
+
 7. Likewise update your Java code to read this number and print it out nicely.
+
 8. Continue doing this for the other keys: send and a receive a raw time reading from the ultrasonic sensor. This is the `0x34` message.
+
 9. When the potentiometer reading is above a threshold
 value (feel free to use whatever value you chose in that assignment, or
 pick a new value) send a message with the error string "High alarm".
 This key = `0x31` message should come at the end of all output.
-10. On the Java side, when you receive a distance value from the ultrasonic sensor you should convert it to the appropriate engineering units (&mu;s), then display the computed distance values. **Note**, your conversion code is now in Java, not in C. 
+
+10. On the Java side, when you receive a distance value from the ultrasonic sensor you should convert it to the appropriate engineering units (&mu;s), then display the computed distance value. **Note**, your conversion code is now in Java, not in C. 
 
 ### Guidelines
 

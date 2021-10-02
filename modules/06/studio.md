@@ -99,8 +99,8 @@ Changes to repo structure:
 	- `SerialComm.java`
 - `datatypetest/`
 	- `datatypetest.ino`
--  echo/
-	-  echo.ino
+-  `echo/`
+	-  `echo.ino`
 
 
 ![========]({{ "/images/line.gif" | relative_url }})
