@@ -106,7 +106,7 @@ For this assignment, we define the following keys:
 - `0x31`	error string in UTF-8 format, maximum of 100 characters long
 - `0x32`	timestamp, 4-byte integer, milliseconds since reset
 - `0x33`	potentiometer reading, 2-byte integer A/D counts
-- `0x34`	raw (unconverted) ultrasonic sensor reading (i.e., time), 4-byte unsigned integer &mu;s.
+- `0x34`	raw (unconverted) ultrasonic sensor reading (i.e., time), 4-byte unsigned integer in &mu;s.
 
 As the semester progresses, we might add to the above list, but we
 won't change the meaning of these already-defined keys.
@@ -231,8 +231,8 @@ Note, this is merely advisory, the precise rubric is on Canvas.
 		- Error string in UTF-8 format
 		- Timestamp represents the number of milliseconds since reset, 4-byte integer
 		- Potentiometer reading in A/D counts, 2-byte integer
-		- Raw (unfiltered) temperature reading in A/D counts, 2-byte integer
-	- Proper conversion and filtering of temperature on Java side
+		- Raw (unfiltered) ultrasonic sensor reading as 4-byte unsigned integer in &mu;s.
+	- Proper conversion and filtering of distance on Java side
 	- SerialComm debug showing received bytes
 	- Correct wiring and sensor readings
 
