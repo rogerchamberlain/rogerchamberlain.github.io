@@ -206,7 +206,7 @@ This key = `0x31` message should come at the end of all output.
 2. Make sure your program generates errors if it receives input it didn't expect. While silently failing is sometimes good (see [Defensive Programming](https://en.wikipedia.org/wiki/Defensive_programming)), in your case it will make it harder to understand where your program is going wrong. 
 
 	Be loud! Print error messages! User error is the best type of error because it's not your fault.
-3. Read your analog values, parse them, filter your data, and *then* print all your messages. It will make it easier for us to grade your assignment (and also easier for you to debug).
+3. Read your analog values, parse them, and *then* print all your messages. It will make it easier for us to grade your assignment (and also easier for you to debug).
 4. Send info strings *a lot*. Since they are the first thing you implement, they are also the first thing you can be confident *works*, so if something is broken, falling back to them may be just what you need. 
 	
 	Use them only for debugging and small program notes, though. They're "info strings" for a reason, not info paragraphs!
@@ -231,8 +231,8 @@ Note, this is merely advisory, the precise rubric is on Canvas.
 		- Error string in UTF-8 format
 		- Timestamp represents the number of milliseconds since reset, 4-byte integer
 		- Potentiometer reading in A/D counts, 2-byte integer
-		- Raw (unfiltered) ultrasonic sensor reading as 4-byte unsigned integer in &mu;s.
-	- Proper conversion and filtering of distance on Java side
+		- Raw ultrasonic sensor reading as 4-byte unsigned integer in &mu;s.
+	- Proper conversion of distance on Java side
 	- SerialComm debug showing received bytes
 	- Correct wiring and sensor readings
 
