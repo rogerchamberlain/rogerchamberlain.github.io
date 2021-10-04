@@ -135,7 +135,7 @@ In Java, you should have done this in studio.
 
 ## The assignment
 
-Locate and open the `MsgReceiver.java` file in your repository. This is where most of your work will go on the Java side. Import your SerialComm.java into the same directory and copy out its `public static void main(String[] args)` method, as that is now in `MsgReceiver.java`.
+Locate and open the `MsgReceiver.java` file in your repository. This is where most of your work will go on the Java side. Import your SerialComm.java into the same directory and comment out its `public static void main(String[] args)` method, as that is now in `MsgReceiver.java`.
 
 >### Sidebar for all you hackers
 
