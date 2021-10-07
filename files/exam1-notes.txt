@@ -1,0 +1,17 @@
+This note is intended to provide some logistical information on the upcoming exam, scheduled for Monday, Oct 18.
+
+1. The exam will be in the lab spaces (Urbauer 214, 216, 218, and 222), at the normal class meeting time (1pm-2:20pm). Feel free to go to any one of the labs, however, we might ask you to move to a different one so as to balance the number of students and seats in each space. We will start as close to 1pm as we possibly can and finish promptly at 2:20pm.
+
+2. You do not need to bring your Arduino kit or even a laptop, but do bring a pencil.
+
+3. The exam will be closed book, closed notes, no calculators, and you are allowed a one-page, 8.5 by 11 in crib sheet on which you can write anything you wish.  The crib sheet does not have to be hand-written, but I strongly recommend it (even if several of you work together to decide what goes on it, you will benefit from the physical preparation yourself).
+
+4. The coverage of the exam is everything up to and including module 3. Module 4 (communications) and later material is saved for exam 2.
+
+5. If you have exam accommodations, you will receive a separate email from me (by tomorrow).  If you do not receive this email, definitely contact me so that I can ensure you are on the list.
+
+6. We will post an extra-credit practice exam after fall break, on Wed. prior to the exam. This is not required, but is designed to help you prepare for the actual exam.  The amount of extra credit (which will be modest, but non-zero) will not be based on how many of the questions you get right, but rather on the fact that you participated and did “reasonably” well (i.e., don’t just fill in the answers with garbage). On Canvas, it is called Extra Credit Quiz 1E.
+
+7. Office hours on Oct 15 will be via Zoom, and I will give a short presentation (review) of the subject matter that is in-scope for the exam and open the Zoom call for questions for the rest of the hour.  I will attempt to record this session and post it immediately following. The Zoom link will be available both on Canvas and on Piazza, as will the link to the recording.
+
+Roger
