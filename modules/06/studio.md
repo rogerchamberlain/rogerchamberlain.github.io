@@ -80,6 +80,8 @@ The following table describes the function of each pin on the distance sensor:
 
 Be careful when wiring up the sensor, as inadvertently mixing up `VCC` (5V) and `GND` (0V) can damage the sensor.  The `Trig` and `Echo` pins can be wired to any convenient digital pin (`Trig` will be a digital output and `Echo` will be a digital input).
 
+When you're not actively using the sensor, please unplug the Arduino. This helps eliminate interference with other groups.
+
 In the Arduino sketch `echo.ino`, set the `trigPin` and `echoPin` pin numbers to correspond to how you wired up your sensor. Insert code to compute `calculatedDistance` using `echoTime` in the `getDistance()` function. Execute the code and monitor the output using the Arduino IDE's Serial Monitor (we'll save sending this information to Java for the assignment).
 
 Put an object (e.g., book, folder, something reasonbly flat that will echo sound well) in front of your sensor and see how well it works.
