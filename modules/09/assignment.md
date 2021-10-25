@@ -60,9 +60,9 @@ To keep things as simple as possible all values are *unsigned*.  In C the 8-bit 
 
 ## The Assignment
 
-In your repository you will find an `cse132-assignment12/assignment12Demo` Arduino project. This project contains the prototypes for the functions we are asking you to write as well as code to test your work.
+In your repository you will find an `assignment09` Arduino project. This project contains the prototypes for the functions we are asking you to write as well as code to test your work.
 
-The Assembly language functions may be easier to write if you have already tested the logic using C. There are four C-functions you'll need to complete in `assignment12Demo.ino`:
+The Assembly language functions may be easier to write if you have already tested the logic using C. There are four C-functions you'll need to complete in `assignment09.ino`:
 
 - `uint8_t slowDivisionAlgorithm8(uint8_t dividend, uint8_t divisor)`: This function will do division of 8-bit values the "slow" way. 
 - `uint16_t slowDivisionAlgorithm16(uint16_t dividend, uint16_t divisor)`: This function will do division of 16-bit values the "slow" way. (And may look a *lot* like the 8-bit version.  None the less, note the differences!)
@@ -83,7 +83,7 @@ There are five functions to complete entirely in assembly language:
 
 Assembly language can be challenging.  The provided files include several test cases to help you with your work.  Here's the approach we suggest:
 
-1. assignment12Demo.ino includes a lot of code to help you with testing.  The `setup()` includes calls to all test cases.  There are two styles of tests:
+1. assignment09.ino includes a lot of code to help you with testing.  The `setup()` includes calls to all test cases.  There are two styles of tests:
 	1. Standalone test cases, like:
 
 			uint8_t dividend8 = 175;
@@ -102,15 +102,15 @@ Assembly language can be challenging.  The provided files include several test c
 		You will want to comment/un-comment test cases so you can focus on each part independently.
 
 
-2. It's probably best start with the C-code version of 8-bit division. I.e., complete `slowDivisionAlgorithm8()` in assignment12Demo.ino.  Use the test functions to test it (they will indicate the values printed by both the algorithm, which should be correct when you're done with the C-code, and the assembly language, which will still be incorrect)
+2. It's probably best start with the C-code version of 8-bit division. I.e., complete `slowDivisionAlgorithm8()` in assignment09.ino.  Use the test functions to test it (they will indicate the values printed by both the algorithm, which should be correct when you're done with the C-code, and the assembly language, which will still be incorrect)
 
-3. Write and test the assembly language version of 8-bit division: `slowDivisionUint8` in assignment12.S.
+3. Write and test the assembly language version of 8-bit division: `slowDivisionUint8` in assignment09.S.
 
-4. Try the assembly language version of comparisons --- do `greaterThanOrEqualUInt16` in assignment12.S.  Again, test your work.
+4. Try the assembly language version of comparisons --- do `greaterThanOrEqualUInt16` in assignment09.S.  Again, test your work.
 
-5. Do the C version of 16-bit division.  Complete`slowDivisionAlgorithm16()` in assignment12Demo.ino.
+5. Do the C version of 16-bit division.  Complete`slowDivisionAlgorithm16()` in assignment09.ino.
 
-6. Now try the assembly language version of 16-bit division: `slowDivisionUint16` in assignment12.S.  This may be the most difficult part of the assignment. (Hint: 16-bit subtraction can be done with just two instructions)
+6. Now try the assembly language version of 16-bit division: `slowDivisionUint16` in assignment09.S.  This may be the most difficult part of the assignment. (Hint: 16-bit subtraction can be done with just two instructions)
 
 7. Complete the two modulus functions: `slowModulusAlgorithm` and `slowModulusUint8`. Don't forget to use your division functions in your solution - we will be checking for this.
 

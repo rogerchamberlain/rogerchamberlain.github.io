@@ -36,7 +36,7 @@ There are a lot of very important topics today.  Let's get started.
 
 The key to control flow is the ability to compare values.  AVR assembly language includes a compare instruction: `cp`. Let's use it.
 
-1. Set up your repository. We have written a bare bones project, `CSE132-studio12/programControl` (very creatively named). In it are assembly stubs for four functions. Let's start by writing `lessThan()`.
+1. Set up your repository. We have written a bare bones project, `programControl` (very creatively named). In it are assembly stubs for four functions. Let's start by writing `lessThan()`.
 
 2. If you carefully review most loops or if-statements you'll notice that they nearly always use a relational operator, like `==`, `!=`, `<`, `<=`, etc.  These operators produce a boolean value based on the relationalship between values: are they the same? are they different? does the first come before the second? is the first either before or the same as the second? etc. 
 
