@@ -100,7 +100,7 @@ The full manual for the AVR assembly language instructions is available [here](h
 
 1. 	The [Arduino IDE](https://www.arduino.cc/en/Main/Software) natively supports programming in assembly.
 	
-Open up `cse132-studio10/simpleValues/simpleValues.ino` from your repository.
+Open up `simpleValues/simpleValues.ino` from your repository.
 
 You'll notice that the code still looks like C. That's because it is! Our assembly unit is going to be a combination of C and assembly. If you open the `assembly.S` tab you'll see the first bit of assembly you'll work on today.
 
