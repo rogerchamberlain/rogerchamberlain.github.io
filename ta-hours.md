@@ -20,7 +20,7 @@ The instructor for this course is [Roger Chamberlain](http://www.ccrc.wustl.edu/
 | Wednesday | 1-2:30pm | Urbauer 214 |  Roger (possibly TAs) | 
 | Friday<sup>1</sup>    | 1pm-2pm       | McKelvey 1030  | Roger Chamberlain |
 
-<sup>1</sup> On Oct 15 there will be a Zoom review for exam 1.  See Canvas for Zoom link.
+<sup>1</sup> No office hours on Nov 5 or 19. On Nov 12 there will be a Zoom review for exam 2.  See Canvas for Zoom link.
 
 <img src="{{ "/images/line.gif" | relative_url }}">
 
