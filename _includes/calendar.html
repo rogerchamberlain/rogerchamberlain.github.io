@@ -10,7 +10,11 @@ The calendar is subject to change during the course of the semester.
 	     {% if item.module <= site.data.display.module %} 
 		&nbsp; <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
 	     {% else %} 
-		&nbsp; {{ item.title }}
+	         {% if item.title[0] == "P" %}
+		     &nbsp; <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+		 {% else %}
+		     &nbsp; {{ item.title }}
+		 {% endif %}
 	     {% endif %} 
 	{% endif %}
     {% endfor %}
