@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Studio A - Finite-State Machines
+title: SIGCSE Workshop Studio A - Finite-State Machines
 author: Roger Chamberlain, Claire Heuckeroth, Ben Stolovitz, and Sean Schaffer
 ---
 
