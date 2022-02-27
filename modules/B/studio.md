@@ -53,9 +53,7 @@ where *T<sub>C</sub>* is temperature in &deg;C and *V<sub>measured</sub>* is the
 
 ### Analog Reference
 
-FIXME: need to talk about `analogRead()`
-
-In order to read the temperature output by our sensor, you need to read the voltage into your Arduino.  You have experience with `analogRead()` from an earlier assignment. You will use `analogRead()` to read a voltage from the temperature sensor.
+In order to read the temperature output by our sensor, you need to read the voltage into your Arduino.  We will use [`analogRead()`](https://www.arduino.cc/en/Reference/AnalogRead) to read a voltage from the temperature sensor. 
 
 An `analogRead()` returns a number between `0` and `1023` that corresponds to a voltage. Usually, the `1023` corresponded to 5V. It turns out that this "upper limit voltage" can be changed. This **reference voltage**, on our Arduinos at least, can be one of two values: 5V or 1.1V.
 
@@ -78,9 +76,7 @@ A rolling average filter determines the filtered value from the arithmetic mean 
 Where *y<sub>t</sub>* is the filtered value at time *t* and *x<sub>t</sub>* is the measured value at time *t*.  
 It's only possible to compute the rolling average if you store the *N* most recent data points, and the easiest way to do this is with an **array**.
 
-FIXME: need to re-write paragraph below.
-
-For a challenge, implement the rolling average filter without any `for` loops. This will keep our code truly non-blocking&mdash;the point of delta-timing. **Hint:** think about how the array's sum changes each time a new value is about to be added.
+A challenge that we ask our students to do is the following, implement the rolling average filter without any `for` loops. This will keep their code truly non-blocking&mdash;the point of delta timing. **Hint:** think about how the array's sum changes each time a new value is about to be added.  You are free to take on this challenge, but we suggest not until you have completed the other portions of the studio (it is definitely not required).
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
@@ -90,17 +86,19 @@ Use the existing `cricket/cricket.ino` sketch for your work.
 
 ### The basic system
 
-1. FIXME: Wire an LED output to the digital output pin of your choice (avoiding digital output pins 0 and 1), include a series resistor, and attach it to ground (this is the same as the discrete LEDs we wired in studio). Make sure you can turn it on and off.
+1. If you want to use an external LED, wire an LED output to the digital output pin of your choice (avoiding digital output pins 0 and 1), include a series resistor, and attach it to ground (this is the same as the discrete LEDs we wired in studio). Make sure you can turn it on and off.
 
-2. Connect the center, output pin of your temperature sensor to an analog pin. Then attach the power pin to `+5V` and the ground pin to `GND`. (Refer to the directions and diagram above.  Double check your work.)
+2. Alternatively, use digital output pin 13, which has an LED mounted on the Arduino Uno board.
+
+3. Connect the center, output pin of your temperature sensor to an analog pin. Then attach the power pin to `+5V` and the ground pin to `GND`. (Refer to the directions and diagram above.  Double check your work.)
 
 	Make sure you can `analogRead()` from it, even if you haven't set `analogReference()` yet.
 
-3. FIXME: Write delta time code to read the temperature at 4 Hz (do a `analogRead()` 4 times a second). Test your work so far by using `Serial.print()` to display the value from `analogRead()`.
+4. Write delta time code to read the temperature at 4 Hz (do a `analogRead()` 4 times a second). Test your work so far by using `Serial.print()` to display the value from `analogRead()`.
 
-4. Set `analogReference()` to `INTERNAL`. This will change what each value of `analogRead()` corresponds to (`1023` will now correspond to 1.1V, not 5V), which will be important when you convert the data.
+5. Set `analogReference()` to `INTERNAL`. This will change what each value of `analogRead()` corresponds to (`1023` will now correspond to 1.1V, not 5V), which will be important when you convert the data.
 
-5. Convert the raw `analogRead()` value into a temperature. Mathematically this is a two step procedure, first converting the raw value into a voltage (i.e., understanding what voltage the temperature probe is generating given the A/D counts returned from `analogRead()`), then into a temperature based on the equation you derived earlier using the [spec sheet for the TMP36](http://www.analog.com/media/en/technical-documentation/data-sheets/TMP35_36_37.pdf). 
+6. Convert the raw `analogRead()` value into a temperature. Mathematically this is a two step procedure, first converting the raw value into a voltage (i.e., understanding what voltage the temperature probe is generating given the A/D counts returned from `analogRead()`), then into a temperature based on the equation you derived earlier using the [spec sheet for the TMP36](http://www.analog.com/media/en/technical-documentation/data-sheets/TMP35_36_37.pdf). 
 
 	While the counts returned by `analogRead()` are of type `int`, you likely will want to use variables of type `float` to perform the computation and store the resulting temperature value.
  		Print out both the raw A/D counts and the converted temperature value until you are confident that your temperature is right. 
@@ -148,17 +146,15 @@ If you update the array each time you read the temperature, its mean is the roll
 
 If you structure your output something like this, with commas or whitespace (spaces or tabs) separating each field of the data:
 
-		24.12,22.65
-		23.44,22.87
-		24.04,23.13
-		22.57,22.99
-		21.21,22.76
+		24.12, 22.65
+		23.44, 22.87
+		24.04, 23.13
+		22.57, 22.99
+		21.21, 22.76
 
 each column of numeric data will be drawn as a separate line (that is, each column represents a different series of data). *Close the `Serial Monitor`* and select *`Serial Plotter` from the Tools menu*.
 	
 Generate a noticeable change (increase) in temperature by gently pinching the temperature sensor and then letting it go a few times. Get a feel for how changing temperature impacts the graph of data and, especially, the impact of filtering.  Also, double check your temperatures to make sure they're reasonable.
-
-***You will need to submit this graph with your repository.  You may want to take a screenshot of it.  (A google search of "screenshot Windows" or "screenshot Mac" will show you how)***
 
 
 ### The cricket part
@@ -197,58 +193,23 @@ Now you can use the filtered temperature to make a blinking cricket.
 
 	![The final circuit](finalcircuit.png){:width="50%"}
 
-	Note that this picture has the LED connected to the Arduino pin and the resistor connected to ground.  Either order is fine, Arduino pin then LED then resistor then ground, or Arduino pin then resistor then LED then ground.
+	Note that this picture has the LED connected to the Arduino pin and the resistor connected to ground.  Either order is fine, Arduino pin then LED then resistor then ground, or Arduino pin then resistor then LED then ground. Alternatively, use digital output pin 13, which has an LED mounted on the Arduino board.
 
 
 
-2. Don't use `delay()` *at all* in this lab. We will *penalize* you if you do. The delta timing alternative we use is an important concept, and if it is not crystal clear, try reading some more about it and working through examples.
+2. You don't need to use `delay()` *at all* in this studio. The delta timing alternative we use is one of the important concepts being taught.
 
-	[Adafruit](https://learn.adafruit.com/multi-tasking-the-arduino-part-1/using-millis-for-timing) has a nice tutorial, as does [StackOverflow](http://electronics.stackexchange.com/a/67090). Adafruit takes some code from [the Arduino tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay). Work through some problems, try to see if you can understand the idea in a generic form.
+	For those who would like some additional reading, [Adafruit](https://learn.adafruit.com/multi-tasking-the-arduino-part-1/using-millis-for-timing) has a nice tutorial, as does [StackOverflow](http://electronics.stackexchange.com/a/67090). Adafruit takes some code from [the Arduino tutorial](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay). Work through some problems, try to see if you can understand the idea in a generic form.
 3. Save all your math work (conversions of voltage to temperature, Dolbear's law, etc). It will be helpful when your numbers aren't coming out right (trust me, they will be wrong the first time).
 4. The easiest way to check your equations is by plugging in some test values: is the output sensible at 1V? 25 Celsius? Am I blinking at the right rate? Plug at least two values in to make sure everything's working.
 5. Verify all your numbers again. Graph them. Are they changing as you hold your temperature sensor? Is the average within the range of the noise of your signal?
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
-## The check-in
+## Finish up
 
-1. Make *sure* your numbers make sense.
-2. Commit all your code and graphs (make sure to add all the new files to your repo first).
-3. Follow the checklist below to see if you have everything done before demo your assignment to a TA.
-	- The temperature sensor is wired correctly (not burning)
-	- `analogReference()` is set to `INTERNAL`
-	- Temperature is converted properly from `analogRead()` (degree Celsius)
-	- The filter for the rolling average temperature is set up correctly
-	- `FILTER_COUNTS` is chosen properly
-	- A screen capture of the temperature data is saved 
-	- The number of chirps in a minute is correctly computed by Dolbear’s Law
-	- Delta time for flashing the LED is chosen reasonably
-	- No `delay()` is used
-	- Your sketch flashes the LED properly
-	- All of your files are committed
-4. Assignment Demo <br />
+Here is an image of a working cricket<br />
 	![Cricket](Cricket.gif)
-5. Check out with a TA.
 
-New files:
-
-<!-- <section class="tree"> -->
-
-- `cricket/`
-	- `cricket.ino`
-- A screen capture of the graph of your temperature data from the `Serial Plotter`.
-
-<!-- </section> -->
-
-### The rubric
-
-- Did the lab they demoed work?
-    * Is the circuit wired correctly?
-    * Do they correctly read the temperature sensor?
-    * Do they correctly filter the data?
-    * Did they graph the data with a noticeable temperature change?
-    * Did they use proper delta-time loops?
-	* Does the LED "chirp" at the correct interval?
-- Was the lab committed to Github before demoing?
 
 {% include footer.html %}
