@@ -53,7 +53,7 @@ where *T<sub>C</sub>* is temperature in &deg;C and *V<sub>measured</sub>* is the
 
 ### Analog Reference
 
-In order to read the temperature output by our sensor, you need to read the voltage into your Arduino.  We will use [`analogRead()`](https://www.arduino.cc/en/Reference/AnalogRead) to read a voltage from the temperature sensor. 
+In order to read the temperature output by our sensor, you need to read the voltage into your Arduino.  We will use [`analogRead()`](https://www.arduino.cc/en/Reference/AnalogRead) to read a voltage from the temperature sensor. E.g., if the temperature output is connected to analog pin A1, the call to `analogRead()` will be `analogRead(A1)`.
 
 An `analogRead()` returns a number between `0` and `1023` that corresponds to a voltage. Usually, the `1023` corresponded to 5V. It turns out that this "upper limit voltage" can be changed. This **reference voltage**, on our Arduinos at least, can be one of two values: 5V or 1.1V.
 
@@ -90,7 +90,7 @@ Use the existing `cricket/cricket.ino` sketch for your work.
 
 2. Alternatively, use digital output pin 13, which has an LED mounted on the Arduino Uno board.
 
-3. Connect the center, output pin of your temperature sensor to an analog pin. Then attach the power pin to `+5V` and the ground pin to `GND`. (Refer to the directions and diagram above.  Double check your work.)
+3. Connect the center, output pin of your temperature sensor to an analog pin. Then attach the power pin to `+5V` and the ground pin to `GND`. (Refer to the directions and diagram above.  There is also an image blow, in Guidlines. Double check your wiring and ask for help if you are unsure.)
 
 	Make sure you can `analogRead()` from it, even if you haven't set `analogReference()` yet.
 
