@@ -10,7 +10,39 @@ author: Roger Chamberlain, Claire Heuckeroth, Ben Stolovitz, and Sean Schaffer
 
 FIXME: Click [here](https://wustl.instructure.com/courses/68860/assignments/289429) to access the Canvas page with the repository for this studio.  
 
-FIXME: RC: all of the stuff below is from studio 1 and needs to be re-written. 
+![========]({{ "/images/line.gif" | relative_url }})
+
+## Introduction to Arduino
+
+The Arduino is a (very) small computer that has dramatically fewer capabilities than the desktop or laptop machines that you have used in the past to run Java programs. For example, it doesn\'t have a keyboard, it doesn\'t have a screen, its processor is well over 100 times slower, and you might even be wondering, "what is the point?" The point is that small computers like the Arduino are priced relative to their capabilities. Want a computer for under \$10? If so, the Arduino is a great choice! Its small size makes it incredibly useful for lots of jobs where it would seem overkill to use a $1500 laptop. Over the course of the semester, we\'ll discover all that the Arduino can do, even though it starts out as humbly as it does.
+
+### Assembling the Arduino Board
+
+You will need to assemble your the main components of your Arduino kit. The tutorial from SparkFun (the supplier of the hardware) is [here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/baseplate-assembly), or you can follow the description below. Either gets you to the same place.
+
+The Arduino RedBoard:
+
+![Arduino RedBoard](ArduinoRedBoard.png)
+
+The BreadboardHolder:
+
+![Breadboard Holder](BreadboardHolder.png)
+
+And the (solderless) Breadboard: 
+
+![Breadboard](Breadboard.png)
+
+When done, it should look like: 
+
+![Assembled Board](AssembledRedBoard.png)
+
+You will need to:
+1. Attach the Breadboard to the Breadboard holder *with the labels on the breadboard facing the correct way, as shown above*.  The breadboard has an adhesive backing.  Remove the protective layer and stick it to the holder in the indentation. The column letters a-j on the top and bottom of the breadboard should be in the same direction as the "sparkfun" label on the breadboard holder.   
+
+2. Put the RedBoard on the Breadboard Holder. Again, the print/labels should match those shown above.  The Redboard has four holes for screws and the kit includes two screws.  Any two holes will be suitable, but diagonal holes are recommended.  Screwdrivers are available from the instructors and TAs.
+
+![RedBoard Assembled Screws](AssembledRedBoardScrews.png)
+
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
