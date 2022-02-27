@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SIGCSE Workshop 407 Studio B - A Cricket
+title: SIGCSE Workshop 407 Studio B - Crickets
 author: Ben Stolovitz and Shuya Ma; Updated by Bill Siever and Evan Simkowitz
 ---
 {% include nav.html %}
