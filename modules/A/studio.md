@@ -43,6 +43,51 @@ You will need to:
 
 ![RedBoard Assembled Screws](AssembledRedBoardScrews.png)
 
+### Programming the Arduino
+
+Although the Arduino itself is a computer separate from your laptop or desktop, its lack of screen serves as an impediment to programming it directly. We write and compile programs for it on a larger computer and then send them over to the Arduino via USB. The Arduino, as you'll soon see, runs one program at a time, for as long as it's plugged in.
+
+As you might imagine, the transfer process is very complex, and until the Arduino came out in 2005, microprocessor programming was a [long and arduous task](http://ww1.microchip.com/downloads/en/appnotes/atmel-0943-in-system-programming_applicationnote_avr910.pdf). Luckily for us, we are past those dark ages of computing and we have the **Arduino IDE** (Integrated Development Environment). The *Arduino* IDE helps you write and compile Arduino programs and also manages uploading those programs to your Arduino board.
+
+Arduino programs are written in a variant of C, one with extra libraries specifically for writing Arduino programs. If you have already been introduced to C, programming the Arduino should be a snap.
+
+
+![========]({{ "/images/line.gif" | relative_url }})
+
+## First Exercise
+
+In this exercise you will get accustomed to the basics of Arduino C by writing a simple "heartbeat" program and uploading it to your Arduino board.
+
+### Running a program
+
+Navigate to the `helloworld/helloworld.ino` file underneath your `Arduino` directory. Double click on the file to start the Arduino IDE.
+
+The `helloworld.ino` file is a complete Arduino program. Compiling and uploading it should help you learn the Arduino interface.
+
+![An annotated screenshot of the Arduino IDE](arduino.png)
+
+1. Click the **Upload** button to *compile* `helloworld` and *upload* it to the Arduino (the **Verify** button just compiles your program, looking for errors in the code).
+2.	Make sure the code uploaded correctly (the **status message** should say `Done uploading.`).
+3. Open the **Serial Monitor** to view the output that our newly programmed Arduino writes to its *serial port*. You should see the phrase `Hello, world!`.
+4. Press the **reset button** on your Arduino board. The Serial Monitor should  display the phrase `Hello, world!` again. <br/>**Important:** Note that in the bottom right of the Serial Monitor there is a dropdown box that by default reads `Newline`. **Change this to the `No line ending` option**. This has to do with input to the Arduino from the keyboard. Although this studio will not provide keyboard input to the Arduino, future studios and assignments will, and it is important that the `No line ending` option is selected or unintended isues may arise. You should get into the habit of making sure this option is selected.
+5. The Arduino has two **entry points** into your code, or, in other words, two places it looks to run your code. Whenever the Arduino starts up or is reset, the Arduino runs the `void setup()` function once. After that, the Arduino runs the `void loop()` function over and over until the Arduino is unplugged or reset.
+
+	Opening serial monitor or pushing the reset button on the Arduino both reset the Arduino.
+	
+	Note that opening the serial monitor will sometimes print garbage data as the signals between the Arduino and computer sync up.
+
+<!-- <aside class="sidenote"> -->
+>#### Problems uploading?
+
+>Considering that you are compiling a program from C, using an old USB driver designed by one company to communicate with a board designed by another company running code designed by a third, it\'s surprising that Arduino upload works as often as it does.
+
+>But stuff goes wrong. A lot. Here\'s how to troubleshoot your upload.
+
+>- **Is your code free of syntax errors?** Make sure that your code is correct (**Verify** it and make sure the status is `Done compiling.`)
+>- **Are you writing to the correct port?** Look under `Tools>Port>` and select a different one. On Windows it will be something like `COM3`. On Mac, it will be something like `/dev/cu.usbmodem1492`. There\'s no good way to find the correct one aside from guess-and-check.
+>- **Restart the Arduino IDE and plug everything in again**. It works a lot of the time.
+<!-- </aside> -->
+
 
 ![========]({{ "/images/line.gif" | relative_url }})
 

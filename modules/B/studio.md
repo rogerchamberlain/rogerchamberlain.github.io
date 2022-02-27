@@ -90,7 +90,7 @@ Use the existing `cricket/cricket.ino` sketch for your work.
 
 2. Alternatively, use digital output pin 13, which has an LED mounted on the Arduino Uno board.
 
-3. Connect the center, output pin of your temperature sensor to an analog pin. Then attach the power pin to `+5V` and the ground pin to `GND`. (Refer to the directions and diagram above.  There is also an image blow, in Guidlines. Double check your wiring and ask for help if you are unsure.)
+3. Connect the center, output pin of your temperature sensor to an analog pin. Then attach the power pin to `+5V` and the ground pin to `GND`. (Refer to the directions and diagram above.  There is also an image blow, in [Guidlines]({{ "/modules/B/studio.html#guidelines" | relative_url }}). Double check your wiring and ask for help if you are unsure.)
 
 	Make sure you can `analogRead()` from it, even if you haven't set `analogReference()` yet.
 
