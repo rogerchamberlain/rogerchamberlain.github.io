@@ -91,36 +91,11 @@ The `helloworld.ino` file is a complete Arduino program. Compiling and uploading
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
-## Introduction
+## Second Exercise - FSMs
 
-Now that you know the basics of the Arduino IDE and its Programming Language, it's time to go a bit more in-depth about how it and computers in general work.
+[**Here**]({{ "/intro-to-FSMs.html" | relative_url }}) is a great introduction to Finite-State Machines (FSMs). They are also described in Chapter 7 of the [text]({{ "/files/cc_v0_07.pdf#page=75" | relative_url }}) (read Section 7.1).
 
-### The C Programming Language
-
-If you took CSE131 or AP Computer Science, you should already be familiar with Java. We will still use a lot of Java in this class, but we're also switching the emphasis to another language called **C**. 
-
-We do this for two reasons:
-
-- You program Arduinos in C
-- C is much closer to the hardware
-
-Unlike Java, which runs on a virtual machine *on top* of your existing operating system, C compiles to pure machine language: the direct instruction set that your computer actually runs. In other words, if you'd like to see the exact instructions your computer uses to draw a pixel onscreen in a video game or download your email, you look at a compiled C program.
-
-Lucky for us, *uncompiled* C (like, C code) looks a lot like Java. So much so that you should be able to read C with no problems.
-
-Compiled code is a different story. We'll deal with the human-readable "rendition" of machine-language, Assembly, later in the semester, but for now we'll deal with the more immediate problem of how programs interact with the computer
-
-![========]({{ "/images/line.gif" | relative_url }})
-
-## Studio Proper
-
-![========]({{ "/images/line.gif" | relative_url }})
-
-## FSMs
-
-[**Here**]({{ "/intro-to-FSMs.html" | relative_url }}) is a great introduction to FSMs. They are also described in Chapter 7 of the [text]({{ "/files/cc_v0_06.pdf#page=59" | relative_url }}) (read Section 7.1).
-
-For the final Part of the studio we have designed another program `FSM.ino`, a simplified binary counter, designed to introduce you to the concepts and syntax of FSMs that you will need for **Assignment 1**
+For the next exercise in this studio we have designed another program `FSM.ino`, a simplified binary counter, designed to introduce you to the concepts and syntax of FSMs.
 
 - Open `FSM.ino` (` FSM / FSM.ino`)
 - Upload `FSMs.ino` onto the Arduino
@@ -153,7 +128,7 @@ Here is this FSM's `enum`:
 	State counterState = up0;
 
 
-What does this *Output*:
+What does this *Output*?
 
 	state = up4;
 	Serial.print(state);
