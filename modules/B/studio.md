@@ -21,11 +21,11 @@ Crickets chirp at a rate proportional to external temperature: you can [calculat
 
 Every electrical component has a **specification sheet** (a **spec** sheet). It lists everything you'd want to know about that component and then some. Your Arduino kits include a TMP36 temperature sensor with these specs: [TMP36 Specifications](http://www.analog.com/media/en/technical-documentation/data-sheets/TMP35_36_37.pdf).  
 
-Pages 1 and 3 of the spec sheet have all the information you need to complete this assignment.  The first piece of information you should find is the slope (what is the response of the sensor in mV/&deg;C). In Table 1 this is called the Scale Factor. The second piece of information you should find is the offset (what is the voltage at a given temperature). In Table 1, this is called the Output Voltage (and it isn't a true offset, because it gives us the voltage at 25&deg;C instead of 0&deg;C, but we can work with that.
+Pages 1 and 3 of the spec sheet have all the information you need to complete this assignment.  The first piece of information you should find is the slope (what is the response of the sensor in mV/&deg;C). In Table 1 this is called the Scale Factor. The second piece of information you should find is the offset (what is the voltage at a given temperature). In Table 1, this is called the Output Voltage (and it isn't a true offset, because it gives us the voltage at 25&deg;C instead of 0&deg;C, but we can work with that).
 
 ### The TMP36
 
-The TMP36 is fairly simple. When a voltage is provided across the two outer pins (in the right orientation), the center pin produces an output voltage based on the temperature. 
+The TMP36 is fairly simple. When a voltage is provided across the two outer pins (in the right orientation), the center pin produces an output voltage proportional to the temperature. 
 
 ![A temperature sensor with pins labeled](tempsensor.png)
 
@@ -55,7 +55,7 @@ In order to read the temperature output by our sensor, you need to read the volt
 
 An `analogRead()` returns a number between `0` and `1023` that corresponds to a voltage. Usually, the `1023` corresponded to 5V. It turns out that this "upper limit voltage" can be changed. This **reference voltage**, on our Arduinos at least, can be one of two values: 5V or 1.1V.
 
-It's more appropriate to use 1.1V for the TMP36. Using the equation for the TMP36, 1.1V corresponds to 60&deg;C (use this to verify your derivation of the equation from above).   60&deg;C is well above the temperature of Wash U's classrooms. More importantly, using the lower reference voltage gives us more resolution, which means it will give us a more accurate temperature, so it makes sense to use a lower reference voltage.  That is, when we use the 5V reference: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\frac{5V}{1024counts}&space;\approx&space;.005&space;\frac{V}{count}" title="\frac{5V}{1024counts} \approx .005 \frac{V}{count}" /> whereas with the 1.1V reference: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\frac{1.1V}{1024counts}&space;\approx&space;.001&space;\frac{V}{count}" title="\frac{1.1V}{1024counts} \approx .001 \frac{V}{count}" />. So the 1.1V reference allows us to measure changes of about 0.001V.  The one downside of the higher resolution is the inability to measure values greater than 1.1V, but we don't expect our sensor to measure temperatures that hot for this application (i.e., hotter than 60&deg;C, which is 140&deg;F; the crickets probably aren't accurate at those temperatures either).
+It's more appropriate to use 1.1V for the TMP36. Using the equation for the TMP36, 1.1V corresponds to 60&deg;C (use this to verify your derivation of the equation from above).   60&deg;C is well above the temperature of our meetingroom. More importantly, using the lower reference voltage gives us more resolution, which means it will give us a more accurate temperature, so it makes sense to use a lower reference voltage.  That is, when we use the 5V reference: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\frac{5V}{1024counts}&space;\approx&space;.005&space;\frac{V}{count}" title="\frac{5V}{1024counts} \approx .005 \frac{V}{count}" /> whereas with the 1.1V reference: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\frac{1.1V}{1024counts}&space;\approx&space;.001&space;\frac{V}{count}" title="\frac{1.1V}{1024counts} \approx .001 \frac{V}{count}" />. So the 1.1V reference allows us to measure changes of about 0.001V.  The one downside of the higher resolution is the inability to measure values greater than 1.1V, but we don't expect our sensor to measure temperatures that hot for this application (i.e., hotter than 60&deg;C, which is 140&deg;F; the crickets probably aren't accurate at those temperatures either).
 
 Generally this reference should be configured in the `setup()`.  You can use `analogReference()` to [change the reference voltage to `INTERNAL`](https://www.arduino.cc/en/Reference/AnalogReference).
 
@@ -88,11 +88,11 @@ Use the existing `cricket/cricket.ino` sketch for your work.
 
 2. Alternatively, use digital output pin 13, which has an LED mounted on the Arduino Uno board.
 
-3. Connect the center, output pin of your temperature sensor to an analog pin. Then attach the power pin to `+5V` and the ground pin to `GND`. (Refer to the directions and diagram above.  There is also an image blow, in [Guidlines]({{ "/modules/B/studio.html#guidelines" | relative_url }}). Double check your wiring and ask for help if you are unsure.)
+3. Connect the center, output pin of your temperature sensor to an analog pin. Then attach the power pin to `+5V` and the ground pin to `GND`. (Refer to the directions and diagram above.  There is also an image below, in [Guidlines]({{ "/modules/B/studio.html#guidelines" | relative_url }}). Double check your wiring and ask for help if you are unsure.)
 
 	Make sure you can `analogRead()` from it, even if you haven't set `analogReference()` yet.
 
-4. Write delta time code to read the temperature at 4 Hz (do a `analogRead()` 4 times a second). Test your work so far by using `Serial.print()` to display the value from `analogRead()`.
+4. Write delta time code to read the temperature at 4 Hz (invoke `analogRead()` 4 times a second). Test your work so far by using `Serial.print()` to display the value from `analogRead()`.
 
 5. Set `analogReference()` to `INTERNAL`. This will change what each value of `analogRead()` corresponds to (`1023` will now correspond to 1.1V, not 5V), which will be important when you convert the data.
 
