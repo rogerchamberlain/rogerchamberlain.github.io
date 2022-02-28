@@ -91,7 +91,7 @@ The `helloworld.ino` file is a complete Arduino program. Compiling and uploading
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
-## Second Exercise - FSMs
+## Second Exercise
 
 [**Here**]({{ "/intro-to-FSMs.html" | relative_url }}) is a great introduction to Finite-State Machines (FSMs). They are also described in Chapter 7 of the [text]({{ "/files/cc_v0_07.pdf#page=75" | relative_url }}) (read Section 7.1).
 
@@ -233,9 +233,7 @@ Here is the drawing of the original FSM from above:
 	- We want to use an input to dictate when we should reverse directions. For this studio, our input will come from the keyboard. In your FSM drawing, however, you could represent the input as a binary value: 1 if a key has been pressed, and 0 if not.
 	- *Hint -- your FSM should have 16 states* One set of states is for counting up and another set for counting down. If you were to only use 8 states to represent the current number, the FSM does not know whether it should count up or down. We would need another variable to keep track of which way we are counting (which effectively adds additional states to the FSM in a rather crude and unsophisticaed way). 
 
-### The Program 
-
-#### Transferring FSMs to Code
+### Transferring FSMs to code
 
 - Return to `updownFSM.ino`
 - Complete the function `determineNextState()`  with a **FSM** to determine the next state of the machine.
@@ -270,18 +268,22 @@ Here is some pseudocode to demonstrate `switch`:
 		... 
 	}
 
-#### Adding the Reverse Button
+### Adding the Reverse Button
 
 - Complete the function `checkReverse()` , which **reverses** the direction of the counter **if** a key on the keyboard has been pressed.
 	- To check if a key on the keyboard has been pressed, you can use [Serial.read()](https://www.arduino.cc/en/Serial/Read). Take a look at the documentation to see how this function works, then use it to complete this method. 
 	- For this lab, we don't care which key has been pressed, we only care about whether or not any key has been pressed.
 	- If the user has input something, `checkReverse()` should update the state to reflect this. (Be sure the serial monitor has `No line ending` selected.  Other options, like `Newline` will send one or more additional characters and may cause it to reverse multiple times.)**
 
-#### The Final product
+### The final product
 Your Output should look close to this:
 
 ![Final Product](FSM_Final.gif)   
 
-![========]({{ "/images/line.gif" | relative_url }})
+## Fourth Exercise
+
+In this exercise, we are going to explore making the timing of our applications more precise.  In the sketch `counterFSM.ino`, remove the comments that print the time value. The `millis()` library routine returns the number of milliseconds since the Arduino was reset.
+
+FIXME: continue to introduce delta timing.
 
 {% include footer.html %}
