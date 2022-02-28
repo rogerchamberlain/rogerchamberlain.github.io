@@ -56,7 +56,7 @@ Arduino programs are written in a variant of C, one with extra libraries specifi
 
 ## First Exercise
 
-In this exercise you will get accustomed to the basics of Arduino C by writing a simple "heartbeat" program and uploading it to your Arduino board.
+In this exercise you will get accustomed to the basics of Arduino C by observing a simple "helloworld" program and uploading it to your Arduino board.
 
 ### Running a program
 
@@ -284,7 +284,7 @@ Your output should look close to this:
 
 In this exercise, we are going to explore making the timing of our applications more precise.  In the sketch `counterFSM.ino`, remove the comments that print the time value. The `millis()` library routine returns the number of milliseconds since the Arduino was reset.
 
-Run the sketch for a bit and watch the last few digits of the time output.  Is the amount of time for each loop really 1 second?  Or maybe a bit longer?  Next, we will introduce an approach to dealing with time that doesn't have this problem.
+Run the sketch for a bit and watch the last few digits of the time output.  Is the amount of time for each loop really 0.5 seconds?  Or maybe a bit longer?  Next, we will introduce an approach to dealing with time that doesn't have this problem.
 
 ### Delta-based timing
 	
@@ -292,7 +292,7 @@ Delta timing is a **non-blocking** timing mechanism. It does not halt the rest o
 	
 It is not a specific function, but rather a *mindset*, a different way of reasoning about your programs.  And it all starts with `millis()`. `millis()` returns an `unsigned long` indicating the number of milliseconds that have elapsed since your sketch began running.  Instead of *having your sketch wait* for the right time, you create code that will run *after the appropriate amount of time has passed*.  By keeping track of the `millis()` value of the *last* time you executed a recurring task, you can compare its value to the *current* `millis()` value every iteration of the loop, and if the difference---the **delta**---is larger than a certain value, you execute the task again.
 	
-For example, if I had a task I wanted to run every second, like in the heartbeat project:
+For example, if I had a task I wanted to run every second, like a heartbeat:
 
 ~~~ c
 // Create a variable for the "period" (time between beats) in ms
@@ -319,6 +319,8 @@ void loop() {
 
 Because there's no call to `delay()`, the `if` statement does not block program execution.  If a program needs to do several tasks at regular intervals (but possibly having different frequencies), it could use one variable to keep track of when the "next beat" happens for each task.
 
-FIXME: ask them to code up a delta time FSM, or just provide one?
+This sketch is available as `heartbeat / heartbeat.ino`, if you want to run it. (We've actually added some additional printing so you can see its timing.)
+
+If you have time, convert your `updownFSM` sketch to use delta timing.  For an additional challenge, each time the state changes flash the LED (pin 13 if you are using the built-in LED) for 200 ms.
 
 {% include footer.html %}
