@@ -284,6 +284,41 @@ Your output should look close to this:
 
 In this exercise, we are going to explore making the timing of our applications more precise.  In the sketch `counterFSM.ino`, remove the comments that print the time value. The `millis()` library routine returns the number of milliseconds since the Arduino was reset.
 
-FIXME: continue to introduce delta timing.
+Run the sketch for a bit and watch the last few digits of the time output.  Is the amount of time for each loop really 1 second?  Or maybe a bit longer?  Next, we will introduce an approach to dealing with time that doesn't have this problem.
+
+### Delta-based timing
+	
+Delta timing is a **non-blocking** timing mechanism. It does not halt the rest of the program while it waits. It's a powerful concept used in everything from slow computers to the most recent blockbuster video games (it's actually [vital to them](http://gafferongames.com/game-physics/fix-your-timestep/)).
+	
+It is not a specific function, but rather a *mindset*, a different way of reasoning about your programs.  And it all starts with `millis()`. `millis()` returns an `unsigned long` indicating the number of milliseconds that have elapsed since your sketch began running.  Instead of *having your sketch wait* for the right time, you create code that will run *after the appropriate amount of time has passed*.  By keeping track of the `millis()` value of the *last* time you executed a recurring task, you can compare its value to the *current* `millis()` value every iteration of the loop, and if the difference---the **delta**---is larger than a certain value, you execute the task again.
+	
+For example, if I had a task I wanted to run every second, like in the heartbeat project:
+
+~~~ c
+// Create a variable for the "period" (time between beats) in ms
+const unsigned long beatPeriod = 1000;     // 1000ms = 1s. 
+
+// Create a variable to keep track of when the next beat will occur
+unsigned long nextBeatTime = 0;
+
+void loop() {
+
+	// Get the current "time"
+ 	unsigned long now = millis();
+
+ 	// Check if it's been too long since the last beat
+ 	if( now >= nextBeatTime) {
+ 		// It's past time for a beat --- do it
+		Serial.println("beat");
+
+		// Schedule when the next beat should occur
+ 		nextBeatTime = nextBeatTime + beatPeriod;
+ 	}
+ } 
+~~~
+
+Because there's no call to `delay()`, the `if` statement does not block program execution.  If a program needs to do several tasks at regular intervals (but possibly having different frequencies), it could use one variable to keep track of when the "next beat" happens for each task.
+
+FIXME: ask them to code up a delta time FSM, or just provide one?
 
 {% include footer.html %}
