@@ -60,7 +60,7 @@ In this exercise you will get accustomed to the basics of Arduino C by writing a
 
 ### Running a program
 
-Navigate to the `helloworld/helloworld.ino` file underneath your `Arduino` directory. Double click on the file to start the Arduino IDE.
+Navigate to the `helloworld / helloworld.ino` file underneath your `Arduino` directory. Double click on the file to start the Arduino IDE.
 
 The `helloworld.ino` file is a complete Arduino program. Compiling and uploading it should help you learn the Arduino interface.
 
@@ -95,10 +95,10 @@ The `helloworld.ino` file is a complete Arduino program. Compiling and uploading
 
 [**Here**]({{ "/intro-to-FSMs.html" | relative_url }}) is a great introduction to Finite-State Machines (FSMs). They are also described in Chapter 7 of the [text]({{ "/files/cc_v0_07.pdf#page=75" | relative_url }}) (read Section 7.1).
 
-For the next exercise in this studio we have designed another program `FSM.ino`, a simplified binary counter, designed to introduce you to the concepts and syntax of FSMs.
+For the next exercise in this studio we have designed another program `countFSM.ino`, a simplified binary counter, designed to introduce you to the concepts and syntax of FSMs.
 
-- Open `FSM.ino` (` FSM / FSM.ino`)
-- Upload `FSMs.ino` onto the Arduino
+- Open `countFSM.ino` (` countFSM / countFSM.ino`)
+- Upload `countFSM.ino` onto the Arduino
 - Open the Serial Monitor and notice how the **state** changes with the Binary Counter
 
 Here is a Visual Depiction of the FSM:
@@ -167,7 +167,7 @@ There can **only** be **one** selection from **Multiple** Choices
 
 
 
-### Switch  Statements: 
+### Switch Statements: 
 
 `switch` statements are where enums shine.
 
@@ -208,35 +208,80 @@ Things can can get Confusing Quickly:
 ![Complex FSM](complexFSM.png)
 
 
-Go through **Key Concepts** in your head to make sure you have all that you need to start on **Assignment 1**. As always if you think you missed a concept or just want a wonderful TA to explain it to you **Please Ask** (*it's their job*)
-
 ![========]({{ "/images/line.gif" | relative_url }})
 
-## Check out!
+## Third Exercise
+	
+This part has two components: drawing a FSM, and executing said FSM on your Arduino. 
 
-1. Commit your code and get checked out by a TA.
+- Connect your Arduino
+- Open `updownFSM / updownFSM.ino`  
+
+### Interpreting FSMs and FSAs
+
+Here is the drawing of the original FSM from above:
+
+![Simple Binary Counter](studio1-FSM.png)
+
+- The **circles** represent the possible states the machine can be in, and each circle has its own set of instructions. 
+- The **arrows** represent the possible movements the machine can make.
+- Notice that this FSM has no inputs. It continuously progresses from one state to the next. This is about to change!
+
+### Drawing Your Model
+
+- Draw a FSM to model a Binary Counter that can reverse directions
+	- We want to use an input to dictate when we should reverse directions. For this studio, our input will come from the keyboard. In your FSM drawing, however, you could represent the input as a binary value: 1 if a key has been pressed, and 0 if not.
+	- *Hint -- your FSM should have 16 states* One set of states is for counting up and another set for counting down. If you were to only use 8 states to represent the current number, the FSM does not know whether it should count up or down. We would need another variable to keep track of which way we are counting (which effectively adds additional states to the FSM in a rather crude and unsophisticaed way). 
+
+### The Program 
+
+#### Transferring FSMs to Code
+
+- Return to `updownFSM.ino`
+- Complete the function `determineNextState()`  with a **FSM** to determine the next state of the machine.
+	- Using your FSM drawing as a guide, your FSM should have **16** states and a matching `enum`.
+
+Here is an Example of an Enum in Arduino C:
+   
+	enum Direction {
+  	 North,			// North = 0
+  	 East,			// East = 1
+  	 South,			// South = 2
+  	 West			// West = 3
+	} direction = North;
+
+
+ - **Recommended** -- use  `switch`  statements to *switch* between your states using  `cases` 
+	- Correctly designed `if` statements will also be accepted
+
+Here is some pseudocode to demonstrate `switch`:
+
+	month = 2
+	switch (month) {
+		case 1:
+			print 'January'
+			break
+		case 2:  		// switch to case 2 because month == 2
+			print 'February' 	
+			break		// break so other cases won't run
+		case 3:
+			print 'March'
+			break
+		... 
+	}
+
+#### Adding the Reverse Button
+
+- Complete the function `checkReverse()` , which **reverses** the direction of the counter **if** a key on the keyboard has been pressed.
+	- To check if a key on the keyboard has been pressed, you can use [Serial.read()](https://www.arduino.cc/en/Serial/Read). Take a look at the documentation to see how this function works, then use it to complete this method. 
+	- For this lab, we don't care which key has been pressed, we only care about whether or not any key has been pressed.
+	- If the user has input something, `checkReverse()` should update the state to reflect this. (Be sure the serial monitor has `No line ending` selected.  Other options, like `Newline` will send one or more additional characters and may cause it to reverse multiple times.)**
+
+#### The Final product
+Your Output should look close to this:
+
+![Final Product](FSM_Final.gif)   
 
 ![========]({{ "/images/line.gif" | relative_url }})
-
-## Key Concepts
-
-This is a checklist for you to see what the Studio is designed to teach you.
-
-- Binary, Hexadecimal, and other Bases 
-- Bitwise Operations
-	- LEFTSHIFT
-	- RIGHTSHIFT
-	- INVERSE
-	- Overflow 
-- FSMs
-	- Cases
-	- Enums
-		- What happens at Runtime
-	- `switch`
-		- `break`
-- Repository 
-	- Eclipse 
-		- `Team > commit` 
-
 
 {% include footer.html %}
