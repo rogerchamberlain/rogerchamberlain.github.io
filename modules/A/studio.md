@@ -282,7 +282,7 @@ Your output should look close to this:
 
 ## Fourth Exercise
 
-In this exercise, we are going to explore making the timing of our applications more precise.  In the sketch `counterFSM.ino`, remove the comments that print the time value. The `millis()` library routine returns the number of milliseconds since the Arduino was reset.
+In this exercise, we are going to explore making the timing of our applications more precise.  In the sketch `countFSM.ino`, remove the comments that print the time value. The `millis()` library routine returns the number of milliseconds since the Arduino was reset.
 
 Run the sketch for a bit and watch the last few digits of the time output.  Is the amount of time for each loop really 0.5 seconds?  Or maybe a bit longer?  Next, we will introduce an approach to dealing with time that doesn't have this problem.
 
