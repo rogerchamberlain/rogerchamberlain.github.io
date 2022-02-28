@@ -101,7 +101,7 @@ For the next exercise in this studio we have designed another program `countFSM.
 - Upload `countFSM.ino` onto the Arduino
 - Open the Serial Monitor and notice how the **state** changes with the Binary Counter
 
-Here is a Visual Depiction of the FSM:
+Here is a visual depiction of the FSM:
 
 ![Simple FSM](studio1FSM.png)
 
@@ -128,7 +128,7 @@ Here is this FSM's `enum`:
 	State counterState = up0;
 
 
-What does this *Output*?
+What does *this* output?
 
 	state = up4;
 	Serial.print(state);
@@ -221,7 +221,7 @@ This part has two components: drawing a FSM, and executing said FSM on your Ardu
 
 Here is the drawing of the original FSM from above:
 
-![Simple Binary Counter](studio1-FSM.png)
+![Simple Binary Counter](studio1FSM.png)
 
 - The **circles** represent the possible states the machine can be in, and each circle has its own set of instructions. 
 - The **arrows** represent the possible movements the machine can make.
@@ -231,7 +231,7 @@ Here is the drawing of the original FSM from above:
 
 - Draw a FSM to model a Binary Counter that can reverse directions
 	- We want to use an input to dictate when we should reverse directions. For this studio, our input will come from the keyboard. In your FSM drawing, however, you could represent the input as a binary value: 1 if a key has been pressed, and 0 if not.
-	- *Hint -- your FSM should have 16 states* One set of states is for counting up and another set for counting down. If you were to only use 8 states to represent the current number, the FSM does not know whether it should count up or down. We would need another variable to keep track of which way we are counting (which effectively adds additional states to the FSM in a rather crude and unsophisticaed way). 
+	- *Hint -- your FSM should have 16 states.* One set of states is for counting up and another set for counting down. If you were to only use 8 states to represent the current number, the FSM does not know whether it should count up or down. We would need another variable to keep track of which way we are counting (which effectively adds additional states to the FSM in a rather crude and unsophisticaed way). 
 
 ### Transferring FSMs to code
 
@@ -276,7 +276,7 @@ Here is some pseudocode to demonstrate `switch`:
 	- If the user has input something, `checkReverse()` should update the state to reflect this. (Be sure the serial monitor has `No line ending` selected.  Other options, like `Newline` will send one or more additional characters and may cause it to reverse multiple times.)**
 
 ### The final product
-Your Output should look close to this:
+Your output should look close to this:
 
 ![Final Product](FSM_Final.gif)   
 
