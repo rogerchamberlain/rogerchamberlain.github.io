@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SIGCSE Workshop 407 Studio B - Crickets
-author: Ben Stolovitz and Shuya Ma; Updated by Bill Siever and Evan Simkowitz
+author: Ben Stolovitz and Shuya Ma; Updated by Bill Siever, Evan Simkowitz, and Roger Chamberlain
 ---
 {% include nav.html %}
 
@@ -55,7 +55,7 @@ In order to read the temperature output by our sensor, you need to read the volt
 
 An `analogRead()` returns a number between `0` and `1023` that corresponds to a voltage. Usually, the `1023` corresponded to 5V. It turns out that this "upper limit voltage" can be changed. This **reference voltage**, on our Arduinos at least, can be one of two values: 5V or 1.1V.
 
-It's more appropriate to use 1.1V for the TMP36. Using the equation for the TMP36, 1.1V corresponds to 60&deg;C (use this to verify your derivation of the equation from above).   60&deg;C is well above the temperature of our meetingroom. More importantly, using the lower reference voltage gives us more resolution, which means it will give us a more accurate temperature, so it makes sense to use a lower reference voltage.  That is, when we use the 5V reference: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\frac{5V}{1024counts}&space;\approx&space;.005&space;\frac{V}{count}" title="\frac{5V}{1024counts} \approx .005 \frac{V}{count}" /> whereas with the 1.1V reference: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\frac{1.1V}{1024counts}&space;\approx&space;.001&space;\frac{V}{count}" title="\frac{1.1V}{1024counts} \approx .001 \frac{V}{count}" />. So the 1.1V reference allows us to measure changes of about 0.001V.  The one downside of the higher resolution is the inability to measure values greater than 1.1V, but we don't expect our sensor to measure temperatures that hot for this application (i.e., hotter than 60&deg;C, which is 140&deg;F; the crickets probably aren't accurate at those temperatures either).
+It's more appropriate to use 1.1V for the TMP36. Using the equation for the TMP36, 1.1V corresponds to 60&deg;C (use this to verify your derivation of the equation from above).   60&deg;C is well above the temperature of our meeting room. More importantly, using the lower reference voltage gives us more resolution, which means it will give us a more accurate temperature, so it makes sense to use a lower reference voltage.  That is, when we use the 5V reference: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\frac{5V}{1024counts}&space;\approx&space;.005&space;\frac{V}{count}" title="\frac{5V}{1024counts} \approx .005 \frac{V}{count}" /> whereas with the 1.1V reference: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\frac{1.1V}{1024counts}&space;\approx&space;.001&space;\frac{V}{count}" title="\frac{1.1V}{1024counts} \approx .001 \frac{V}{count}" />. So the 1.1V reference allows us to measure changes of about 0.001V.  The one downside of the higher resolution is the inability to measure values greater than 1.1V, but we don't expect our sensor to measure temperatures that hot for this application (i.e., hotter than 60&deg;C, which is 140&deg;F; the crickets probably aren't accurate at those temperatures either).
 
 Generally this reference should be configured in the `setup()`.  You can use `analogReference()` to [change the reference voltage to `INTERNAL`](https://www.arduino.cc/en/Reference/AnalogReference).
 
