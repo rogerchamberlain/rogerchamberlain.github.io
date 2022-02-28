@@ -8,17 +8,17 @@ author: Roger Chamberlain, Claire Heuckeroth, Ben Stolovitz, and Sean Schaffer
 
 # {{ page.title }}
 
-The files for today's workshop are make available on a thumb drive.  Copy all of material under the `Arduino` directory into the `Arduino` directory on your laptop.
+The files for today's workshop are made available on a thumb drive.  Copy all of the material under the `Arduino` directory into the `Arduino` directory on your laptop.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## Introduction to Arduino
 
-The Arduino is a (very) small computer that has dramatically fewer capabilities than the desktop or laptop machines that you have used in the past to run Java programs. For example, it doesn\'t have a keyboard, it doesn\'t have a screen, its processor is well over 100 times slower, and you might even be wondering, "what is the point?" The point is that small computers like the Arduino are priced relative to their capabilities. Want a computer for under \$10? If so, the Arduino is a great choice! Its small size makes it incredibly useful for lots of jobs where it would seem overkill to use a $1500 laptop. Over the course of the semester, we\'ll discover all that the Arduino can do, even though it starts out as humbly as it does.
+The Arduino is a (very) small computer that has dramatically fewer capabilities than the desktop or laptop machines that you have used in the past to run Java programs. For example, it doesn\'t have a keyboard, it doesn\'t have a screen, its processor is well over 100 times slower, and you might even be wondering, "what is the point?" The point is that small computers like the Arduino are priced relative to their capabilities. Want a computer for under \$10? If so, the Arduino is a great choice! Its small size makes it incredibly useful for lots of jobs where it would seem overkill to use a $1500 laptop.
 
 ### Assembling the Arduino Board
 
-You will need to assemble your the main components of your Arduino kit. The tutorial from SparkFun (the supplier of the hardware) is [here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/baseplate-assembly), or you can follow the description below. Either gets you to the same place.
+You will need to assemble the main components of your Arduino kit. The tutorial from SparkFun (the supplier of the hardware) is [here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/baseplate-assembly), or you can follow the description below. Either gets you to the same place.
 
 The Arduino RedBoard:
 
@@ -47,7 +47,7 @@ You will need to:
 
 Although the Arduino itself is a computer separate from your laptop or desktop, its lack of screen serves as an impediment to programming it directly. We write and compile programs for it on a larger computer and then send them over to the Arduino via USB. The Arduino, as you'll soon see, runs one program at a time, for as long as it's plugged in.
 
-As you might imagine, the transfer process is very complex, and until the Arduino came out in 2005, microprocessor programming was a [long and arduous task](http://ww1.microchip.com/downloads/en/appnotes/atmel-0943-in-system-programming_applicationnote_avr910.pdf). Luckily for us, we are past those dark ages of computing and we have the **Arduino IDE** (Integrated Development Environment). The *Arduino* IDE helps you write and compile Arduino programs and also manages uploading those programs to your Arduino board.
+As you might imagine, the transfer process is very complex, and until the Arduino came out in 2005, microprocessor programming was a [long and arduous task](http://ww1.microchip.com/downloads/en/appnotes/atmel-0943-in-system-programming_applicationnote_avr910.pdf). Luckily for us, we are past those dark ages of computing and we have the **Arduino IDE** (Integrated Development Environment). The Arduino IDE helps you write and compile Arduino programs and also manages uploading those programs to your Arduino board.
 
 Arduino programs are written in a variant of C, one with extra libraries specifically for writing Arduino programs. If you have already been introduced to C, programming the Arduino should be a snap.
 
@@ -69,7 +69,7 @@ The `helloworld.ino` file is a complete Arduino program. Compiling and uploading
 1. Click the **Upload** button to *compile* `helloworld` and *upload* it to the Arduino (the **Verify** button just compiles your program, looking for errors in the code).
 2.	Make sure the code uploaded correctly (the **status message** should say `Done uploading.`).
 3. Open the **Serial Monitor** to view the output that our newly programmed Arduino writes to its *serial port*. You should see the phrase `Hello, world!`.
-4. Press the **reset button** on your Arduino board. The Serial Monitor should  display the phrase `Hello, world!` again. <br/>**Important:** Note that in the bottom right of the Serial Monitor there is a dropdown box that by default reads `Newline`. **Change this to the `No line ending` option**. This has to do with input to the Arduino from the keyboard. Although this studio will not provide keyboard input to the Arduino, future studios and assignments will, and it is important that the `No line ending` option is selected or unintended isues may arise. You should get into the habit of making sure this option is selected.
+4. Press the **reset button** on your Arduino board. The Serial Monitor should  display the phrase `Hello, world!` again. <br/>**Important:** Note that in the bottom right of the Serial Monitor there is a dropdown box that by default reads `Newline`. **Change this to the `No line ending` option**. This has to do with input to the Arduino from the keyboard. Although this first exercise will not provide keyboard input to the Arduino, future exercises will, and it is important that the `No line ending` option is selected or unintended issues may arise. You should get into the habit of making sure this option is selected.
 5. The Arduino has two **entry points** into your code, or, in other words, two places it looks to run your code. Whenever the Arduino starts up or is reset, the Arduino runs the `void setup()` function once. After that, the Arduino runs the `void loop()` function over and over until the Arduino is unplugged or reset.
 
 	Opening serial monitor or pushing the reset button on the Arduino both reset the Arduino.
@@ -95,7 +95,7 @@ The `helloworld.ino` file is a complete Arduino program. Compiling and uploading
 
 [**Here**]({{ "/intro-to-FSMs.html" | relative_url }}) is a great introduction to Finite-State Machines (FSMs). They are also described in Chapter 7 of the [text]({{ "/files/cc_v0_07.pdf#page=75" | relative_url }}) (read Section 7.1).
 
-For the next exercise in this studio we have designed another program `countFSM.ino`, a simplified binary counter, designed to introduce you to the concepts and syntax of FSMs.
+For the next exercise in this studio we have provided another program `countFSM.ino`, a simplified binary counter, designed to introduce you to the concepts and syntax of FSMs.
 
 - Open `countFSM.ino` (` countFSM / countFSM.ino`)
 - Upload `countFSM.ino` onto the Arduino
@@ -133,7 +133,7 @@ What does *this* output?
 	state = up4;
 	Serial.print(state);
 
-*Enum* types in C are just **numbers** with readable **names**, and those names are not compiled into your program -- meaning *"up4"* is not accessible at runtime. In other Languages, however, Enums sometimes have a `toString()` or `name()` method that will allow access to a **name** at runtime.
+*Enum* types in C are just **numbers** with readable **names**, and those names are not compiled into your program -- meaning *"up4"* is not accessible at runtime. In other languages, however, Enums sometimes have a `toString()` or `name()` method that will allow access to a **name** at runtime.
 
 
 An `Enum` is useful when a variable can **only** take **one** out of a small **set** of possible values. Examples include *Months*, *Game Pieces*, or the *Cardinal Directions*. 
@@ -217,7 +217,7 @@ This part has two components: drawing a FSM, and executing said FSM on your Ardu
 - Connect your Arduino
 - Open `updownFSM / updownFSM.ino`  
 
-### Interpreting FSMs and FSAs
+### Interpreting FSM bubble diagrams
 
 Here is the drawing of the original FSM from above:
 
@@ -321,6 +321,6 @@ Because there's no call to `delay()`, the `if` statement does not block program 
 
 This sketch is available as `heartbeat / heartbeat.ino`, if you want to run it. (We've actually added some additional printing so you can see its timing.)
 
-If you have time, convert your `updownFSM` sketch to use delta timing.  For an additional challenge, each time the state changes flash the LED (pin 13 if you are using the built-in LED) for 200 ms.
+If you have time, convert your `updownFSM` sketch to use delta timing.  For an additional challenge, each time the state changes flash the LED (pin 13 to use the built-in LED) for 200 ms.
 
 {% include footer.html %}
