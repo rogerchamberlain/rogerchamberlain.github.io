@@ -8,7 +8,7 @@ author: Roger Chamberlain, Claire Heuckeroth, Ben Stolovitz, and Sean Schaffer
 
 # {{ page.title }}
 
-FIXME: Click [here](https://wustl.instructure.com/courses/68860/assignments/289429) to access the Canvas page with the repository for this studio.  
+The files for today's workshop are make available on a thumb drive.  Copy all of material under the `Arduino` directory into the `Arduino` directory on your laptop.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 

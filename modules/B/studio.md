@@ -7,8 +7,6 @@ author: Ben Stolovitz and Shuya Ma; Updated by Bill Siever and Evan Simkowitz
 
 # {{ page.title }}
 
-FIXME: Click [here](https://wustl.instructure.com/courses/68860/assignments/289459) to access the Canvas page with the repository for this assignment.
-
 ![========]({{ "/images/line.gif" | relative_url }})
 
 ## The idea
