@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Studio 10 - Memory Model"
-author: Doug Shook
+author: Doug Shook and Roger Chamberlain
 ---
 {% include nav.html %}
 
@@ -29,15 +29,17 @@ By the end of this studio, you should:
 
 ## Around the globe
 
-We'll start out by taking a look at how to use global variables.
+We'll start out by taking a look at how to use global variables.  We will do this while exploring two addressing modes: _data direct_ and _data indirect_, both of which can be used to read and write main memory (i.e., load a memory value into a register or store a register value into memory).
 
-1. Set up your repository. We have written a bare bones project, `memoryModel`. In it are assembly stubs for three functions. Let's start by looking at increment and decrement.
+1. Set up your repository. We have written a bare bones project, `memoryModel`. In the `assembly.S` file are assembly stubs for three functions. Let's start by looking at increment and decrement.
 
 2. The goal of increment and decrement is simple: we want to add one or subtract one from a global variable. First, define a global variable in your assembly code. We wish to use a single byte for our counter. This counter should have an initial value of 0.
 
-3. Complete the increment/decrement functions. These functions should add or subtract one from the global counter variable that you created. Notice that there are no input parameters for either of these functions. To access the global variable, you will need to get a _reference_ to it, which you can do using the `hi8()` and `lo8()` functions, as explained in the prep work. You will then need to copy this reference into the appropriate registers (called indirect address registers in the [documentation](https://onlinedocs.microchip.com/pr/GUID-0B644D8F-67E7-49E6-82C9-1B2B9ABE6A0D-en-US-1/index.html?GUID-BA6EA9E1-E8BD-4CB3-A406-DEA0855A9413), we typically just say **address registers**) so you can access it using `ld` or `st`. Make sure you are properly using these registers (i.e. pay attention to whether they are call-saved or call-used).
+3. Complete the increment function. This function should add one to the global counter variable that you created. Notice that there are no input parameters for this function. To access the global variable, you will use the _data direct_ addressing mode ([here](https://onlinedocs.microchip.com/pr/GUID-0B644D8F-67E7-49E6-82C9-1B2B9ABE6A0D-en-US-1/index.html?GUID-127A13AF-B2A2-44D4-939D-0F08800DD009) is it's description) associated with the `lds` (load) and `sts` (store) instructions.  Use the name of the global variable for the memory address in the load and store instructions.  After loading the value of the global counter variable into a register, increment it and store it back in the global variable. Make sure you are properly using a caller-saved register (or save the register before using it and restore it before the return instruction).
 
-4. After you increment/decrement the value, store the updated value back to the global variable. The return value of these functions should be the value of the global variable after the increment/decrement has taken place. You can check your work by running the tests provided in `memoryModel.ino`.
+4. Next complete the decrement function. This function should subtract one from the global counter variable that you created above. Again, there are no input parameters for this function. For decrement, you will use the _data indirect_ addressing mode ([here](https://onlinedocs.microchip.com/pr/GUID-0B644D8F-67E7-49E6-82C9-1B2B9ABE6A0D-en-US-1/index.html?GUID-FCF78F7F-C5D8-4C3A-A7F1-5260C6A9D81C) is its description). With indirect addressing, to access the global variable, you will need to get a _reference_ to it, which you can do using the `hi8()` and `lo8()` functions, as explained in the prep work. You will then need to copy this reference into the appropriate registers (called indirect address registers in the [documentation](https://onlinedocs.microchip.com/pr/GUID-0B644D8F-67E7-49E6-82C9-1B2B9ABE6A0D-en-US-1/index.html?GUID-9477D04A-94D0-4073-A2C6-80B54C896C17), we typically just say **address registers**) so you can access it using `ld` or `st`. Make sure you are properly using these registers (i.e. pay attention to whether they are caller-saved or callee-saved).  After you decrement the value, store the updated value back to the global variable.
+
+5. The return value of both these functions should be the value of the global variable after the increment/decrement has taken place. You can check your work by running the tests provided in `memoryModel.ino`.
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
