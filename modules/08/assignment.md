@@ -19,7 +19,7 @@ For this lab we are taking out the compiler! You are tasked with writing a serie
 
 Please note that **you should not use any branching instructions**. You may use the "skip" instructions, however (and in fact may be required to do so!).
 
-An important note on registers: as described in the [documentation](http://ww1.microchip.com/downloads/en/appnotes/doc42055.pdf), there are different kinds of registers in assembly. A call-used register may be used and modified by a subroutine, so any *calling* function must save them before calling a subroutine, either by `mov`ing them to another register or `push`ing them to the stack. A call-saved register cannot be affected by calling a subroutine (without likely crashing the calling C code), so your subroutine must save them before modifying them and restore them before returning. In otherwords, if you change the values in any call-saved registers, like `r28` or `r29`, you must restore them back to their original values before your function returns.
+An important note on registers: as described in the [documentation](http://ww1.microchip.com/downloads/en/appnotes/doc42055.pdf), there are different kinds of registers in assembly. A caller-saved register may be used and modified by a subroutine, so any *calling* function must save them before calling a subroutine, either by `mov`ing them to another register or `push`ing them to the stack. A callee-saved register should not be affected by calling a subroutine (without likely crashing the calling C code), so your subroutine must save them before modifying them and restore them before returning. In otherwords, if you change the values in any callee-saved registers, like `r28` or `r29`, you must restore them back to their original values before your function returns.
 
 The easiest way to save a register is to use the **stack**. Interaction with the stack utilizes two primary instructions: [push](https://onlinedocs.microchip.com/pr/GUID-0B644D8F-67E7-49E6-82C9-1B2B9ABE6A0D-en-US-1/index.html?GUID-51635F91-00DA-4C97-A39C-783551EFD2DE) and [pop](https://onlinedocs.microchip.com/pr/GUID-0B644D8F-67E7-49E6-82C9-1B2B9ABE6A0D-en-US-1/index.html?GUID-BA3B66E9-4A18-4C02-90FC-CCF42561A202). Push will put the contents of a register on the the top of a stack. Pop will remove the last value placed on the stack and put it in a register. 
 
@@ -43,7 +43,7 @@ Below is a brief description of each of the functions we're asking you to implem
 
 **`int int8ToInt(int8_t num)`**: Takes in an 8-bit **signed** value and converts it to a 16 bit **signed** value. 
 
-**`int addInt8ToInt(int8_t num1, int num2)`**: Adds an 8-bit **signed** value to a 16-bit signed value and returns a 16-bit **signed** result. To do this properly, you should convert the 8-bit argument to a 16-bit argument before performing the addition. Use your **int8ToInt** function to accomplish this. Be careful with your registers! Even if nothing bad happens when you use call-used or call-safe registers we will be checking to make sure that you used them properly when you demo.
+**`int addInt8ToInt(int8_t num1, int num2)`**: Adds an 8-bit **signed** value to a 16-bit signed value and returns a 16-bit **signed** result. To do this properly, you should convert the 8-bit argument to a 16-bit argument before performing the addition. Use your **int8ToInt** function to accomplish this. Be careful with your registers! Even if nothing bad happens when you use caller-saved or callee-saved registers we will be checking to make sure that you used them properly when you demo.
 
 **`int add4Int8(int8_t num1, int8_t num2, int8_t num3, int8_t num4)`**: Adds the four 8-bit **signed** values and returns an 16-bit **signed** result. *this must use `int8ToInt()` (1 call) and `addInt8ToInt()` (3 calls)*.
 
@@ -91,7 +91,7 @@ It's more difficult to exhaustively test `addInt8ToInt()`, `add4Int8()`, and `av
 		- Additional test cases
 	- `average`
 		- Additional test cases
-	- Correct usage of call-saved registers
+	- Correct usage of caller-saved and callee-saved registers
 	- Code style
 
 {% include footer.html %}
