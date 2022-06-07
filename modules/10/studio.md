@@ -86,7 +86,7 @@ which will print the brackets and the words within.  Note that `print` does
 not work well with symbols, like `=`.
 
 `printAReg` will print the contents of a single register. For example,
-`pringAReg 22` will print `r22 = 0xXX`.  Note that it prints the value in
+`printAReg 22` will print `r22 = 0xXX`.  Note that it prints the value in
 hex and only the number is used for the register (`22` rather than `r22`).
 
 These macros and `printRegs` can be used to study how individual values
@@ -108,8 +108,9 @@ This is a mental checklist for you to see what the Studio is designed to teach y
 
 - Assembly 
 	- Value vs. Reference
+		- `lds`, `sts` instructions
 		- `ld`, `st` instructions
-		- Reference registers
+		- Address registers
 	- Global values in assembly
 		- Defining global values
 		- Reading and writing global values
