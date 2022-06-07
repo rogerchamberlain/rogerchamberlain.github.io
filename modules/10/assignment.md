@@ -18,7 +18,7 @@ In this assignment you're tasked with creating more functions using assembly lan
 - This assignment requires the use of global variables 
 - This assignment uses arrays (one dimensional). 
 
-As before, you will likely want to keep the [AVR Assembly Reference](https://onlinedocs.microchip.com/pr/GUID-0B644D8F-67E7-49E6-82C9-1B2B9ABE6A0D-en-US-1/index.html?GUID-BA59618D-4850-490B-B176-0BCC3D9438A1) handy as well as the [rules for register usage](http://ww1.microchip.com/downloads/en/appnotes/doc42055.pdf). ***Make sure you are using registers appropriately - we will be checking for this when you demo. Some of the functions you have to complete are both called and call another function --- they need to follow both the call-saved and the call-used conventions!!!  Use the stack!***
+As before, you will likely want to keep the [AVR Assembly Reference](https://onlinedocs.microchip.com/pr/GUID-0B644D8F-67E7-49E6-82C9-1B2B9ABE6A0D-en-US-1/index.html?GUID-BA59618D-4850-490B-B176-0BCC3D9438A1) handy as well as the [rules for register usage](http://ww1.microchip.com/downloads/en/appnotes/doc42055.pdf). ***Make sure you are using registers appropriately - we will be checking for this when you demo. Some of the functions you have to complete are both called and call another function --- they need to follow both the caller-saved and the callee-saved conventions!!!  Use the stack!***
 
 ![========]({{ "/images/line.gif" | relative_url }})
 
@@ -103,7 +103,7 @@ The output of the multiplication instruction will be placed in `r0` and `r1`. No
 		- cStringLength
 		- sumArrays
 		- dot
-	- Correct usage of call-saved registers
+	- Correct usage of caller-saved and callee-saved registers
 	- Code style
 
 {% include footer.html %}
